@@ -1,0 +1,15 @@
+{% set navigation = { './index.html': 'Home', './about.html': 'About' } %}
+
+<nav>
+  <ul>
+    {% for url, name in navigation %}
+      <li
+        {% if name == page %}
+          class="is-selected"
+        {% endif %}
+      >
+        <a href="{{ url }}">{{ name }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
