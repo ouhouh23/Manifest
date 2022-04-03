@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "devDependencies": {
+    "browser-sync": "^2.27.9",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "html-webpack-plugin": "^5.5.0",
+    "js-beautify": "^1.14.2",
+    "js-yaml": "^4.1.0",
+    "laravel-mix": "^6.0.43",
+    "laravel-mix-twig": "^2.0.1",
+    "raw-loader": "^4.0.2",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.49.11",
+    "sass-loader": "^12.1.0",
+    "twig-html-loader": "^0.1.9"
+  },
+  "scripts": {
+    "build": "yarn run mix",
+    "watch": "yarn run mix watch"
+  }
+}
