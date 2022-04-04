@@ -1,21 +1,77 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <title>{% block title %}Title{% endblock %}</title>
   
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main.css" />
+
+  <!--<script src="https://kit.fontawesome.com/6b13e560f5.js" crossorigin="anonymous">
+      </script>-->
 </head>
 
 <body>
-  {% include '../partials/_navigation.twig' %}
+  <div class="wrapper">
+    <header class="header">
+      <a class="logo" href="#">
+        <img src="img/logo.png" alt="Site logo" />
+      </a>
 
-  {% block content %}
-    <h1>Portfolio</h1>
-  {% endblock %}
+      <div class="header__navigation">
+        {% include '../partials/_navigation.twig' %}
+
+        <a href="#">Search icon
+          <i class="fa fa-search"></i>
+        </a>
+      </div>
+    </header>
+
+    {% block content %}
+      <h1>Portfolio</h1>
+
+    {% endblock %}
+
+    <footer class="footer">
+      <div class="project-offer">
+        <h1 class="project-offer__heading">
+          Need a project?
+        </h1>
+
+        <a class="project-offer__phone" href="tel:+2395550108">
+          (239) 555-0108
+        </a>
+
+        <a class="project-offer__mail" href="mailto:tanya.hill@example.com">
+          tanya.hill@example.com
+        </a>
+      </div>
+
+      <ul class="social-networks">
+        <li>
+          <a href="#">Facebook</a>
+        </li>
+
+        <li>
+          <a href="#">Instagram</a>
+        </li>
+
+        <li>
+          <a href="#">Dribble</a>
+        </li>
+
+        <li>
+          <a href="#">Linkedin</a>
+        </li>
+      </ul>
+
+      <div class="footer__copyright copyrights">
+        <small>&copy Copyright Manifest Theme. Allrights reserved</small>
+      </div>
+    </footer>
+  </div>
 </body>
 
 </html>

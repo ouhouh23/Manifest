@@ -1,14 +1,15 @@
-{% set navigation = { './index.html': 'Home', './about.html': 'About' } %}
+{% set navigation = { './index.html': 'Home', './about.html': 'About', './blog.html': 'Blog' } %}
+{% set zalupa = 'sometext' %}
 
 <nav>
   <ul>
-    {% for url, name in navigation %}
+    {% for hyi, name in navigation %}
       <li
         {% if name == page %}
           class="is-selected"
         {% endif %}
       >
-        <a href="{{ url }}">{{ name }}</a>
+        <a href="{{ hyi }}">{{ name }}</a>
       </li>
     {% endfor %}
   </ul>

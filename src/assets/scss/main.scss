@@ -1,8 +1,14 @@
+
 .title {
   margin : {
     top: 1rem;
     bottom: 2rem;
   }
+  color: blue;
 
   user-select: none;
+}
+
+.is-selected {
+  background-color: red;
 }

@@ -5,5 +5,147 @@
 {% block title %}{{ page }}{% endblock %}
 
 {% block content %}
-  <h1 class="title">Portfolio with Blog!!</h1>
+  <section class="home">
+    <div class="home-hero">
+      <h1 class="home-hero__heading">
+        Manifest is a newborn theme. Clean, simple and fast.
+      </h1>
+
+      <div class="home-hero__image gallery">
+        <div class="gallery__item">
+          <img class="gallery__image" src="img/roof.png" alt="image with roof"
+            width="544" height="544"  />
+
+          <span class="gallery__caption">
+            some caption
+          </span>
+        </div>
+
+        <div class="gallery__item">
+          <img class="gallery__image" src="img/windows.png" alt="image with windows"
+            width="544" height="544"  />
+
+          <span class="gallery__caption">
+            Mixkit Inspo
+          </span>
+        </div>
+
+        <div class="gallery__item">
+          <img class="gallery__image" src="img/wall.png" alt="image with wall"
+            width="544" height="544"  />
+
+          <span class="gallery__caption">
+            Abalone
+          </span>
+        </div>
+
+        <div class="gallery__item">
+          <img class="gallery__image" src="img/lamp.png" alt="image with lamp"
+            width="544" height="544"  />
+
+          <span class="gallery__caption">
+            Dreamy
+          </span>
+        </div>
+      </div>
+
+      <div class="home-hero__text presentation">
+        <div class="presentation__header">
+          <h4 class="presentation__heading">
+            Full-time UI/UX designer Head of Design at VeronaLabs.com
+          </h4>
+
+          <a class="presentation__link" href="#">
+            arrow
+            <i class="fa-solid fa-arrow-right-long">
+            </i>
+          </a>
+          <!--link on about page-->
+        </div>
+
+        <div class="presentation__text">
+          <p class="presentation__paragraph">
+            We work with clients around the world from
+            our headquarters in Charleston, South Carolina.
+          </p>
+
+          <p class="presentation__paragraph">
+            We focus on naming, branding, brand narratives,
+            website design and development, and brand experiences.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="posts">
+      <div class="posts__header">
+        <h4 class="posts__heading">
+          Latest Posts
+        </h4>
+
+        <a class="posts__link" href="#">
+          <span>View all</span>
+
+          <i class="fa-solid fa-arrow-right-long">
+          </i>
+        </a>
+      </div>
+
+      <div class="posts__group">
+        <div class="post">
+          <img class="post__image" src="img/light.png" alt="enabled lump image"
+            width="350" height="250" />
+
+          <div class="post__caption">
+            <span class="post__category">Interface Design</span>
+
+            <span class="post__date">8 June, 2020</span>
+          </div>
+
+          <h3 class="post__heading">UX traffic light colours</h3>
+
+          <p class="post__paragraph">
+            UI has to make a huge visual difference between warning,
+            an alert and a success.
+          </p>
+        </div>
+
+        <div class="post">
+          <img class="post__image" src="img/arrow.png" alt="arrow on the wall image"
+            width="350" height="250" />
+
+          <div class="post__caption">
+            <span class="post__category">Technology</span>
+
+            <span class="post__date">6 May, 2020</span>
+          </div>
+
+          <h3 class="post__heading">Using UX Design to Build a Sustainable Future
+          </h3>
+
+          <p class="post__paragraph">
+            Transformation has to be driven by everybody, not just by climate groups.
+          </p>
+        </div>
+
+        <div class="post">
+          <img class="post__image" src="img/roof.png" alt="roof image"
+            width="350" height="250" />
+
+          <div class="post__caption">
+            <span class="post__category">Visual design</span>
+
+            <span class="post__date">8 June, 2020</span>
+          </div>
+
+          <h3 class="post__heading">Creativity vs. UX</h3>
+
+          <p class="post__paragraph">
+            Is it possible to create a delightful user experience
+            without following best UX practices?
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 {% endblock %}
