@@ -5,5 +5,151 @@
 {% block title %}Blog{% endblock %}
 
 {% block content %}
-  <h1> Blog test</h1>
+  <h1 class="page-heading">Blog</h1>
+
+  <div class="post post_primary">
+    <img class="post__image" src="img/windows.png" alt="image with windows"
+      width="540" height="470" />
+
+    <div class="post__text">
+      <span class="post__category">Technology, Interface Design</span>
+
+      <span class="post__date">6 May, 2020</span>
+
+      <h3 class="post__heading">Using UX Design to Build a Sustainable Future</h3>
+
+      <p class="post__paragraph">
+        Transformation has to be driven by everybody, not just by climate groups,
+        and we have a responsibility to use our influence to drive this.
+      </p>
+
+      <a class="post__link" href="#">
+        <i class="fa-solid fa-arrow-right-long">
+        </i>
+      </a>
+
+      <div  class="pagination">
+        <a class="pagination__item" href="#">1</a>
+        <a class="pagination__item pagination__item_active" href="#">2</a>
+        <a class="pagination__item" href="#">3</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="posts">
+    <div class="posts__header dropdown">
+      <h4 class="dropdown__heading">
+        Categories:
+      </h4>
+
+      <div class="dropdown__button">
+        <a class="dropdown__item" href="#">
+          Interaction Design
+
+          <span class="dropdown__arrow">❯</span>
+        </a>
+      </div>
+
+      <ul class="dropdown__content">
+        <li>
+          <a class="dropdown__item" href="#">Some Design
+          </a>
+        </li>
+
+        <li>
+          <a class="dropdown__item" href="#">Some Design
+          </a>
+        </li>
+
+        <li>
+          <a class="dropdown__item" href="#">Some Design
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="posts__group">
+      <div class="post">
+        <img class="post__image" src="img/light.png" alt="enabled lump image"
+          width="540" height="250" />
+
+        <div class="post__text">
+          <span class="post__category">Interface Design</span>
+
+          <span class="post__date">8 June, 2020</span>
+
+          <h3 class="post__heading">UX traffic light colours</h3>
+
+          <p class="post__paragraph">
+            UI has to make a huge visual difference between warning,
+            an alert and a success.
+          </p>
+        </div>
+      </div>
+
+      <div class="post">
+        <img class="post__image" src="img/roof-small.png" alt="roof image"
+          width="540" height="250" />
+
+        <div class="post__text">
+          <span class="post__category">Visual design</span>
+
+          <span class="post__date">8 June, 2020</span>
+
+          <h3 class="post__heading">
+            Understanding users by going beyond personas, demographics, and affinity groups
+          </h3>
+
+          <p class="post__paragraph">
+            Personas are great for ‘humanizing’ users. 
+            However, you shouldn’t rely on them to define what larger 
+            demographic  or affinity groups—especially diverse ones—might want
+          </p>
+        </div>
+      </div>
+
+      <div class="post">
+        <img class="post__image" src="img/lamp.png" alt="enabled lamp image"
+          width="540" height="250" />
+
+        <div class="post__text">
+          <span class="post__category">Interface design</span>
+
+          <span class="post__date">8 June, 2020</span>
+
+          <h3 class="post__heading">
+            Mentorship Match — How a simple LinkedIn feature can boost diversity
+          </h3>
+
+          <p class="post__paragraph">
+            LinkedIn is on a clear mission to make professionals more successful
+            by connecting the global workforce and as we learned — diversity
+            and success go hand in hand
+          </p>
+        </div>
+      </div>
+
+      <div class="post">
+        <img class="post__image" src="img/wall.png" alt="arrow on the wall image"
+          width="540" height="250" />
+
+        <div class="post__text">
+          <span class="post__category">Visual Design</span>
+
+          <span class="post__date">8 June, 2020</span>
+
+          <h3 class="post__heading">
+            Creativity vs. UX
+          </h3>
+
+          <p class="post__paragraph">
+            Is it possible to create a delightful user experience
+            without following best UX practices?
+          </p>
+        </div>
+      </div>
+      
+      <a class="button posts__button" href="#">Load more</a>
+    </div>
+  </div>
 {% endblock %}
