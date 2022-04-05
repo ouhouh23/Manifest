@@ -1,0 +1,237 @@
+{% extends '../layouts/_base.twig' %}
+
+{% set page = 'Blog' %}
+
+{% block title %}Single blog{% endblock %}
+
+{% block content %}
+  <div class="post post_opened">
+    <img class="post__image" src="img/windows.png" alt="image with windows"
+      width="1120" height="470" />
+
+    <div class="post__text">
+      <span class="post__category">Technology, Interface Design</span>
+
+      <h3 class="post__heading">Using UX Design to Build a Sustainable Future</h3>
+
+      <span class="date">6 May, 2020</span>
+
+      <a class="post__comments" href="#">
+        <i class="fa-solid fa-message"></i>
+        <span>8 comments</span>
+      </a>
+
+      <p class="post__paragraph">
+        Transformation has to be driven by everybody, not just by climate groups,
+        and we have a responsibility to use our influence to drive this.
+      </p>
+    </div>
+
+    <div class="post__content blog">
+      <div class="blog__author">
+        <img class="user-image" src="img/blog-author.png" alt="ugly black woman" width="70" height="70" />
+
+        <span class="user-name">Monica Geller</span>
+      </div>
+
+      <div class="blog__header">
+        <div class="blog__social-networks">
+          <a href="#">
+            <i class="social-networks-item fa-brands fa-facebook-f"></i>
+          </a>
+
+          <a href="#">
+            <i class="social-networks-item fa-brands fa-twitter"></i>
+          </a>
+
+          <a href="#">
+            <i class="social-networks-item fa-brands fa-linkedin-in"></i>
+          </a>
+
+          <a href="#">
+            <i class="social-networks-item fa-brands fa-dribbble"></i>
+          </a>
+        </div>
+
+        <p class="blog__paragraph">
+          Transformation has to be driven by everybody, not just by climate groups,
+          and we have a responsibility to use our influence to drive this. 
+          Overwhelming evidence points to the fact that we have about a 
+          decade to combat climate change caused by human activity before 
+          irreversible damage is caused. It is the biggest crisis of our generation. 
+        </p>
+      </div>
+
+      <p class="blog__paragraph">
+        What Can UX Designers Do?
+      </p>
+
+      <p class="blog__paragraph">
+        Firstly, on a broader scale, influence is held by people who work in tech,
+        economically, socially and politically. People follow and listen to 
+        what happens in the world of tech. We need to take advantage of this 
+        to highlight important issues and create awareness around the environmental impact of tech.
+      </p>
+
+      <p class="blog__paragraph">
+        <blockquote cite="#">
+          “UX designers are in a unique position to create tools with sustainability at their heart
+          by streamlining user workflows, minimizing information overload, and removing potential 
+          distractions that keep users from accomplishing tasks they set out to do.”
+        </blockquote>
+        ‘<site>Designing For Sustainability</site>, Tim Frick, 2014'
+      </p>
+
+      <p class="blog__paragraph">
+        Most of the Internet is unsustainable, so there is an opportunity to make a very real
+        and lasting impact through our work. The following are some ideas for ways in which UX 
+        designers can play their part in managing this global crisis.
+      </p>
+
+      <ul class="blog__points">
+        <li class="point">
+          Ask if the product is solving a real-world problem?
+        </li>
+
+        <li class="point">
+          Use content strategy to offer choices to customers choices.
+        </li>
+
+        <li class="point">
+          When considering fonts, stick to two font types and reduce the typeface.
+        </li>
+      </ul>
+
+      <div class="tags">
+        <h4 class="tags__heading">Tags:</h4>
+
+        <a class="tag__item" href="#">Technology,</a>
+        <a class="tag__item" href="#">Interface Design</a>
+        <a class="tag__item" href="#">Visual Design</a>
+      </div>
+
+      <form class="form" action="#">
+        <div class="form__header">
+          <h2 class="form__heading">Leave a reply</h2>
+          <span class="form__requrement">Required fields are marked *</span>
+        </div>
+
+        <div class="form__item">
+          <label class="form__label" for="name">Name*</label>
+
+          <input class="form__input" type="text" name="name" 
+            id="name" placeholder="Walter Moss" required />
+        </div>
+
+        <div class="form__item">
+          <label class="form__label" for="email">Email*</label>
+
+          <input class="form__input" type="email" name="email"
+            id="email" placeholder="Info@manifest.com" required />
+        </div>
+
+        <div class="form__item">
+          <label class="form__label" for="url">Website</label>
+
+          <input class="form__input" type="url" name="url" id="url" placeholder="www.manifest.com" />
+        </div>
+
+        <div class="form__item">
+          <input class="form__input" type="checkbox" name="checkbox"
+            id="checkbox" required />
+
+          <label class="form__label" for="checkbox">
+            Save my name, email, and website in this browser for the next time I comment
+          </label>
+        </div>
+
+        <div class="form__item">
+          <label class="form__label" for="text">Comment</label>
+
+          <input class="form__input" type="text" name="text"
+            id="text" placeholder="Hi there..." required />
+        </div>
+
+        <input class="button form__button" type="submit" name="Post" value="Post" />
+      </form>
+
+      <div class="comments">
+        <h2 class="comments__heading">Comments</h2>
+
+        <div class="comments__group">
+          <div class="comment">
+            <img class="user-image" src="img/comment-1.png"
+              alt="another ugly black woman" width="70" height="70" />
+
+            <div class="comment__content">
+              <div class="comment__header">
+                <span class="user-name">Scarlet withch</span>
+
+                <span class="date">6 May, 2020</span>
+              </div>
+
+              <p class="comment__body">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy 
+                nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+              </p>
+
+              <a class="comment__footer" href="#">
+                <i class="reply-icon fa-solid fa-reply"></i>
+
+                <span>Reply</span>
+              </a>
+            </div>
+
+            <div class="comment__reply comment">
+              <img class="user-image" src="img/comment-2.png"
+                alt="beautiful white woman" width="70" height="70" />
+
+              <div class="comment__content">
+                <div class="comment__header">
+                  <span class="user-name">Kate Moss</span>
+
+                  <span class="date">6 May, 2020</span>
+                </div>
+
+                <p class="comment__body">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                  nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+                </p>
+
+                <a class="comment__footer" href="#">
+                  <i class="reply-icon fa-solid fa-reply"></i>
+
+                  <span>Reply</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="comment">
+            <img class="user-image" src="img/comment-1.png"
+              alt="another ugly black woman" width="70" height="70" />
+
+            <div class="comment__content">
+              <div class="comment__header">
+                <span class="user-name">Scarlet withch</span>
+
+                <span class="date">6 May, 2020</span>
+              </div>
+
+              <p class="comment__body">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy 
+                nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+              </p>
+
+              <a class="comment__footer" href="#">
+                <i class="reply-icon fa-solid fa-reply"></i>
+
+                <span>Reply</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
