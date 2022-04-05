@@ -1,0 +1,73 @@
+{% extends '../layouts/_base.twig' %}
+
+{% set page = 'Works' %}
+
+{% block title %}Works{% endblock %}
+
+{% block content %}
+  <section class="works-page">
+    <div class="works__header">
+      <h1 class="page-heading">Works</h1>
+
+      <p class="works__paragraph">
+        Hello! I’m Manifest – a Freelance UI/UX Designer from Berlin, Germany.
+      </p>
+    </div>
+
+    <div class="works__content">
+      <div class="illustrated">
+        <div class="illustrated__text">
+          <h3 class="illustrated__heading">Car Sharing App</h3>
+
+          <hr class="illustrated__break" />
+
+          <span class="illustrated__type">Product Design</span>
+          <span class="illustrated__date">2020</span>
+
+          <a class="button illustrated__button" href="#">
+            View More &#8594
+          </a>
+        </div>
+
+        <img class="illustrated__image" src="img/windows.png" 
+          alt="image with windows" width="544" height="544" />
+      </div>
+
+      <div class="illustrated">
+        <div class="illustrated__text">
+          <h3 class="illustrated__heading">AI fashion platform</h3>
+
+          <hr class="illustrated__break" />
+
+          <span class="illustrated__type">User Centered Website Redesign</span>
+          <span class="illustrated__date">2019</span>
+
+          <a class="button illustrated__button" href="#">
+            View More &#8594
+          </a>
+        </div>
+
+        <img class="illustrated__image" src="img/wall.png" 
+          alt="image with windows" width="544" height="544" />
+      </div>
+
+      <div class="illustrated">
+        <div class="illustrated__text">
+          <h3 class="illustrated__heading">Redesigning DropBox</h3>
+
+          <hr class="illustrated__break" />
+
+          <span class="illustrated__type">Product Design</span>
+          <span class="illustrated__date">2018</span>
+
+          <a class="button illustrated__button" href="#">
+            View More &#8594
+          </a>
+        </div>
+
+        <img class="illustrated__image" src="img/roof.png" 
+          alt="image with windows" width="544" height="544" />
+      </div>
+    </div>
+  </section>
+{% endblock %}
