@@ -1,0 +1,125 @@
+{% extends '../layouts/_base.twig' %}
+
+{% set page = 'Contact' %}
+
+{% block title %}Contact us{% endblock %}
+
+{% block content %}
+  <div class="contact">
+    <div class="contact__header">
+      <h1 class="page-heading">Contact us</h1>
+
+      <p class="contact__paragraph">
+        If you need our help with your user account, have questions about 
+        how to use the platform or are experiencing technical difficulties,
+        please do not hesitate to contact us.
+      </p>
+    </div>
+
+    <div class="contact__content">
+      <div class="contact__data">
+        <div class="address">
+          <h3 class="contact__heading">Contact information</h3>
+
+          <address class="address__content">
+            <div class="address__item">
+              <span>486 Rahi street, Berlin .98 Germany</span>
+            </div>
+
+            <div class="address__item">
+               <a  href="tel:+48601366816">
+                  <i class="fa-solid fa-phone"></i>
+
+                  +48 601 366 816
+                </a>
+            </div>
+
+            <div class="address__item">
+               <a href="mailto:company@support.com">
+                  <i class="fa-solid fa-envelope"></i>
+
+                  company@support.com
+                </a>
+            </div>
+          </address>
+        </div>
+
+        <h3 class="contact__heading">Follow Us</h3>
+
+        <div class="social-networks social-networks_horizontal">
+          <a href="#">
+            <i class="social-networks__item fa-brands fa-facebook-f"></i>
+          </a>
+
+          <a href="#">
+            <i class="social-networks__item fa-brands fa-twitter"></i>
+          </a>
+
+          <a href="#">
+            <i class="social-networks__item fa-brands fa-linkedin-in"></i>
+          </a>
+
+          <a href="#">
+            <i class="social-networks__item fa-brands fa-dribbble"></i>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact__form form" action="#">
+        <div class="form__item">
+          <label class="form__label" for="contact-name">Name*</label>
+
+          <input class="form__input" type="text" name="contact-name" 
+            id="contact-name" placeholder="Walter Moss" required />
+        </div>
+
+        <div class="form__item">
+          <label class="form__label" for="contact-email">Email*</label>
+
+          <input class="form__input" type="email" name="contact-email"
+            id="contact-email" placeholder="Info@manifest.com" required />
+        </div>
+
+        <div class="form__item">
+          <label class="form__label" for="contact-text">Comment</label>
+
+          <input class="form__input" type="text" name="contact-text"
+            id="contact-text" placeholder="Hi there..." required />
+        </div>
+
+        <div class="dropdown">
+          <div class="dropdown__button">
+            <a class="dropdown__item" href="#">
+              Reason for contact
+
+            <span class="dropdown__arrow">❯</span>
+            </a>
+          </div>
+
+          <ul class="dropdown__content">
+            <li>
+              <a class="dropdown__item" href="#">
+                Some ugly black woman 
+              </a>
+            </li>
+
+            <li>
+              <a class="dropdown__item" href="#">
+                Another ugly black woman
+              </a>
+            </li>
+
+            <li>
+              <a class="dropdown__item" href="#">
+                Beautiful white woman
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <input class="button form__button" type="submit" name="Send" value="Send &#8594" />
+      </form>
+
+    </div>
+  </div>
+{% endblock %}
