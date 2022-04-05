@@ -5,21 +5,21 @@
 {% block title %}Contact us{% endblock %}
 
 {% block content %}
-  <div class="contact">
-    <div class="contact__header">
+  <section class="contact-page">
+    <div class="contact-page__header">
       <h1 class="page-heading">Contact us</h1>
 
-      <p class="contact__paragraph">
+      <p class="contact-page__paragraph">
         If you need our help with your user account, have questions about 
         how to use the platform or are experiencing technical difficulties,
         please do not hesitate to contact us.
       </p>
     </div>
 
-    <div class="contact__content">
-      <div class="contact__data">
+    <div class="contact-page__content">
+      <div class="contact-page__data">
         <div class="address">
-          <h3 class="contact__heading">Contact information</h3>
+          <h3 class="contact-page__heading">Contact information</h3>
 
           <address class="address__content">
             <div class="address__item">
@@ -44,7 +44,7 @@
           </address>
         </div>
 
-        <h3 class="contact__heading">Follow Us</h3>
+        <h3 class="contact-page__heading">Follow Us</h3>
 
         <div class="social-networks social-networks_horizontal">
           <a href="#">
@@ -65,7 +65,7 @@
         </div>
       </div>
 
-      <form class="contact__form form" action="#">
+      <form class="contact-page__form form" action="#">
         <div class="form__item">
           <label class="form__label" for="contact-name">Name*</label>
 
@@ -119,7 +119,6 @@
 
         <input class="button form__button" type="submit" name="Send" value="Send &#8594" />
       </form>
-
     </div>
-  </div>
+  </section>
 {% endblock %}
