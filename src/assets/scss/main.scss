@@ -1,5 +1,6 @@
-@import "helpers/variables";
-@import "helpers/mixins";
+@import "helpers";
+@import "layout";
+@import "blocks";
 
 .title {
   margin : {
@@ -12,5 +13,14 @@
 }
 
 .is-selected {
-  background: $red;
+  @include flexbox($direction: column, $align: center);
+  margin-bottom: -2px;
+
+  &:after {
+  content: ('');
+  display: inline-block;
+  width: 35px;
+  height: 2px;
+  background: $black;
+  }
 }

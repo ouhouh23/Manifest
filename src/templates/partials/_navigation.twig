@@ -2,14 +2,14 @@
 {% set zalupa = 'sometext' %}
 
 <nav>
-  <ul>
+  <ul class="navigation navigation_mobile navigation_desktop">
     {% for hyi, name in navigation %}
       <li
         {% if name == page %}
           class="is-selected"
         {% endif %}
       >
-        <a href="{{ hyi }}">{{ name }}</a>
+        <a class="navigation__item" href="{{ hyi }}">{{ name }}</a>
       </li>
     {% endfor %}
   </ul>

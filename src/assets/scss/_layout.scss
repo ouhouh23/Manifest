@@ -1,0 +1,20 @@
+.wrapper {
+	max-width: 1440px;
+	padding-left: $indent40;
+	padding-right: $indent40;
+	margin: 0 auto;  
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+
+	&:visited {
+	  color: inherit;
+	}
+}

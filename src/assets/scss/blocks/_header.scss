@@ -1,0 +1,14 @@
+.header {
+	padding: $indent100 0 $indent128 0;
+	
+	@include flexbox($justify: space-between, $align: center);
+
+	.header__navigation {
+		display: flex;
+		color: $black;
+	}
+
+	.header__icon {
+		margin-left: $indent50;
+	}
+}
