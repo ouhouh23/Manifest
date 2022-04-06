@@ -1,0 +1,12 @@
+@mixin font-style($font-regular, $font-16, $font-normal) {
+  font-family: $font-regular;
+  font-size: $font-16;
+  font-weight: $font-normal;
+}
+
+@mixin flexbox($direction: row, $justify: flex-start, $align: stretch) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
