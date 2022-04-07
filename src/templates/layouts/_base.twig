@@ -11,44 +11,44 @@
 
   <link rel="stylesheet" href="css/main.css" />
 
-  <script src="https://kit.fontawesome.com/6b13e560f5.js" crossorigin="anonymous">
-  </script>
+  <a src="https://kit.fontawesome.com/6b13e560f5.js" crossorigin="anonymous">
+  </a>
 </head>
 
 <body>
-  <div class="wrapper">
-    <header class="header">
-      <a class="logo" href="index.html">
-        <img src="img/logo.png" alt="Site logo" />
+  <header class="header wrapper">
+    <a class="logo" href="index.html">
+      <img src="img/logo.png" alt="Site logo" />
+    </a>
+
+    <div class="header__navigation">
+      <input type="checkbox" class="navigation_mobile__checkbox" id="navigation-mobile-checkbox" />
+
+      {% include '../partials/_navigation.twig' %}
+
+      <a class="header__icon" href="#">
+        <i class="fa fa-search"></i>
       </a>
 
-      <div class="header__navigation">
-        <input type="checkbox" class="navigation_mobile__checkbox" id="navigation-mobile-checkbox" />
+      <label for="navigation-mobile-checkbox" class="navigation_mobile__button">
+        <svg viewBox="0 0 100 80" width="24" height="20">
+          <rect width="100" height="13"></rect>
+          <rect y="30" width="100" height="13"></rect>
+          <rect y="60" width="100" height="13"></rect>
+        </svg>
+      </label>
+    </div>
+  </header>
 
-        {% include '../partials/_navigation.twig' %}
-
-        <a class="header__icon" href="#">
-          <i class="fa fa-search"></i>
-        </a>
-
-        <label for="navigation-mobile-checkbox" class="navigation_mobile__button">
-          <svg viewBox="0 0 100 80" width="24" height="20">
-            <rect width="100" height="13"></rect>
-            <rect y="30" width="100" height="13"></rect>
-            <rect y="60" width="100" height="13"></rect>
-          </svg>
-        </label>
-      </div>
-    </header>
-
+  <div class="wrapper">
     {% block content %}
-      <h1>Portfolio</h1>
-
     {% endblock %}
+  </div>
 
-    <footer class="footer">
-      <div class="project-offer">
-        <h1 class="project-offer__heading">
+  <footer class="footer">
+    <div class="wrapper footer__wrapper">
+      <div class="project-offer footer__offer">
+        <h1 class="page-heading">
           Need a project?
         </h1>
 
@@ -80,10 +80,11 @@
       </ul>
 
       <div class="footer__copyright copyrights">
-        <small>&copy Copyright Manifest Theme. Allrights reserved</small>
+        <small>&copy Copyright Manifest Theme.<br>
+          Allrights reserved
+        </small>
       </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
 </body>
-
 </html>

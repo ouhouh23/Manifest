@@ -1,0 +1,3 @@
+.page-heading {
+	@include font-style($size: $font-48, $heights: $font-height-64);
+}

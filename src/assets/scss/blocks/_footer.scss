@@ -1,0 +1,19 @@
+.footer {
+	background: $gray100;
+	padding-top: $indent128;
+	padding-bottom: $indent128;
+
+	.footer__wrapper {
+	  @include flexbox($justify: space-between, $align: center);
+	}
+
+	.footer__social-networks {
+		align-self: stretch;
+		@include flexbox($direction: column, $justify: space-between);
+	}
+
+	.footer__copyright {
+		margin-top: auto;
+		@include font-style($size: $font-12, $heights: $font-height-20, $spacing: 1px);
+	}
+}

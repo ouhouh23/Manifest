@@ -1,7 +1,8 @@
-@mixin font-style($family: $font-regular, $size: $font-16, $weight: $font-normal,) {
-  font-family: $family;
+@mixin font-style($size: $font-16, $weight: $font-normal, $heights: $font-height-32, $spacing: 2px) {
   font-size: $size;
   font-weight: $weight;
+  line-height: $heights;
+  letter-spacing: $spacing;
 }
 
 @mixin flexbox($direction: row, $justify: flex-start, $align: stretch) {

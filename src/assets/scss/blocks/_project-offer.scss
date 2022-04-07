@@ -1,0 +1,12 @@
+.project-offer {
+  @include flexbox($direction: column);
+
+  .project-offer__phone {
+  	margin-top: $indent32;
+  	margin-bottom: $indent16;
+  }
+
+  .project-offer__phone, .project-offer__mail {
+  	@include font-style($heights: $font-height-26);
+  }	
+}

@@ -1,5 +1,6 @@
 .header {
-	padding: $indent100 0 $indent128 0;
+	padding-top: $indent100;
+	padding-bottom: $indent128;
 	
 	@include flexbox($justify: space-between, $align: center);
 

@@ -2,11 +2,9 @@
 	display: grid;
 	grid-template-columns: auto auto auto auto auto;
 	column-gap: $indent50;
-	align-items: center;
 
 	.navigation__item {
-		@include font-style($size: $font-12);
-		letter-spacing: 3px;
+		@include font-style($size: $font-12, $heights: $font-height-16, $spacing: 3px);
 	}
 
 }

@@ -1,7 +1,6 @@
 .wrapper {
 	max-width: 1440px;
-	padding-left: $indent40;
-	padding-right: $indent40;
+	@extend %padding-desktop;
 	margin: 0 auto;  
 }
 
@@ -13,8 +12,18 @@ ul {
 
 a {
 	text-decoration: none;
+	color: inherit;
 
 	&:visited {
 	  color: inherit;
 	}
+}
+
+h1, h2, h3, h4, h5 {
+	margin: 0;
+	font-family: $font-heading;
+}
+
+p, a, span, small {
+	font-family: $font-regular;
 }
