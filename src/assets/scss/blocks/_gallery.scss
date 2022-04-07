@@ -1,0 +1,18 @@
+.gallery {
+	.gallery__heading {
+		max-width: 65%;
+	}
+
+	.gallery__content {
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		grid-gap: $indent34;
+		justify-content: center;
+	}
+
+	.gallery__caption {
+		display: inline-block;
+		margin-top: $indent16;
+		@include font-style($heights: $font-height-26);
+	}
+}

@@ -1,0 +1,23 @@
+.presentation {
+	display: grid;
+	grid-template-columns: 60% 40%;
+
+	.presentation__header {
+		margin-bottom: auto;
+	}
+
+	.presentation__link {
+		display: block;
+		margin-top: $indent45;
+	}
+
+	.presentation__text {
+		display: grid;
+		row-gap: $indent45;
+	}
+
+	.presentation__paragraph {
+		@include font-style($size: $font-19, $heights: $font-height-32, $spacing: 1px);
+
+	}
+}

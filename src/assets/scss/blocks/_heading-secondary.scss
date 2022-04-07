@@ -1,0 +1,3 @@
+.heading-secondary {
+	@include font-style($size: $font-23, $heights: $font-height-38, $spacing: 1px);
+}

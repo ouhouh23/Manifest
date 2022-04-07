@@ -10,6 +10,7 @@
 	.footer__social-networks {
 		align-self: stretch;
 		@include flexbox($direction: column, $justify: space-between);
+		letter-spacing: 2px;
 	}
 
 	.footer__copyright {

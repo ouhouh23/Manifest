@@ -1,0 +1,21 @@
+.post {
+	@include flexbox($direction: column);
+	
+	.post__caption {
+		@include flexbox($justify: space-between);
+		color: $gray500;
+		@include font-style($size: font-12, $heights: font-height-20, $spacing: 1px);
+		margin-top: $indent25;
+		margin-bottom: $indent25;
+	}
+
+	.post__heading {
+		margin-bottom: $indent25;
+	}
+
+	.post__paragraph {
+	  margin-top: auto;
+	  color: $gray700;
+	  @include font-style($heights: $font-height-26);	
+	}
+}

@@ -1,0 +1,17 @@
+.posts {
+	.posts__header {
+		@include flexbox($justify: space-between, $align: center);
+		margin-bottom: $indent40;
+	}
+
+	.posts__link {
+		@include font-style($heights: $font-height-26);
+		color: $gray500;
+	}
+
+	.posts__group {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: $indent34;
+	}
+}
