@@ -1,4 +1,6 @@
 .posts {
+	display: grid;
+
 	.posts__header {
 		@include flexbox($justify: space-between, $align: center);
 		margin-bottom: $indent40;
@@ -11,7 +13,20 @@
 
 	.posts__group {
 		display: grid;
+	}
+
+	.posts__group_row {
 		grid-template-columns: auto auto auto;
 		grid-gap: $indent34;
+	} 
+
+	.posts__group_columns {
+		grid-template-columns: auto auto;
+		grid-gap: $indent128 $indent40;
+	}
+
+	.posts__button {
+		margin: $indent70 auto 0;
+		color: $white;
 	}
 }

@@ -3,10 +3,14 @@
 	
 	.post__caption {
 		@include flexbox($justify: space-between);
-		color: $gray500;
-		@include font-style($size: font-12, $heights: font-height-20, $spacing: 1px);
 		margin-top: $indent25;
 		margin-bottom: $indent25;
+	}
+
+	.post__category, .post__date {
+		display: block;
+		color: $gray500;
+		@include font-style($size: $font-12, $heights: $font-height-20, $spacing: 1px);
 	}
 
 	.post__heading {
@@ -16,6 +20,46 @@
 	.post__paragraph {
 	  margin-top: auto;
 	  color: $gray700;
-	  @include font-style($heights: $font-height-26);	
+	  @include font-style($heights: $font-height-26, $spacing: 1px);	
+	}
+}
+
+.post_primary {
+	@include flexbox;
+	margin-top: $indent100;
+	margin-bottom: $indent115;
+
+	.post__text {
+		@include flexbox($direction: column);
+		margin-left: $indent70;
+	}
+
+	.post__category {
+		margin-top: auto;
+		order: 1;	
+	}
+
+	.post__heading {
+		order: 2;
+		margin-top: $indent25;
+		margin-bottom: $indent16;
+	}
+
+	.post__date {
+		order: 3;
+	}
+
+	.post__paragraph {
+		order: 4;
+		margin-top: $indent50;
+	}
+
+	.post__link {
+		vertical-align: text-top;
+	}
+
+	.post__pagination {
+		order: 5;
+		margin-top: auto;
 	}
 }

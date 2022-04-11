@@ -1,0 +1,14 @@
+.button {
+	display: inline-block;
+	background: $gray700;
+	color: $white;
+	@include font-style($heights: $font-height-26, $weight: $font-bold);
+
+	&_tight {
+		padding: $indent10 $indent34;
+	}
+
+	&_wide {
+		padding: $indent10 $indent45;
+	}
+}
