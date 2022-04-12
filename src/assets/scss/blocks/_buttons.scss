@@ -3,6 +3,7 @@
 	background: $gray700;
 	color: $white;
 	@include font-style($heights: $font-height-26, $weight: $font-bold);
+	width: fit-content;
 
 	&_tight {
 		padding: $indent10 $indent34;

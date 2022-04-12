@@ -1,0 +1,21 @@
+.contact-page {
+	display: grid;
+	grid-template-columns: 35% 45%;
+	grid-gap: $indent128 $indent25;
+	justify-content: space-between;
+
+	&__paragraph {
+		@include font-style($size: $font-19, $spacing: 0.5px);
+		color: $gray700;
+	}
+
+	&__social-networks {
+		margin-top: $indent25;
+	}
+
+	&__form {
+		display: grid;
+		row-gap: $indent50;
+	}
+
+}

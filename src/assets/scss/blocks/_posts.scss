@@ -3,7 +3,9 @@
 
 	.posts__header {
 		@include flexbox($justify: space-between, $align: center);
-		margin-bottom: $indent40;
+		margin-bottom: $indent45;
+		width: 50%;
+		padding-right: ($indent40/2);
 	}
 
 	.posts__link {

@@ -6,119 +6,122 @@
 
 {% block content %}
   <section class="contact-page">
-    <div class="contact-page__header">
-      <h1 class="page-heading">Contact us</h1>
+    <h1 class="page-heading contact-page__heading">Contact us</h1>
 
-      <p class="contact-page__paragraph">
-        If you need our help with your user account, have questions about 
-        how to use the platform or are experiencing technical difficulties,
-        please do not hesitate to contact us.
-      </p>
-    </div>
+    <p class="contact-page__paragraph">
+      If you need our help with your user account, have questions about 
+      how to use the platform or are experiencing technical difficulties,
+      please do not hesitate to contact us.
+    </p>
 
-    <div class="contact-page__content">
-      <div class="contact-page__data">
-        <div class="address">
-          <h3 class="contact-page__heading">Contact information</h3>
+    <div class="contact-page__data">
+      <div class="address">
+        <h3 class="adress__heading heading-secondary">Contact information</h3>
 
-          <address class="address__content">
-            <div class="address__item">
-              <span>486 Rahi street, Berlin .98 Germany</span>
-            </div>
+        <address class="address__content">
+          <span class="address__item">
+            486 Rahi street, Berlin .98 Germany
+          </span>
 
-            <div class="address__item">
-               <a  href="tel:+48601366816">
-                  <i class="fa-solid fa-phone"></i>
+          <a class="address__item" href="tel:+48601366816">
+            <i class="fa-solid fa-phone"></i>
 
-                  +48 601 366 816
-                </a>
-            </div>
-
-            <div class="address__item">
-               <a href="mailto:company@support.com">
-                  <i class="fa-solid fa-envelope"></i>
-
-                  company@support.com
-                </a>
-            </div>
-          </address>
-        </div>
-
-        <h3 class="contact-page__heading">Follow Us</h3>
-
-        <div class="social-networks social-networks_horizontal">
-          <a href="#">
-            <i class="social-networks__item fa-brands fa-facebook-f"></i>
+            +48 601 366 816
           </a>
 
-          <a href="#">
-            <i class="social-networks__item fa-brands fa-twitter"></i>
-          </a>
+           <a href="mailto:company@support.com">
+              <i class="fa-solid fa-envelope"></i>
 
-          <a href="#">
-            <i class="social-networks__item fa-brands fa-linkedin-in"></i>
+              company@support.com
           </a>
-
-          <a href="#">
-            <i class="social-networks__item fa-brands fa-dribbble"></i>
-          </a>
-        </div>
+        </address>
       </div>
 
-      <form class="contact-page__form form" action="#">
-        <div class="form__item">
-          <label class="form__label" for="contact-name">Name*</label>
+      <h3 class="heading-secondary">
+        Follow Us
+      </h3>
 
-          <input class="form__input" type="text" name="contact-name" 
-            id="contact-name" placeholder="Walter Moss" required />
-        </div>
+      <div class="contact-page__social-networks  social-networks social-networks_horizontal">
+        <a href="#">
+          <i class="social-networks__item fa-brands fa-facebook-f"></i>
+        </a>
 
-        <div class="form__item">
-          <label class="form__label" for="contact-email">Email*</label>
+        <a href="#">
+          <i class="social-networks__item fa-brands fa-twitter"></i>
+        </a>
 
-          <input class="form__input" type="email" name="contact-email"
-            id="contact-email" placeholder="Info@manifest.com" required />
-        </div>
+        <a href="#">
+          <i class="social-networks__item fa-brands fa-linkedin-in"></i>
+        </a>
 
-        <div class="form__item">
-          <label class="form__label" for="contact-text">Comment</label>
-
-          <input class="form__input" type="text" name="contact-text"
-            id="contact-text" placeholder="Hi there..." required />
-        </div>
-
-        <div class="dropdown">
-          <div class="dropdown__button">
-            <a class="dropdown__item" href="#">
-              Reason for contact
-
-            <span class="dropdown__arrow">❯</span>
-            </a>
-          </div>
-
-          <ul class="dropdown__content">
-            <li>
-              <a class="dropdown__item" href="#">
-                Some ugly black woman 
-              </a>
-            </li>
-
-            <li>
-              <a class="dropdown__item" href="#">
-                Another ugly black woman
-              </a>
-            </li>
-
-            <li>
-              <a class="dropdown__item" href="#">
-                Beautiful white woman
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <input class="button form__button" type="submit" name="Send" value="Send &#8594" />
-      </form>
+        <a href="#">
+          <i class="social-networks__item fa-brands fa-dribbble"></i>
+        </a>
+      </div>
     </div>
+
+    <form class="contact-page__form form indent-bottom" action="#">
+      <div class="form__item">
+        <label class="form__label" for="contact-name">Name*</label>
+
+        <input class="form__input" type="text" name="contact-name" 
+          id="contact-name" placeholder="Walter Moss" required />
+      </div>
+
+      <div class="form__item">
+        <label class="form__label" for="contact-email">Email*</label>
+
+        <input class="form__input" type="email" name="contact-email"
+          id="contact-email" placeholder="Info@manifest.com" required />
+      </div>
+
+      <div class="dropdown">
+        <label for="contact-checkbox" class="dropdown__button">
+          <span>
+            Reason for contact
+          </span>
+
+          <span class="dropdown__arrow">❯</span>
+        </label>
+
+        <input type="checkbox" name="checkbox" 
+          class="dropdown__checkbox"/ id="contact-checkbox" />
+
+        <ul class="dropdown__items">
+          <li>
+            <a class="dropdown__item" href="#">
+              Know about the product
+            </a>
+          </li>
+
+          <li>
+            <a class="dropdown__item" href="#">
+              Need help or assistance
+            </a>
+          </li>
+
+          <li>
+            <a class="dropdown__item" href="#">
+              Have a complaint
+            </a>
+          </li>
+
+          <li>
+            <a class="dropdown__item" href="#">
+              Other
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="form__item">
+        <label class="form__label" for="contact-text">Message*</label>
+
+        <input class="form__input" type="text" name="contact-text"
+          id="contact-text" placeholder="Hi there..." required />
+      </div>
+
+      <input class="button button_tight form__button" type="submit" name="Send" value="Send &#8594" />
+    </form>
   </section>
 {% endblock %}

@@ -1,7 +1,6 @@
 .dropdown {
-	margin-bottom: $indent45;
-	width: 50%;
-	padding-right: ($indent40/2);
+	color: $gray700;
+	position: relative;
 
 	.dropdown__heading, .dropdown__button {
 		@include font-style ($heights: $font-height-26, $spacing: 1px);
@@ -15,7 +14,6 @@
 		margin-right: auto;
 		margin-left: $indent40;
 		flex-grow: 1;
-		color: $gray700;
 		position: relative;
 	}
 
@@ -41,6 +39,7 @@
 		width: 100%;
 		border: 2px solid $gray500;
 		font-size: $font-12;
+		z-index: 1;
 	}
 
 	.dropdown__checkbox:checked + .dropdown__items {
