@@ -1,0 +1,35 @@
+.error {
+	margin-top: $indent100;
+	margin-bottom: 13.5rem;
+
+	&__header, &__content {
+		text-align: center;
+	}
+
+	&__heading {
+		@include font-style($size: 8.8rem, $weight: font-bold, $heights: 11.5rem, $spacing: 10px);
+		color: $gray300;
+	}
+
+	&__paragraph {
+		@include font-style($size: $font-23, $heights: $font-height-38);
+		color: $gray700;
+		margin-bottom: $indent50;
+	}
+
+	&__caption {
+		@include font-style($size: $font-33, $heights: 3.12rem);
+		color: $gray300;
+	}
+
+	&__button {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&__social-networks {
+		margin-top: $indent25;
+		color: $black;
+	}
+}

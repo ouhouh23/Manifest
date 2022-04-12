@@ -1,4 +1,5 @@
 .overview {
+
 	&__content {
 	display: grid;
 	grid-template-columns: 60% 40%;
@@ -14,6 +15,7 @@
 		@include font-style($size: $font-19, $spacing: 0.5px);
 		color: $gray700;
 	}
+
 	&__information {
 		display: grid;
 		row-gap: $indent45;
