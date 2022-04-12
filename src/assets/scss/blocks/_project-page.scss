@@ -1,0 +1,11 @@
+.project-page {
+
+	&__caption {
+		@include font-style($heights: $font-height-26);
+	}
+
+	&__heading {
+		margin-top: $indent65;
+		margin-bottom: $indent50;
+	}
+}

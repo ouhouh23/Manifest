@@ -1,0 +1,33 @@
+.overview {
+	&__content {
+	display: grid;
+	grid-template-columns: 60% 40%;
+	}
+
+	&__text {
+		align-self: start;
+		display: grid;
+		row-gap: $indent40;
+	}
+
+	&__paragraph {
+		@include font-style($size: $font-19, $spacing: 0.5px);
+		color: $gray700;
+	}
+	&__information {
+		display: grid;
+		row-gap: $indent45;
+		justify-content: center;
+	}
+
+	&__item {
+		display: block;
+		@include font-style($size: $font-19, $spacing: 0.5px);
+		color: $gray700;
+	}
+
+	&__section {
+		display: grid;
+		row-gap: $indent45;
+	} 
+}
