@@ -1,0 +1,19 @@
+.about-page {
+	display: grid;
+	grid-template-columns: 40% 60%;
+	grid-gap: $indent45;
+
+	&__rank {
+		display: inline-block;
+		margin-top: $indent40;
+		margin-bottom: $indent16;
+		@include font-style ($size: $font-23, $heights: $font-height-38, $spacing: 1px);
+		color: $gray700;
+	}
+
+	&__paragraph {
+		margin-bottom: $indent65;
+		@include font-style($size: $font-19, $heights: $font-height-32, $spacing: 0.5px);
+		color: $gray700;
+	}
+}
