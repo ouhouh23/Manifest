@@ -7,7 +7,7 @@
 	}
 
 	&__heading {
-		@include font-style($size: 8.8rem, $weight: font-bold, $heights: 11.5rem, $spacing: 10px);
+		@include font-style($size: 8.5rem, $weight: font-bold, $heights: 11.5rem, $spacing: 7px);
 		color: $gray300;
 	}
 
@@ -31,5 +31,15 @@
 	&__social-networks {
 		margin-top: $indent25;
 		color: $black;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.error {
+
+		&__paragraph {
+			margin-top: $indent50;
+			margin-botton: $indent65;
+		}
 	}
 }
