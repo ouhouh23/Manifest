@@ -1,0 +1,24 @@
+.illustrated {
+
+	&__break {
+		width: 5.3rem;
+		display: inline-block;
+		margin-top: $indent16;
+		margin-bottom: $indent25;
+		border-color: $gray100;
+	}
+
+	&__type {
+		display: block;
+		margin-bottom: $indent16;
+	}
+
+	&__date {
+		color: $gray700;
+		display: block;
+	}
+
+	&__button {
+		margin-top: $indent40;
+	}  
+}

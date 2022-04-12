@@ -1,7 +1,8 @@
 .about-page {
 	display: grid;
-	grid-template-columns: 40% 60%;
+	grid-template-columns: 35% 55%;
 	grid-gap: $indent45;
+	justify-content: space-between;
 
 	&__rank {
 		display: inline-block;

@@ -1,0 +1,18 @@
+.works-page {
+	&__header, &__item {
+		display: grid;
+		grid-template-columns: 30% 50%;
+		grid-gap: $indent45;
+		justify-content: space-between;
+	}
+
+	&__paragraph {
+		@include font-style($size: $font-19, $heights: $font-height-32, $spacing: 0.5px);
+		color: $black;
+	}
+
+	&__content {
+		display: grid;
+		row-gap: $indent50;
+	}
+}
