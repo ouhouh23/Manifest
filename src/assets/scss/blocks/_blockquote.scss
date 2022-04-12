@@ -1,0 +1,14 @@
+.blockquote {
+	padding-left: $indent65;
+	border-left: 3px solid $gray300;
+
+	&__content {
+		margin: 0 0 $indent34 0;
+	}
+
+	&__caption {
+		display: inline-block;
+		margin-bottom: $indent34;
+		color: $gray500;
+	}
+}

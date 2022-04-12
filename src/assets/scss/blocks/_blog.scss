@@ -1,0 +1,33 @@
+.blog {
+	&__author {
+		@include flexbox($align: center);
+		font-size: $font-16;
+		margin-bottom: $indent40;
+	}
+
+	&__header {
+		margin-left: -7rem;
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-gap: 5.6rem;
+	}
+
+	&__paragraph {
+		@include font-style ($size: $font-19, $heights: $font-height-32, $spacing: 0.5px);
+		color: $black;
+		margin-bottom: $indent34;
+	}
+
+	&__points {
+		display: grid;
+		grid-gap: $indent34;
+		@include font-style ($size: $font-19, $heights: $font-height-32, $spacing: 0.5px);
+		list-style-type: disc;
+		padding-left: $indent40;
+	}
+
+	&__form {
+		margin: $indent100 0;
+	}
+
+}

@@ -1,0 +1,7 @@
+.comments {
+	&__group {
+		margin-top: $indent25;
+		display: grid;
+		row-gap: $indent40;
+	}
+}

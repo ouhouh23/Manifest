@@ -1,0 +1,43 @@
+.form {
+	&__requrement {
+		color: $gray500;
+	}
+
+	&__group {
+		margin-top: $indent65;
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: $indent40;
+	}
+
+	&__item {
+		display: grid;
+	}
+
+	&__label {
+		@include font-style($heights: $font-height-26, $spacing: 0.5px);
+		color: $gray700;
+	}
+
+	&__input {
+		margin-top: $indent16;
+		border: none;
+		border-bottom: 1px solid $black;
+		padding-bottom: $indent10;
+		opacity: 0.8;
+	}
+
+	&__item_checkbox {
+		margin: $indent50 0;
+		opacity: 0.8;
+		@include flexbox($align: center);
+	}
+
+	&__checkbox {
+		margin-right: $indent10;
+	}
+
+	&__button {
+		margin-top: $indent25;
+	}
+}

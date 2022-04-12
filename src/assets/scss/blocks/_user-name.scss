@@ -1,0 +1,4 @@
+.user-name {
+	@include font-style($size: $font-19);
+	color: $black;
+}

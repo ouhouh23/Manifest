@@ -6,28 +6,24 @@
 
 {% block content %}
   <section class="post post_opened">
-    <img class="post__image" src="img/windows-wide.png" alt="image with windows"
-      width="1120" height="470" />
-
     <div class="post__text">
       <span class="post__category">Technology, Interface Design</span>
 
-      <h3 class="post__heading">Using UX Design to Build a Sustainable Future</h3>
+      <h1 class="post__heading page-heading">Using UX Design to Build a Sustainable Future</h1>
 
-      <span class="date">6 May, 2020</span>
+      <span class="post__date">6 May, 2020</span>
 
       <a class="post__comments" href="#">
         <i class="fa-solid fa-message"></i>
+
         <span>8 comments</span>
       </a>
-
-      <p class="post__paragraph">
-        Transformation has to be driven by everybody, not just by climate groups,
-        and we have a responsibility to use our influence to drive this.
-      </p>
     </div>
 
-    <div class="post__content blog">
+    <img class="post__image" src="img/windows-wide.png" alt="image with windows"
+      width="1120" height="470" />
+
+    <div class="post__content blog indent-bottom">
       <div class="blog__author">
         <img class="user-image" src="img/blog-author.png" alt="ugly black woman" width="70" height="70" />
 
@@ -73,14 +69,17 @@
         to highlight important issues and create awareness around the environmental impact of tech.
       </p>
 
-      <p class="blog__paragraph">
-        <blockquote cite="#">
+      <div class="blog__paragraph blockquote">
+        <blockquote cite="#" class="blockquote__content">
           “UX designers are in a unique position to create tools with sustainability at their heart
           by streamlining user workflows, minimizing information overload, and removing potential 
           distractions that keep users from accomplishing tasks they set out to do.”
         </blockquote>
-        ‘<site>Designing For Sustainability</site>, Tim Frick, 2014'
-      </p>
+
+        <span class="blockquote__caption">
+          ‘<site>Designing For Sustainability</site>, Tim Frick, 2014'
+        </span>
+      </div>
 
       <p class="blog__paragraph">
         Most of the Internet is unsustainable, so there is an opportunity to make a very real
@@ -105,39 +104,41 @@
       <div class="tags">
         <h4 class="tags__heading">Tags:</h4>
 
-        <a class="tag__item" href="#">Technology,</a>
-        <a class="tag__item" href="#">Interface Design</a>
-        <a class="tag__item" href="#">Visual Design</a>
+        <a class="tags__item" href="#">Technology,</a>
+        <a class="tags__item" href="#">Interface Design,</a>
+        <a class="tags__item" href="#">Visual Design</a>
       </div>
 
-      <form class="form" action="#">
+      <form class="form blog__form" action="#">
         <div class="form__header">
-          <h2 class="form__heading">Leave a reply</h2>
+          <h3 class="form__heading heading-secondary">Leave a reply</h3>
           <span class="form__requrement">Required fields are marked *</span>
         </div>
 
-        <div class="form__item">
-          <label class="form__label" for="name">Name*</label>
+        <div class="form__group">
+          <div class="form__item">
+            <label class="form__label" for="name">Name*</label>
 
-          <input class="form__input" type="text" name="name" 
-            id="name" placeholder="Walter Moss" required />
+            <input class="form__input" type="text" name="name" 
+              id="name" placeholder="Walter Moss" required />
+          </div>
+
+          <div class="form__item">
+            <label class="form__label" for="email">Email*</label>
+
+            <input class="form__input" type="email" name="email"
+              id="email" placeholder="Info@manifest.com" required />
+          </div>
+
+          <div class="form__item">
+            <label class="form__label" for="url">Website</label>
+
+            <input class="form__input" type="url" name="url" id="url" placeholder="www.manifest.com" />
+          </div>
         </div>
 
-        <div class="form__item">
-          <label class="form__label" for="email">Email*</label>
-
-          <input class="form__input" type="email" name="email"
-            id="email" placeholder="Info@manifest.com" required />
-        </div>
-
-        <div class="form__item">
-          <label class="form__label" for="url">Website</label>
-
-          <input class="form__input" type="url" name="url" id="url" placeholder="www.manifest.com" />
-        </div>
-
-        <div class="form__item">
-          <input class="form__input" type="checkbox" name="checkbox"
+        <div class="form__item form__item_checkbox">
+          <input class="form__checkbox" type="checkbox" name="checkbox"
             id="checkbox" required />
 
           <label class="form__label" for="checkbox">
@@ -152,11 +153,11 @@
             id="text" placeholder="Hi there..." required />
         </div>
 
-        <input class="button form__button" type="submit" name="Post" value="Post" />
+        <input class="button button_tight form__button" type="submit" name="Post" value="Post" />
       </form>
 
-      <div class="comments">
-        <h2 class="comments__heading">Comments</h2>
+      <div class="comments indent-bottom">
+        <h3 class="comments__heading heading-secondary">Comments</h3>
 
         <div class="comments__group">
           <div class="comment">
@@ -167,7 +168,7 @@
               <div class="comment__header">
                 <span class="user-name">Scarlet withch</span>
 
-                <span class="date">6 May, 2020</span>
+                <span class="comment__date">6 May, 2020</span>
               </div>
 
               <p class="comment__body">
@@ -190,7 +191,7 @@
                 <div class="comment__header">
                   <span class="user-name">Kate Moss</span>
 
-                  <span class="date">6 May, 2020</span>
+                  <span class="comment__date">6 May, 2020</span>
                 </div>
 
                 <p class="comment__body">
@@ -215,7 +216,7 @@
               <div class="comment__header">
                 <span class="user-name">Scarlet withch</span>
 
-                <span class="date">6 May, 2020</span>
+                <span class="comment__date">6 May, 2020</span>
               </div>
 
               <p class="comment__body">

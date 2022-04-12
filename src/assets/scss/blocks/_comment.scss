@@ -1,0 +1,36 @@
+.comment {
+	display: grid;
+	grid-template-columns: 4.38rem auto;
+	grid-gap: $indent40 $indent25;
+	padding-bottom: $indent40;
+	border-bottom: 3px solid $gray100;
+
+	&__reply {
+		grid-column: 2/3;
+	}
+
+	&__reply, &:last-child {
+		padding-bottom: 0;
+		border-bottom: none;
+	}
+	&__header {
+		@include flexbox($align: center);
+	}
+
+	&__date {
+		@include font-style($size: $font-12, $heights: $font-height-20, $spacing: 0.5px);
+		color: $gray500;
+		margin-left: $indent25;
+	}
+
+	&__body {
+		@include font-style($size: $font-16, $heights: $font-height-32, $spacing: 0.5px);
+		color: $gray700;
+		margin: $indent16 $indent25 $indent16 0;
+	}
+
+	&__footer {
+		color: $gray500;
+		@font-style ($heights: $font-height-26, $spacing: 0.5px);
+	}
+}

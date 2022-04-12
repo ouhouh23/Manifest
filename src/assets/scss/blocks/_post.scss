@@ -7,10 +7,9 @@
 		margin-bottom: $indent25;
 	}
 
-	.post__category, .post__date {
-		display: block;
+	.post__category, .post__date, .post__comments {
 		color: $gray500;
-		@include font-style($size: $font-12, $heights: $font-height-20, $spacing: 1px);
+		@include font-style($size: $font-16, $heights: $font-height-20, $spacing: 1px);
 	}
 
 	.post__heading {
@@ -61,5 +60,26 @@
 	.post__pagination {
 		order: 5;
 		margin-top: auto;
+	}
+}
+
+.post_opened {
+	.post__heading {
+		margin-top: $indent25;
+		margin-bottom: $indent45;
+	}
+
+	.post__comments {
+		margin-left: $indent40;
+	}
+
+	.post__image {
+		margin-top: $indent65;
+		margin-bottom: $indent40;
+	}
+
+	.post__content {
+		padding-left: $indent195;
+		padding-right: $indent195;
 	}
 }

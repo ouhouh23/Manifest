@@ -3,17 +3,21 @@
 	padding-top: $indent128;
 	padding-bottom: $indent128;
 
-	.footer__wrapper {
+	&__wrapper {
 	  @include flexbox($justify: space-between, $align: center);
 	}
 
-	.footer__social-networks {
+	.footer__heading {
+		max-width: 100%;
+	}
+
+	&__social-networks {
 		align-self: stretch;
 		@include flexbox($direction: column, $justify: space-between);
 		letter-spacing: 2px;
 	}
 
-	.footer__copyright {
+	&__copyright {
 		margin-top: auto;
 		@include font-style($size: $font-12, $heights: $font-height-20, $spacing: 1px);
 	}
