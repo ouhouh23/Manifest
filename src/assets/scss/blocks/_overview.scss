@@ -1,8 +1,10 @@
 .overview {
 
 	&__content {
-	display: grid;
-	grid-template-columns: 60% 40%;
+		display: grid;
+		grid-template-columns: 50% 40%;
+		grid-gap: $indent65;
+		justify-content: space-between;
 	}
 
 	&__text {
@@ -32,4 +34,17 @@
 		display: grid;
 		row-gap: $indent45;
 	} 
+}
+
+@media screen and (max-width: 870px) {
+	.overview {
+
+		&__content {
+			grid-template-columns: auto;
+		}
+
+		&__information {
+			justify-content: start;
+		}
+	}
 }

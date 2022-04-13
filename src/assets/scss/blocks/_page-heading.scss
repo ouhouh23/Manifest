@@ -2,3 +2,15 @@
 	@include font-style($size: $font-48, $heights: $font-height-64);
 	max-width: 65%;
 }
+
+@media screen and (max-width: 870px) {
+	.page-heading {
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.page-heading {
+		font-size: $font-33;
+	}
+}
