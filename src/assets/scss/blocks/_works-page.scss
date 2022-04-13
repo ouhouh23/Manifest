@@ -1,7 +1,7 @@
 .works-page {
 	&__header, &__item {
 		display: grid;
-		grid-template-columns: 30% 50%;
+		grid-template-columns: 30% 49%;
 		grid-gap: $indent45;
 		justify-content: space-between;
 	}
@@ -14,5 +14,21 @@
 	&__content {
 		display: grid;
 		row-gap: $indent50;
+	}
+}
+
+@media screen and (max-width: 870px) {
+	.works-page {
+
+		&__header, &__item {
+			grid-template-columns: auto;
+			justify-content: center;
+		}
+
+		&__header {
+			max-width: 34.38rem;
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 }

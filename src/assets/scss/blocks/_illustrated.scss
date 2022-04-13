@@ -11,6 +11,7 @@
 	&__type {
 		display: block;
 		margin-bottom: $indent16;
+		letter-spacing: 2px;
 	}
 
 	&__date {
@@ -21,4 +22,12 @@
 	&__button {
 		margin-top: $indent40;
 	}  
+}
+
+@media screen and (max-width: 870px) {
+	.illustrated {
+		&__image {
+			grid-area: 1/1/2/2;
+		}
+	}
 }
