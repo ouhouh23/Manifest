@@ -19,6 +19,22 @@
 
 	&__copyright {
 		margin-top: auto;
-		@include font-style($size: $font-12, $heights: $font-height-20, $spacing: 1px);
+		@include font-style($size: $font-16, $heights: $font-height-20, $spacing: 1px);
+	}
+}
+
+@media screen and (max-width: 870px) {
+	.footer {
+		padding-top: $indent65;
+		padding-bottom: $indent65;
+
+		&__wrapper {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		&__social-networks {
+			margin: $indent50 0;
+		}
 	}
 }

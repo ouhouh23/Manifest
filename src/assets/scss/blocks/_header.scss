@@ -3,13 +3,13 @@
 	
 	@include flexbox($justify: space-between, $align: center);
 
-	.header__navigation {
+	&__navigation {
 		display: flex;
 		color: $black;
 		position: relative;
 	}
 
-	.header__icon {
+	&__icon {
 		margin-left: $indent50;
 	}
 }

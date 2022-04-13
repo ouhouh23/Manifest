@@ -6,9 +6,10 @@
 	}
 
 	.navigation__item {
-		@include font-style($size: $font-12, $heights: $font-height-16, $spacing: 3px);
+		@include font-style($size: $font-16, $heights: $font-height-16, $spacing: 3px);
 	}
 }
+
 .navigation_mobile {
 
 	&__button {
@@ -21,8 +22,6 @@
 		display: none;
 	}
 }
-
-
 
 @media screen and (max-width: 870px) {
 	.navigation_desktop {
