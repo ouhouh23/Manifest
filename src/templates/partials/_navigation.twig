@@ -1,8 +1,8 @@
 {% set navigation = { './index.html': 'Home', './about.html': 'About', './blog.html': 'Blog', './contact.html': 'Contact' , './works.html': 'Works' } %}
 {% set zalupa = 'sometext' %}
 
-<nav>
-  <ul class="navigation navigation_mobile navigation_desktop">
+<nav class="navigation navigation_mobile navigation_desktop">
+  <ul class="navigation__content">
     {% for hyi, name in navigation %}
       <li
         {% if name == page %}

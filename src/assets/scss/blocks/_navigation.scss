@@ -1,18 +1,51 @@
 .navigation {
-	display: grid;
-	grid-template-columns: auto auto auto auto auto;
-	column-gap: $indent50;
+	&__content {
+		display: grid;
+		grid-template-columns: auto auto auto auto auto;
+		grid-gap: $indent50;
+	}
 
 	.navigation__item {
 		@include font-style($size: $font-12, $heights: $font-height-16, $spacing: 3px);
 	}
+}
+.navigation_mobile {
 
+	&__button {
+		display: none;
+		margin-left: $indent10;
+		cursor: pointer;
+	}
+
+	&__checkbox {
+		display: none;
+	}
 }
 
 
-.navigation_mobile__button {
-	display: none;
-}
-.navigation_mobile__checkbox {
-	display: none;
+
+@media screen and (max-width: 870px) {
+	.navigation_desktop {
+		display: none;
+	}
+
+	.navigation_mobile {
+		position: absolute;
+		right: 0;
+		top: 2rem;
+		padding: $indent40 $indent65;
+		background: $gray100;
+
+		&__button {
+			display: block;
+		}
+
+		&__checkbox:checked + & {
+			display: block;
+		}
+	}
+
+	.navigation__content {
+		grid-template-columns: auto;
+	}
 }
