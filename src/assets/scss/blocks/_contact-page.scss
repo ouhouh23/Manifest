@@ -18,3 +18,10 @@
 		row-gap: $indent50;
 	}
 }
+
+@media screen and (max-width: 600px) {
+	.contact-page {
+		grid-template-columns: auto;
+		grid-gap: $indent65;
+	}
+}
