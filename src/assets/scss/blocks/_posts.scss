@@ -21,7 +21,8 @@
 	}
 
 	.posts__group_row {
-		grid-template-columns: auto auto auto;
+		grid-template-columns: 30% 30% 30%;
+		justify-content: space-between;
 		grid-gap: $indent34;
 	} 
 
@@ -34,10 +35,17 @@
 
 @media screen and (max-width: 870px) {
 	.posts {
-		.posts__group_columns {
+		.posts__group_columns, .posts__group_row {
 			grid-template-columns: auto;
 			row-gap: $indent50;
 			max-width: 33.7rem;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		&__header {
+			max-width: 33.7rem;
+			width: 100%;
 			margin-left: auto;
 			margin-right: auto;
 		}

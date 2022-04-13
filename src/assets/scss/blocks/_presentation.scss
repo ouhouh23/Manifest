@@ -21,3 +21,18 @@
 
 	}
 }
+
+@media screen and (max-width: 870px) {
+	.presentation {
+		grid-template-columns: auto;
+
+		&__heading {
+			margin-bottom: $indent50;
+		}
+
+		&__link {
+			margin-top: 0;
+			margin-bottom: $indent50;
+		}
+	}
+}

@@ -2,17 +2,8 @@
 	box-sizing: border-box;
 }
 
-.wrapper {
-	max-width: 1200px;
-	@extend %padding-desktop;
-	margin: 0 auto;  
-}
-
-@media screen and (max-width: 600px) {
-  .wrapper {
-    padding-left: $indent16;
-    padding-right: $indent16;
-  }
+body {
+	overflow-x: hidden;
 }
 
 ul {
@@ -43,5 +34,18 @@ p, a, span, small, label, blockquote, site {
 img {
 	max-width: 100%;
 	height: auto;
+}
+
+.wrapper {
+	max-width: 1200px;
+	@extend %padding-desktop;
+	margin: 0 auto;  
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    padding-left: $indent16;
+    padding-right: $indent16;
+  }
 }
 

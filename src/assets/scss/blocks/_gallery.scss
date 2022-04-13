@@ -1,14 +1,33 @@
 .gallery {
-	.gallery__content {
+	&__content {
 		display: grid;
 		grid-template-columns: auto auto auto auto;
 		grid-gap: $indent34;
 		justify-content: center;
+		width: 69rem;
 	}
 
-	.gallery__caption {
+	&__caption {
 		display: inline-block;
 		margin-top: $indent16;
 		@include font-style($heights: $font-height-26);
+	}
+
+	&__image {
+		max-width: 34rem;
+		height: 34rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.gallery {
+		&__content {
+			width: 34rem;
+		}
+
+		&__image {
+			max-width: 16rem;
+			height: auto;
+		}	
 	}
 }
