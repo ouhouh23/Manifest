@@ -1,20 +1,23 @@
 .posts {
 	display: grid;
 
-	.posts__header {
+	&__header {
 		@include flexbox($justify: space-between, $align: center);
 		margin-bottom: $indent45;
-		width: 50%;
-		padding-right: ($indent40/2);
 	}
 
-	.posts__link {
+	&__link {
 		@include font-style($heights: $font-height-26);
 		color: $gray500;
 	}
 
-	.posts__group {
+	&__group {
 		display: grid;
+	}
+
+	&__button {
+		margin: $indent70 auto 0;
+		color: $white;
 	}
 
 	.posts__group_row {
@@ -23,12 +26,24 @@
 	} 
 
 	.posts__group_columns {
-		grid-template-columns: auto auto;
+		grid-template-columns: 48% 48%;
 		grid-gap: $indent128 $indent40;
 	}
-
-	.posts__button {
-		margin: $indent70 auto 0;
-		color: $white;
-	}
 }
+
+
+@media screen and (max-width: 870px) {
+	.posts {
+		.posts__group_columns {
+			grid-template-columns: auto;
+			row-gap: $indent50;
+			max-width: 33.7rem;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		&__button {
+			margin-top: $indent50;
+		}
+	}
+} 

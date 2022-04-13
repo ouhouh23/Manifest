@@ -32,6 +32,10 @@
 	margin-top: $indent100;
 	margin-bottom: $indent115;
 
+	.post__image {
+		max-width: 50%;
+	}
+
 	.post__text {
 		@include flexbox($direction: column);
 		margin-left: $indent70;
@@ -42,7 +46,7 @@
 		order: 1;	
 	}
 
-	&__heading {
+	.post__heading {
 		order: 2;
 		margin-top: $indent25;
 		margin-bottom: $indent16;
@@ -90,6 +94,28 @@
 
 		.post__content {
 			padding: 0;
+		}
+	}
+
+	.post_primary {
+		flex-direction: column;
+		align-items: center;
+		margin-top: $indent65;
+		margin-bottom: $indent65;
+
+		.post__image {
+			max-width: 100%;
+			margin-bottom: $indent16;
+		}
+
+		.post__text {
+			margin-left: 0;
+			max-width: 33.7rem;
+		}
+
+		.post__paragraph {
+			margin-top: $indent16;
+			margin-bottom: $indent65;
 		}
 	}
 }

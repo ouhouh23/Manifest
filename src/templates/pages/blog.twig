@@ -5,10 +5,10 @@
 {% block title %}Blog{% endblock %}
 
 {% block content %}
-  <section>
-    <h1 class="page-heading">Blog</h1>
+  <section class="blog-page">
+    <h1 class="page-heading blog-page__heading">Blog</h1>
 
-    <div class="post post_primary">
+    <div class="blog-page__content post post_primary">
       <img class="post__image" src="img/windows.png" alt="image with windows"
         width="540" height="470" />
 
@@ -37,7 +37,7 @@
     </div>
 
     <div class="posts indent-bottom">
-      <div class="posts__header dropdown">
+      <div class="posts__header blog-page__dropdown dropdown">
         <h4 class="dropdown__heading">
           Categories:
         </h4>
@@ -139,7 +139,7 @@
         </div>
 
         <div class="post">
-          <img class="post__image" src="img/wall.png" alt="arrow on the wall image"
+          <img class="post__image" src="img/wall-medium.png" alt="arrow on the wall image"
             width="540" height="250" />
 
           <div class="post__caption">
@@ -159,7 +159,7 @@
         </div>
       </div>
         
-      <a class="button button_wide posts__button" href="#">Load more</a>
+      <a class="button button_wide posts__button" href="error.html">Load more</a>
     </div>
   </section>
 {% endblock %}
