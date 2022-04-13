@@ -17,4 +17,22 @@
 		@include font-style($size: $font-19, $heights: $font-height-32, $spacing: 0.5px);
 		color: $gray700;
 	}
+
+	&__content {
+		display: grid;
+	}
+
+	&__button {
+		align-self: end;
+	}
+}
+
+@media screen and (max-width: 870px) {
+	.about-page {
+		grid-template-columns: auto;
+
+		&__header {
+			display: grid;
+		}
+	}
 }
