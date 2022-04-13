@@ -31,3 +31,18 @@
 	}
 
 }
+
+@media screen and (max-width: 870px) {
+	.blog {
+
+		&__header {
+			margin-left: 0;
+			grid-template-columns: auto;
+			grid-gap: $indent40;
+		}
+
+		&__form {
+			margin-top: $indent65;
+		}
+	}
+}

@@ -1,5 +1,6 @@
 .tags {
 	display: flex;
+	align-items: baseline;
 	padding-bottom: $indent16;
 	border-bottom: 1px solid $gray100;
 	@include font-style($heights: $font-height-26, $spacing: 1px);

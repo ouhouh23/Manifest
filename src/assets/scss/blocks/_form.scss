@@ -41,3 +41,11 @@
 		margin-top: $indent25;
 	}
 }
+
+@media screen and (max-width: 1160px) {
+	.form {
+		&__group {
+			grid-template-columns: auto;
+		}
+	}
+}

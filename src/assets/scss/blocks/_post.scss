@@ -1,25 +1,29 @@
 .post {
 	@include flexbox($direction: column);
 	
-	.post__caption {
+	&__caption {
 		@include flexbox($justify: space-between);
 		margin-top: $indent25;
 		margin-bottom: $indent25;
 	}
 
-	.post__category, .post__date, .post__comments {
+	&__category, &__date, &__comments {
 		color: $gray500;
 		@include font-style($size: $font-16, $heights: $font-height-20, $spacing: 1px);
 	}
 
-	.post__heading {
+	&__heading {
 		margin-bottom: $indent25;
 	}
 
-	.post__paragraph {
+	&__paragraph {
 	  margin-top: auto;
 	  color: $gray700;
 	  @include font-style($heights: $font-height-26, $spacing: 1px);	
+	}
+
+	&__comments {
+		margin-left: $indent40;
 	}
 }
 
@@ -38,7 +42,7 @@
 		order: 1;	
 	}
 
-	.post__heading {
+	&__heading {
 		order: 2;
 		margin-top: $indent25;
 		margin-bottom: $indent16;
@@ -64,13 +68,10 @@
 }
 
 .post_opened {
+
 	.post__heading {
 		margin-top: $indent25;
 		margin-bottom: $indent45;
-	}
-
-	.post__comments {
-		margin-left: $indent40;
 	}
 
 	.post__image {
@@ -81,5 +82,35 @@
 	.post__content {
 		padding-left: $indent195;
 		padding-right: $indent195;
+	}
+}
+
+@media screen and (max-width: 870px) {
+	.post_opened {
+
+		.post__content {
+			padding: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.post {
+		&__comments {
+			display: block;
+			margin: $indent10 0 0 0;
+		}
+	}
+
+	.post_opened {
+
+		.post__heading {
+			margin-top: $indent16;
+			margin-bottom: $indent16;
+		}
+
+		.post__image {
+			margin-top: $indent40;
+		}
 	}
 }
