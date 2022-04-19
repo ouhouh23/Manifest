@@ -2,6 +2,10 @@
 	padding-left: $indent65;
 	border-left: 3px solid $gray300;
 
+	@media screen and (max-width: 600px) {
+		padding-left: $indent16;
+	}
+
 	&__content {
 		margin: 0 0 $indent34 0;
 	}
@@ -10,11 +14,5 @@
 		display: inline-block;
 		margin-bottom: $indent34;
 		color: $gray500;
-	}
-}
-
-@media screen and (max-width: 600px) {
-	.blockquote {
-		padding-left: $indent16;
 	}
 }

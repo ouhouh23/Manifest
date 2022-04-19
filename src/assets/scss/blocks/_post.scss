@@ -27,6 +27,11 @@
 
 	&__comments {
 		margin-left: $indent40;
+
+		@media screen and (max-width: 600px) {
+			display: block;
+			margin: $indent10 0 0 0;
+		}
 	}
 }
 
@@ -100,48 +105,21 @@
 }
 
 .post_opened {
-
 	.post__heading {
 		margin-top: $indent25;
 		margin-bottom: $indent45;
+
+		@media screen and (max-width: 600px) {
+			margin-top: $indent16;
+			margin-bottom: $indent16;
+		}
 	}
 
 	.post__image {
 		margin-top: $indent65;
 		margin-bottom: $indent40;
-	}
 
-	.post__content {
-		padding-left: $indent195;
-		padding-right: $indent195;
-	}
-}
-
-@media screen and (max-width: 870px) {
-	.post_opened {
-
-		.post__content {
-			padding: 0;
-		}
-	}
-}
-
-@media screen and (max-width: 600px) {
-	.post {
-		&__comments {
-			display: block;
-			margin: $indent10 0 0 0;
-		}
-	}
-
-	.post_opened {
-
-		.post__heading {
-			margin-top: $indent16;
-			margin-bottom: $indent16;
-		}
-
-		.post__image {
+		@media screen and (max-width: 600px) {
 			margin-top: $indent40;
 		}
 	}

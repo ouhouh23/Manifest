@@ -5,6 +5,10 @@
 	padding-bottom: $indent40;
 	border-bottom: 3px solid $gray100;
 
+	@media screen and (max-width: 600px) {
+		column-gap: $indent16;
+	}
+
 	&__reply {
 		grid-column: 2/3;
 	}
@@ -13,30 +17,29 @@
 		padding-bottom: 0;
 		border-bottom: none;
 	}
+
 	&__header {
 		@include flexbox($align: center);
+
 		flex-wrap: wrap;
 	}
 
 	&__date {
 		@include font-style($size: $font-12, $heights: $font-height-20, $spacing: 0.5px);
+		
 		color: $gray500;
 	}
 
 	&__body {
 		@include font-style($size: $font-16, $heights: $font-height-32, $spacing: 0.5px);
+
 		color: $gray700;
 		margin: $indent16 $indent25 $indent16 0;
 	}
 
 	&__footer {
 		color: $gray500;
-		@font-style ($heights: $font-height-26, $spacing: 0.5px);
-	}
-}
 
-@media screen and (max-width: 600px) {
-	.comment {
-		column-gap: $indent16;
+		@include font-style ($heights: $font-height-26, $spacing: 0.5px);
 	}
 }

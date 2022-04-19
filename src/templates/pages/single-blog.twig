@@ -6,7 +6,7 @@
 
 {% block content %}
   <section class="post post_opened">
-    <div class="post__text">
+    <div>
       <span class="post__category">Technology, Interface Design</span>
 
       <h1 class="post__heading page-heading">Using UX Design to Build a Sustainable Future</h1>
@@ -23,9 +23,9 @@
     <img class="post__image" src="img/windows-wide.png" alt="image with windows"
       width="1120" height="470" />
 
-    <div class="post__content blog indent-bottom">
+    <div class="blog indent-bottom">
       <div class="blog__author">
-        <img class="user-image" src="img/blog-author.png" alt="ugly black woman" width="70" height="70" />
+        <img src="img/blog-author.png" alt="ugly black woman" width="70" height="70" />
 
         <span class="user-name">Monica Geller</span>
       </div>
@@ -33,19 +33,19 @@
       <div class="blog__header">
         <div class="social-networks">
           <a href="#">
-            <i class="social-networks__item fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-facebook-f"></i>
           </a>
 
           <a href="#">
-            <i class="social-networks__item fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-twitter"></i>
           </a>
 
           <a href="#">
-            <i class="social-networks__item fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
           </a>
 
           <a href="#">
-            <i class="social-networks__item fa-brands fa-dribbble"></i>
+            <i class="fa-brands fa-dribbble"></i>
           </a>
         </div>
 
@@ -88,15 +88,15 @@
       </p>
 
       <ul class="blog__points">
-        <li class="point">
+        <li>
           Ask if the product is solving a real-world problem?
         </li>
 
-        <li class="point">
+        <li>
           Use content strategy to offer choices to customers choices.
         </li>
 
-        <li class="point">
+        <li>
           When considering fonts, stick to two font types and reduce the typeface.
         </li>
       </ul>
@@ -104,18 +104,16 @@
       <div class="tags">
         <h4 class="tags__heading">Tags:</h4>
 
-        <div class="tags__content">
-          <a class="tags__item" href="error.html">Technology,</a>
-          <a class="tags__item" href="error.html">Interface Design,</a>
-          <a class="tags__item" href="error.html">Visual Design</a>
+        <div>
+          <a class="tags__item" href="./error.html">Technology,</a>
+          <a class="tags__item" href="./error.html">Interface Design,</a>
+          <a class="tags__item" href="./error.html">Visual Design</a>
         </div>
       </div>
 
       <form class="form blog__form" action="#">
-        <div class="form__header">
-          <h3 class="form__heading heading-secondary">Leave a reply</h3>
+          <h3 class="heading-secondary">Leave a reply</h3>
           <span class="form__requrement">Required fields are marked *</span>
-        </div>
 
         <div class="form__group">
           <div class="form__item">
@@ -158,80 +156,78 @@
         <input class="button button_tight form__button" type="submit" name="Post" value="Post" />
       </form>
 
+      <h3 class="heading-secondary">Comments</h3>
+
       <div class="comments">
-        <h3 class="comments__heading heading-secondary">Comments</h3>
+        <div class="comment">
+          <img src="img/comment-1.png"
+            alt="another ugly black woman" width="70" height="70" />
 
-        <div class="comments__group">
-          <div class="comment">
-            <img class="user-image" src="img/comment-1.png"
-              alt="another ugly black woman" width="70" height="70" />
+          <div>
+            <div class="comment__header">
+              <span class="user-name">Scarlet withch</span>
 
-            <div class="comment__content">
-              <div class="comment__header">
-                <span class="user-name">Scarlet withch</span>
-
-                <span class="comment__date">6 May, 2020</span>
-              </div>
-
-              <p class="comment__body">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy 
-                nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
-              </p>
-
-              <a class="comment__footer" href="error.html">
-                <i class="reply-icon fa-solid fa-reply"></i>
-
-                <span>Reply</span>
-              </a>
+              <span class="comment__date">6 May, 2020</span>
             </div>
 
-            <div class="comment__reply comment">
-              <img class="user-image" src="img/comment-2.png"
-                alt="beautiful white woman" width="70" height="70" />
+            <p class="comment__body">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy 
+              nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+            </p>
 
-              <div class="comment__content">
-                <div class="comment__header">
-                  <span class="user-name">Kate Moss</span>
+            <a class="comment__footer" href="./error.html">
+              <i class="fa-solid fa-reply"></i>
 
-                  <span class="comment__date">6 May, 2020</span>
-                </div>
-
-                <p class="comment__body">
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-                  nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
-                </p>
-
-                <a class="comment__footer" href="error.html">
-                  <i class="reply-icon fa-solid fa-reply"></i>
-
-                  <span>Reply</span>
-                </a>
-              </div>
-            </div>
+              <span>Reply</span>
+            </a>
           </div>
 
-          <div class="comment">
-            <img class="user-image" src="img/comment-1.png"
-              alt="another ugly black woman" width="70" height="70" />
+          <div class="comment__reply comment">
+            <img src="img/comment-2.png"
+              alt="beautiful white woman" width="70" height="70" />
 
-            <div class="comment__content">
+            <div>
               <div class="comment__header">
-                <span class="user-name">Scarlet withch</span>
+                <span class="user-name">Kate Moss</span>
 
                 <span class="comment__date">6 May, 2020</span>
               </div>
 
               <p class="comment__body">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy 
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
                 nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
               </p>
 
-              <a class="comment__footer" href="error.html">
-                <i class="reply-icon fa-solid fa-reply"></i>
+              <a class="comment__footer" href="./error.html">
+                <i class="fa-solid fa-reply"></i>
 
                 <span>Reply</span>
               </a>
             </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <img src="img/comment-1.png"
+            alt="another ugly black woman" width="70" height="70" />
+
+          <div>
+            <div class="comment__header">
+              <span class="user-name">Scarlet withch</span>
+
+              <span class="comment__date">6 May, 2020</span>
+            </div>
+
+            <p class="comment__body">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy 
+              nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+            </p>
+
+            <a class="comment__footer" href="./error.html">
+              <i class="fa-solid fa-reply"></i>
+
+              <span>Reply</span>
+            </a>
           </div>
         </div>
       </div>
