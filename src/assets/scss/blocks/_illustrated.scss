@@ -1,4 +1,19 @@
 .illustrated {
+	display: grid;
+	grid-template-columns: 30% 49%;
+	grid-gap: $indent45;
+	justify-content: space-between;
+
+	@media screen and (max-width: 870px)  {
+		grid-template-columns: auto;
+		justify-content: center;
+	}
+
+	&__paragraph {
+		@include font-style($size: $font-19, $heights: $font-height-32, $spacing: 0.5px);
+
+		color: $black;
+	}
 
 	&__break {
 		width: 5.3rem;
@@ -21,13 +36,20 @@
 
 	&__button {
 		margin-top: $indent40;
+	}
+
+	&__image {
+		@media screen and (max-width: 870px) {
+			grid-area: 1/1/2/2;
+		}
 	}  
 }
 
-@media screen and (max-width: 870px) {
-	.illustrated {
-		&__image {
-			grid-area: 1/1/2/2;
-		}
+.illustrated_header {
+	margin-bottom: $indent70;
+
+	@media screen and (max-width: 870px) {
+		max-width: 34.38rem;
+		margin: 0 auto $indent25 auto;
 	}
 }
