@@ -2,37 +2,36 @@
 	display: grid;
 	grid-template-columns: 60% 40%;
 
-	.presentation__header {
+	@media screen and (max-width: 870px) {
+		grid-template-columns: auto;
+	}
+
+	&__header {
 		margin-bottom: auto;
 	}
 
-	.presentation__link {
-		display: block;
-		margin-top: $indent45;
+	&__heading {
+		@media screen and (max-width: 870px) {
+			margin-bottom: $indent50;
+		}
 	}
 
-	.presentation__text {
+	&__link {
+		display: block;
+		margin-top: $indent45;
+
+		@media screen and (max-width: 870px) {
+			margin-top: 0;
+			margin-bottom: $indent50;
+		}
+	}
+
+	&__text {
 		display: grid;
 		row-gap: $indent45;
 	}
 
-	.presentation__paragraph {
+	&__paragraph {
 		@include font-style($size: $font-19, $heights: $font-height-32, $spacing: 1px);
-
-	}
-}
-
-@media screen and (max-width: 870px) {
-	.presentation {
-		grid-template-columns: auto;
-
-		&__heading {
-			margin-bottom: $indent50;
-		}
-
-		&__link {
-			margin-top: 0;
-			margin-bottom: $indent50;
-		}
 	}
 }
