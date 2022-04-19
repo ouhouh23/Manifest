@@ -1,18 +1,20 @@
 .project-offer {
   @include flexbox($direction: column);
 
+  .project-offer__heading {
+    max-width: 100%;
+  }
+
   &__phone {
   	margin-top: $indent34;
   	margin-bottom: $indent16;
-  }
 
+    @media screen and (max-width: 870px) {
+      margin-top: $indent16;
+    }
+  }
+  
   &__phone, &__mail {
   	@include font-style($heights: $font-height-26);
   }	
-}
-
-@media screen and (max-width: 870px) {
-  .project-offer__phone {
-    margin-top: $indent16;
-  }
 }

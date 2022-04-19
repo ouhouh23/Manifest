@@ -17,7 +17,7 @@
 
 <body>
   <header class="header wrapper indent-bottom">
-    <a class="logo" href="index.html">
+    <a class="logo" href="./index.html">
       <img src="img/logo.png" alt="Site logo" width="135" height="12" />
     </a>
 
@@ -26,7 +26,7 @@
 
       {% include '../partials/_navigation.twig' %}
 
-      <a class="header__icon" href="#">
+      <a class="header__icon" href="./error.html">
         <i class="fa fa-search"></i>
       </a>
 
@@ -46,9 +46,9 @@
   </div>
 
   <footer class="footer">
-    <div class="wrapper footer__wrapper">
-      <div class="project-offer footer__offer">
-        <h1 class="page-heading footer__heading">
+    <div class="wrapper footer__content">
+      <div class="project-offer">
+        <h1 class="page-heading project-offer__heading">
           Need a project?
         </h1>
 
@@ -79,7 +79,7 @@
         </li>
       </ul>
 
-      <div class="footer__copyright copyrights">
+      <div class="footer__copyright">
         <small>&copy Copyright Manifest Theme.<br>
           Allrights reserved
         </small>

@@ -1,26 +1,4 @@
 @import "helpers";
+@import "base-styles";
 @import "layout";
 @import "blocks";
-
-.title {
-  margin : {
-    top: 1rem;
-    bottom: 2rem;
-  }
-  color: blue;
-
-  user-select: none;
-}
-
-.is-selected {
-  @include flexbox($direction: column, $align: center);
-  margin-bottom: -2px;
-
-  &:after {
-  content: ('');
-  display: inline-block;
-  width: 35px;
-  height: 2px;
-  background: $black;
-  }
-}

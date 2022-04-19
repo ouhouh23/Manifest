@@ -1,43 +1,6 @@
-* {
-	box-sizing: border-box;
-}
-
-body {
-	overflow-x: hidden;
-}
-
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-a {
-	text-decoration: none;
-	color: inherit;
-}
-
-p {
-	margin: 0;
-	color: $gray700;
-}
-
-h1, h2, h3, h4, h5 {
-	margin: 0;
-	font-family: $font-heading;
-}
-
-p, a, span, small, label, blockquote, site {
-	font-family: $font-regular;
-}
-
-img {
-	max-width: 100%;
-	height: auto;
-}
-
 .wrapper {
 	max-width: 1200px;
+	width: 100%;
 	@extend %padding-desktop;
 	margin: 0 auto;  
 }
@@ -48,4 +11,61 @@ img {
     padding-right: $indent16;
   }
 }
+
+.header {
+	padding-top: $indent100;
+	width: 100%;
+	
+	@include flexbox($justify: space-between, $align: center);
+
+	&__navigation {
+		display: flex;
+		color: $black;
+		position: relative;
+	}
+
+	&__icon {
+		margin-left: $indent50;
+	}
+}
+
+.footer {
+	margin-top: auto;
+	background: $gray100;
+	padding-top: $indent128;
+	padding-bottom: $indent128;
+
+	@media screen and (max-width: 870px) {
+		padding-top: $indent65;
+		padding-bottom: $indent65;
+	}
+
+	&__content {
+	  @include flexbox($justify: space-between, $align: center);
+
+	  @media screen and (max-width: 870px) {
+		flex-direction: column;
+		align-items: flex-start;
+	  }  
+	}
+
+	&__social-networks {
+		align-self: stretch;
+		
+		@include flexbox($direction: column, $justify: space-between);
+
+		letter-spacing: 2px;
+
+		@media screen and (max-width: 870px) {
+		  margin: $indent50 0;
+		}
+	}
+
+	&__copyright {
+		margin-top: auto;
+
+		@include font-style($size: $font-16, $heights: $font-height-20, $spacing: 1px);
+	}
+}
+
 
