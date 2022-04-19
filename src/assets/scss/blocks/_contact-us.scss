@@ -1,8 +1,13 @@
-.contact-page {
+.contact-us {
 	display: grid;
 	grid-template-columns: 35% 45%;
 	grid-gap: $indent128 $indent25;
 	justify-content: space-between;
+
+	@media screen and (max-width: 600px) {
+		grid-template-columns: auto;
+		grid-gap: $indent65;
+	}
 
 	&__paragraph {
 		@include font-style($size: $font-19, $spacing: 0.5px);
@@ -16,12 +21,5 @@
 	&__form {
 		display: grid;
 		row-gap: $indent50;
-	}
-}
-
-@media screen and (max-width: 600px) {
-	.contact-page {
-		grid-template-columns: auto;
-		grid-gap: $indent65;
 	}
 }

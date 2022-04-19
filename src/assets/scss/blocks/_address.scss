@@ -6,6 +6,7 @@
 		row-gap: $indent25;
 		margin-top: $indent25;
 		color: $gray700;
-		@include font-style($heights: font-height-26, $spacing: 0.5px);
+		
+		@include font-style($heights: $font-height-26, $spacing: 0.5px);
 	}
 }
