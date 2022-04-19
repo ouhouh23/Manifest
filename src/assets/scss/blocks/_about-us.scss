@@ -1,8 +1,16 @@
-.about-page {
+.about-us {
 	display: grid;
 	grid-template-columns: 35% 55%;
 	grid-gap: $indent45;
 	justify-content: space-between;
+
+	@media screen and (max-width: 870px) {
+		grid-template-columns: auto;
+	}
+
+	&__person, &__description {
+		display: grid;
+	}
 
 	&__rank {
 		display: inline-block;
@@ -18,21 +26,7 @@
 		color: $gray700;
 	}
 
-	&__content {
-		display: grid;
-	}
-
 	&__button {
 		align-self: end;
-	}
-}
-
-@media screen and (max-width: 870px) {
-	.about-page {
-		grid-template-columns: auto;
-
-		&__header {
-			display: grid;
-		}
 	}
 }

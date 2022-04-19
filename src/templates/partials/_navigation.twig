@@ -1,15 +1,20 @@
-{% set navigation = { './index.html': 'Home', './about.html': 'About', './blog.html': 'Blog', './contact.html': 'Contact' , './works.html': 'Works' } %}
-{% set zalupa = 'sometext' %}
+{% set navigation = { 
+  './index.html': 'Home',
+  './about.html': 'About', 
+  './blog.html': 'Blog', 
+  './contact.html': 'Contact' 
+  , './works.html': 'Works' 
+} %}
 
 <nav class="navigation navigation_mobile navigation_desktop">
   <ul class="navigation__content">
-    {% for hyi, name in navigation %}
+    {% for current, name in navigation %}
       <li
         {% if name == page %}
           class="is-selected"
         {% endif %}
       >
-        <a class="navigation__item" href="{{ hyi }}">{{ name }}</a>
+        <a class="navigation__item" href="{{ current }}">{{ name }}</a>
       </li>
     {% endfor %}
   </ul>
