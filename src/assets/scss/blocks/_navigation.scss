@@ -1,50 +1,53 @@
 .navigation {
+
+ 	@media screen and (max-width: 870px) {
+		display: none;
+ 	}
+
 	&__content {
 		display: grid;
 		grid-template-columns: auto auto auto auto auto;
 		grid-gap: $indent50;
 	}
 
-	.navigation__item {
+	&__item {
 		@include font-style($size: $font-16, $heights: $font-height-16, $spacing: 3px);
 	}
 }
 
 .navigation_mobile {
 
+	@media screen and (max-width: 870px) {
+		position: absolute;
+		right: 0;
+		top: 2rem;
+		padding: $indent40 $indent65;
+		background: $gray100;	 	
+	}
+
 	&__button {
 		display: none;
 		margin-left: $indent10;
 		cursor: pointer;
+
+		@media screen and (max-width: 870px) {
+			display: block;
+		}
 	}
 
 	&__checkbox {
 		display: none;
 	}
-}
 
-@media screen and (max-width: 870px) {
-	.navigation_desktop {
-		display: none;
-	}
-
-	.navigation_mobile {
-		position: absolute;
-		right: 0;
-		top: 2rem;
-		padding: $indent40 $indent65;
-		background: $gray100;
-
-		&__button {
-			display: block;
-		}
-
+	@media screen and (max-width: 870px) {
 		&__checkbox:checked + & {
 			display: block;
 		}
-	}
 
-	.navigation__content {
-		grid-template-columns: auto;
+		.navigation__content {
+			grid-template-columns: auto;
+		}
 	}
 }
+
+
