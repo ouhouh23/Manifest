@@ -1,10 +1,23 @@
 .overview {
 
+	&__caption {
+		@include font-style($heights: $font-height-26);
+	}
+
+	&__heading {
+		margin-top: $indent65;
+		margin-bottom: $indent50
+	}
+
 	&__content {
 		display: grid;
 		grid-template-columns: 50% 40%;
 		grid-gap: $indent65;
 		justify-content: space-between;
+
+		@media screen and (max-width: 870px) {
+			grid-template-columns: auto;
+		}
 	}
 
 	&__text {
@@ -15,6 +28,7 @@
 
 	&__paragraph {
 		@include font-style($size: $font-19, $spacing: 0.5px);
+
 		color: $gray700;
 	}
 
@@ -22,6 +36,10 @@
 		display: grid;
 		row-gap: $indent45;
 		justify-content: center;
+
+		@media screen and (max-width: 870px) {
+			justify-content: start;
+		}
 	}
 
 	&__item {
@@ -34,17 +52,4 @@
 		display: grid;
 		row-gap: $indent45;
 	} 
-}
-
-@media screen and (max-width: 870px) {
-	.overview {
-
-		&__content {
-			grid-template-columns: auto;
-		}
-
-		&__information {
-			justify-content: start;
-		}
-	}
 }
