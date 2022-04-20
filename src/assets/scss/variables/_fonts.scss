@@ -15,3 +15,9 @@ $font-height-26: (26rem/16);
 $font-height-32: (32rem/16);
 $font-height-38: (38rem/16);
 $font-height-64: (64rem/16);
+$font-size-baze: 16px;
+$font-height-test: rem(160px);
+
+@function rem($px-value, $base-size: $font-size-base) {
+	@return $px-value / $base-size * 1 rem;
+}
