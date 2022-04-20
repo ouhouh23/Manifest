@@ -18,5 +18,8 @@
   "scripts": {
     "build": "yarn run mix",
     "watch": "yarn run mix watch"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.1"
   }
 }
