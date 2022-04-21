@@ -45,7 +45,7 @@
 
 	&__image {
 		@media screen and (max-width: 870px) {
-			grid-area: 1/1/2/2;
+			grid-area: 1 / 1 / 2 / 2;
 		}
 	}  
 }
@@ -54,7 +54,6 @@
 	margin-bottom: $indent70;
 
 	@media screen and (max-width: 870px) {
-		max-width: 34.38rem;
-		margin: 0 auto $indent25 auto;
+		margin-bottom: $indent50;
 	}
 }

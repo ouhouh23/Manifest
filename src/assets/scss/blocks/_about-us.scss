@@ -13,11 +13,11 @@
 	}
 
 	&__rank {
-		display: inline-block;
 		margin-top: $indent40;
 		margin-bottom: $indent16;
-		@include font-style ($size: $font-23, $heights: $font-height-38, $spacing: 1px);
 		color: $gray700;
+
+		@include font-style ($size: $font-23, $heights: $font-height-38, $spacing: 1px);
 	}
 
 	&__paragraph {

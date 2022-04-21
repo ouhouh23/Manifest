@@ -10,9 +10,9 @@
 		margin-bottom: auto;
 	}
 
-	&__heading {
+	&__heading:first-line {
 		@media screen and (max-width: 870px) {
-			margin-bottom: $indent50;
+			line-height: 7rem;
 		}
 	}
 
@@ -21,7 +21,7 @@
 		margin-top: $indent45;
 
 		@media screen and (max-width: 870px) {
-			margin-top: 0;
+			margin-top: $indent25;
 			margin-bottom: $indent50;
 		}
 	}

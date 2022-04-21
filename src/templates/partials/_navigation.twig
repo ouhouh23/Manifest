@@ -2,13 +2,13 @@
   './index.html': 'Home',
   './about.html': 'About', 
   './blog.html': 'Blog', 
-  './contact.html': 'Contact' 
-  , './works.html': 'Works' 
+  './contact.html': 'Contact' , 
+  './works.html': 'Works' 
 } %}
 
 <nav class="navigation">
   <ul class="navigation__content">
-    {% for current, name in navigation %}
+    {% for url, name in navigation %}
       <li 
         {% if name == page %}
           class="navigation__item navigation__item_active"
@@ -16,7 +16,7 @@
           class="navigation__item" 
         {% endif %}
       >
-        <a href="{{ current }}">{{ name }}</a>
+        <a href="{{ url }}">{{ name }}</a>
       </li>
     {% endfor %}
   </ul>

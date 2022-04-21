@@ -14,7 +14,7 @@
 	&__button {
 		margin: -3.3rem auto 0;
 		color: $white;
-		grid-area: 4/1/5/3;
+		grid-area: 4 / 1 / 5 / 3;
 
 		@media screen and (max-width: 870px) {
 			margin-top: 0;
@@ -29,11 +29,11 @@
 	grid-gap: $indent34;
 
 	.posts__header {
-		grid-area: 1/1/2/4;
+		grid-area: 1 / 1 / 2 / 4;
 
 
 		@media screen and (max-width: 870px) {
-			grid-area: 1/1/2/2;
+			grid-area: 1 / 1 / 2 / 2;
 		}
 	}
 } 
@@ -43,7 +43,7 @@
 	grid-gap: $indent128 $indent40;
 
 	.posts__header {
-		grid-area: 1/1/2/3;
+		grid-area: 1 / 1 / 2 / 3;
 		margin-bottom: -4.88rem;
 		align-items: flex-start;
 		width: 50%;
@@ -51,7 +51,7 @@
 
 
 		@media screen and (max-width: 870px) {
-			grid-area: 1/1/2/2;
+			grid-area: 1 / 1 / 2 / 2;
 			margin-bottom: 0;
 			width: 100%;
 			padding-right: ($indent40/2);
@@ -63,8 +63,5 @@
 	.posts_columns, .posts_row {
 		grid-template-columns: auto;
 		row-gap: $indent50;
-		max-width: 33.7rem;
-		margin-left: auto;
-		margin-right: auto;
 	}
 }

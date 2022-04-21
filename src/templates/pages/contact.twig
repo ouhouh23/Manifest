@@ -6,7 +6,7 @@
 
 {% block content %}
   <section class="contact-us">
-    <h1 class="page-heading">Contact us</h1>
+    <h1 class="heading">Contact us</h1>
 
     <p class="contact-us__paragraph">
       If you need our help with your user account, have questions about 
@@ -15,33 +15,31 @@
     </p>
 
     <div>
-      <div class="address">
-        <h3 class="heading-secondary">Contact information</h3>
+      <h3 class="heading-secondary">Contact information</h3>
 
-        <address class="address__content">
-          <span>
-            486 Rahi street, Berlin .98 Germany
-          </span>
+      <address class="address">
+        <span>
+          486 Rahi street, Berlin .98 Germany
+        </span>
 
-          <a href="tel:+48601366816">
-            <i class="fa-solid fa-phone"></i>
+        <a href="tel:+48601366816">
+          <i class="fa-solid fa-phone"></i>
 
-            +48 601 366 816
-          </a>
+          +48 601 366 816
+        </a>
 
-           <a href="mailto:company@support.com">
-              <i class="fa-solid fa-envelope"></i>
+         <a href="mailto:company@support.com">
+            <i class="fa-solid fa-envelope"></i>
 
-              company@support.com
-          </a>
-        </address>
-      </div>
+            company@support.com
+        </a>
+      </address>
 
       <h3 class="heading-secondary">
         Follow Us
       </h3>
 
-      <div class="contact-us__social-networks  social-networks social-networks_horizontal">
+      <div class="contact-us__social-networks social-networks social-networks_horizontal">
         <a href="#">
           <i class="fa-brands fa-facebook-f"></i>
         </a>
@@ -62,17 +60,31 @@
 
     <form class="contact-us__form form indent-bottom" action="#">
       <div class="form__item">
-        <label class="form__label" for="contact-name">Name*</label>
+        <label class="form__label" for="contact-name">
+          Name*
+        </label>
 
-        <input class="form__input" type="text" name="contact-name" 
-          id="contact-name" placeholder="Walter Moss" required />
+        <input class="form__input" 
+          type="text" 
+          name="contact-name" 
+          id="contact-name" 
+          placeholder="Walter Moss" 
+          required 
+        />
       </div>
 
       <div class="form__item">
-        <label class="form__label" for="contact-email">Email*</label>
+        <label class="form__label" for="contact-email">
+          Email*
+        </label>
 
-        <input class="form__input" type="email" name="contact-email"
-          id="contact-email" placeholder="Info@manifest.com" required />
+        <input class="form__input" 
+          type="email" 
+          name="contact-email"
+          id="contact-email" 
+          placeholder="Info@manifest.com" 
+          required 
+        />
       </div>
 
       <div class="dropdown">
@@ -115,13 +127,24 @@
       </div>
 
       <div class="form__item">
-        <label class="form__label" for="contact-text">Message*</label>
+        <label class="form__label" for="contact-text">
+          Message*
+        </label>
 
-        <input class="form__input" type="text" name="contact-text"
-          id="contact-text" placeholder="Hi there..." required />
+        <input class="form__input" 
+          type="text" 
+          name="contact-text"
+          id="contact-text" 
+          placeholder="Hi there..." 
+          required 
+        />
       </div>
 
-      <input class="button button_tight form__button" type="submit" name="Send" value="Send &#8594" />
+      <input class="button button_tight form__button" 
+        type="submit" 
+        name="Send" 
+        value="Send &#8594" 
+      />
     </form>
   </section>
 {% endblock %}
