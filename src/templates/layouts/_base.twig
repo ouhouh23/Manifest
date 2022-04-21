@@ -19,7 +19,7 @@
     </a>
 
     <div class="header__navigation">
-      <input type="checkbox" class="navigation_mobile__checkbox" id="navigation-mobile-checkbox" />
+      <input type="checkbox" class="navigation__checkbox" id="navigation-mobile-checkbox" />
 
       {% include '../partials/_navigation.twig' %}
 
@@ -27,7 +27,7 @@
         <i class="fa fa-search"></i>
       </a>
 
-      <label for="navigation-mobile-checkbox" class="navigation_mobile__button">
+      <label for="navigation-mobile-checkbox" class="navigation__button">
         <svg viewBox="0 0 100 80" width="24" height="20">
           <rect width="100" height="7"></rect>
           <rect y="30" width="100" height="7"></rect>
@@ -39,6 +39,7 @@
 
   <div class="wrapper">
     {% block content %}
+       <h1>Something went wrong, please contact support.</h1>
     {% endblock %}
   </div>
 

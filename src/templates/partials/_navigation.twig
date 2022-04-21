@@ -6,15 +6,17 @@
   , './works.html': 'Works' 
 } %}
 
-<nav class="navigation navigation_mobile">
+<nav class="navigation">
   <ul class="navigation__content">
     {% for current, name in navigation %}
-      <li
+      <li 
         {% if name == page %}
-          class="is-selected"
+          class="navigation__item navigation__item_active"
+        {% else %}
+          class="navigation__item" 
         {% endif %}
       >
-        <a class="navigation__item" href="{{ current }}">{{ name }}</a>
+        <a href="{{ current }}">{{ name }}</a>
       </li>
     {% endfor %}
   </ul>

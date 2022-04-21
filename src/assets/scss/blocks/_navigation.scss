@@ -2,30 +2,18 @@
 
  	@media screen and (max-width: 870px) {
 		display: none;
- 	}
-
-	&__content {
-		display: grid;
-		grid-template-columns: auto auto auto auto auto;
-		grid-gap: $indent50;
-	}
-
-	&__item {
-		@include font-style($size: $font-16, $heights: $font-height-16, $spacing: 3px);
-	}
-}
-
-.navigation_mobile {
-
-	@media screen and (max-width: 870px) {
 		position: absolute;
 		right: 0;
 		top: 2rem;
 		padding: $indent40 $indent65;
-		background: $gray100;	 	
-	}
+		background: $gray100;
 
-	&__button {
+		&__checkbox:checked + & {
+			display: block;
+		}
+ 	}
+
+ 	&__button {
 		display: none;
 		margin-left: $indent10;
 		cursor: pointer;
@@ -35,19 +23,38 @@
 		}
 	}
 
+
 	&__checkbox {
 		display: none;
 	}
 
-	@media screen and (max-width: 870px) {
-		&__checkbox:checked + & {
-			display: block;
-		}
+	&__content {
+		display: grid;
+		grid-template-columns: auto auto auto auto auto;
+		grid-gap: $indent50;
 
-		.navigation__content {
+		@media screen and (max-width: 870px) {
 			grid-template-columns: auto;
+
 		}
 	}
-}
 
+	&__item {
+		@include font-style($size: $font-16, $heights: $font-height-16, $spacing: 3px);
+	}
+
+	&__item_active {
+		@include flexbox($direction: column, $align: center);
+  
+		margin-bottom: -2px;
+
+		&:after {
+			content: ('');
+			display: inline-block;
+			width: 35px;
+			height: 2px;
+			background: $black;
+  		}
+  	}  	
+}
 
