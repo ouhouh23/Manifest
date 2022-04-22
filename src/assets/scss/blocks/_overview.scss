@@ -1,35 +1,17 @@
 .overview {
+	display: grid;
+	grid-template-columns: 50% 40%;
+	grid-gap: $indent65;
+	justify-content: space-between;
 
-	&__caption {
-		@include font-style($heights: $font-height-26);
-	}
-
-	&__heading {
-		margin-top: $indent50;
-		margin-bottom: $indent65;
-	}
-
-	&__content {
-		display: grid;
-		grid-template-columns: 50% 40%;
-		grid-gap: $indent65;
-		justify-content: space-between;
-
-		@media screen and (max-width: 870px) {
-			grid-template-columns: auto;
-		}
+	@media screen and (max-width: 870px) {
+		grid-template-columns: auto;
 	}
 
 	&__text {
 		align-self: start;
 		display: grid;
 		row-gap: $indent40;
-	}
-
-	&__paragraph {
-		@include font-style($size: $font-19, $spacing: 0.5px);
-
-		color: $gray700;
 	}
 
 	&__information {
@@ -47,9 +29,4 @@
 		@include font-style($size: $font-19, $spacing: 0.5px);
 		color: $gray700;
 	}
-
-	&__section {
-		display: grid;
-		row-gap: $indent45;
-	} 
 }

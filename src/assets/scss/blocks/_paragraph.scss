@@ -1,0 +1,9 @@
+.paragraph {
+	color: $gray700;
+
+	@include font-style($size: $font-19, $spacing: 0.5px);
+}
+
+.paragraph_indented {
+	margin-top: $indent50;
+}

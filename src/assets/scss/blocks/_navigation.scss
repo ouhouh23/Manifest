@@ -30,11 +30,11 @@
 
 	&__content {
 		display: grid;
-		grid-template-columns: auto auto auto auto auto;
+		grid-auto-flow: column;
 		grid-gap: $indent50;
 
 		@media screen and (max-width: 870px) {
-			grid-template-columns: auto;
+			grid-auto-flow: row;
 
 		}
 	}

@@ -2,10 +2,8 @@
 
 {% set page = 'Works' %}
 
-{% block title %}{{page}}{% endblock %}
-
 {% block content %}
-  <section class="overview">
+  <section>
     <div class="tag">
       CASE STUDY
     </div>
@@ -13,21 +11,21 @@
     <h1 class="heading">AI Fashion Platform</h1>
 
     <picture>
-      <source class="hero-image indent-bottom"
+      <source class="image-primary indent-bottom"
         media="(min-width: 600px)"
         srcset="img/wall-wide.png"
         width="1120" 
         height="470" 
       />
 
-      <source class="hero-image indent-bottom"
+      <source class="image-primary indent-bottom"
         media="(max-width: 600px)"
         srcset="img/wall.webp"
         width="568" 
         height="568" 
       /> 
 
-      <img class="hero-image indent-bottom" 
+      <img class="image-primary indent-bottom" 
         src="img/wall-wide.png" 
         alt="image with a wall" 
         width="1120" 
@@ -35,17 +33,17 @@
       /> 
     </picture>
 
-    <div class="overview__content indent-bottom">
+    <div class="overview indent-bottom">
       <div class="overview__text">
         <h3 class="heading-secondary">Project Overview</h3>
 
-        <p class="overview__paragraph">
+        <p class="paragraph">
           FashHanger is a bespoke sustainable high-fashion accessory company based out of Berlin,
           currently operated by Siesly and her sister Ashely. They needed help for a big rebrand 
           and wanted to relaunch their website.
         </p>
 
-        <p class="overview__paragraph">
+        <p class="paragraph">
           Their goals were simple, create a unique e-commerce store that bring a wonderful 
           shopping experience at every stage of the buyer’s journey.
         </p>
@@ -77,43 +75,46 @@
         <div>
           <span class="overview__item">Deliverables</span>
 
-          <small class="overview__item overview__item_small">
+          <small class="overview__item">
             www.fashhanger.com
           </small>
         </div>
       </div>
     </div>
 
-    <div class="overview__section indent-bottom">
+    <div class="indent-bottom">
       <h3 class="heading-secondary">
         User Research and Personas
       </h3>
 
       <picture>
-        <source media="(min-width: 600px)" 
+        <source class="image-secondary"
+          media="(min-width: 600px)" 
           srcset="img/roof-wide.png"
           width="1120" 
           height="470" 
         />
 
-        <source media="(max-width: 600px)" 
+        <source class="image-secondary"
+          media="(max-width: 600px)" 
           srcset="img/roof-mobile.png"
           width="568" 
           height="568" 
         /> 
 
-        <img  src="img/roof-wide.png"
+        <img class="image-secondary"
+          src="img/roof-wide.png"
           alt="image with roof" 
           width="1120" 
           height="470" 
         />
       </picture>
 
-      <p class="overview__paragraph">
+      <p class="paragraph paragraph_indented">
         Who is your user? Indicate her KEY personality traits and help round out her overall image.
       </p>
 
-      <p class="overview__paragraph">
+      <p class="paragraph paragraph_indented">
         Originally, the personality section of this persona was based off the Myers Briggs personality 
         test. According to the Myers Briggs, there are 16 potential user personality types. 
         Our template integrates questions from this online personality test example into a series of 
@@ -122,36 +123,39 @@
       </p>
     </div>
 
-    <div class="overview__section indent-bottom">
+    <div class="indent-bottom">
       <h3 class="heading-secondary">
         Initial Sketches
       </h3>
 
       <picture>
-        <source media="(min-width: 600px)" 
+        <source class="image-secondary"
+          media="(min-width: 600px)" 
           srcset="img/windows-wide.png"
           width="1120" 
           height="470" 
         />
 
-        <source media="(max-width: 600px)" 
+        <source class="image-secondary"
+          media="(max-width: 600px)" 
           srcset="img/windows.webp"
           width="568" 
           height="568" 
         /> 
 
-        <img src="img/windows-wide.png"
+        <img class="image-secondary"
+          src="img/windows-wide.png"
           alt="image with roof" 
           width="1120" 
           height="470" 
         />
       </picture>
 
-      <p class="overview__paragraph">
+      <p class="paragraph paragraph_indented">
         In the beginning, It’s just about brainstorming.
       </p>
 
-      <p class="overview__paragraph">
+      <p class="paragraph paragraph_indented">
         I list out a jumble of words and draw tiny sketches related to what I’m working on 
         (and find the parallels later). Personally, I prefer paper with a grid so I can 
         convey things responsively. Most of the time perfection isn’t an issue and 
@@ -159,32 +163,35 @@
       </p>
     </div>
 
-    <div class="overview__section indent-bottom">
+    <div class="indent-bottom">
       <h3 class="heading-secondary">
         Final design
       </h3>
 
       <picture>
-        <source media="(min-width: 600px)" 
+        <source class="image-secondary"
+          media="(min-width: 600px)" 
           srcset="img/flashlight-wide.png"
           width="1120" 
           height="470" 
         />
 
-        <source media="(max-width: 600px)" 
+        <source class="image-secondary"
+          media="(max-width: 600px)" 
           srcset="img/flashlight.png"
           width="568" 
           height="568" 
         /> 
 
-        <img src="img/flashlight-wide.png"
+        <img class="image-secondary" 
+          src="img/flashlight-wide.png"
           alt="image with roof" 
           width="1120" 
           height="470" 
         />
       </picture>
 
-      <p class="overview__paragraph">
+      <p class="paragraph paragraph_indented">
         I played with adding a wireframe of the website flow that would lead you 
         in to each screen. For each of those screens I added a floating footer 
         that allows users to see where they are in that particular flow and jump 
