@@ -1,30 +1,40 @@
 .form {
+	display: grid;
+	grid-gap: $indent50;
+
 	&__requrement {
+		margin-top: -3.12rem;
+		margin-bottom: $indent16;
 		color: $gray500;
+
+		@media screen and (max-width: 870px) {
+			margin-top: -1.56rem;
+			margin-bottom: $indent40;
+		}
 	}
 
 	&__group {
-		margin-top: $indent65;
 		display: grid;
 		grid-template-columns: auto auto auto;
 		grid-gap: $indent40;
 
 		@media screen and (max-width: 1160px) {
 			grid-template-columns: auto;
+			grid-gap: $indent25;
 		}
 	}
 
-	&__item {
-		display: grid;
-	}
-
 	&__label {
+		color: $gray700;
+
 		@include font-style($heights: $font-height-26, $spacing: 0.5px);
 
-		color: $gray700;
+		
 	}
 
 	&__input {
+		display: block;
+		width: 100%;
 		margin-top: $indent16;
 		border: none;
 		border-bottom: 1px solid $black;
@@ -33,7 +43,6 @@
 	}
 
 	&__item_checkbox {
-		margin: $indent50 0;
 		opacity: 0.8;
 
 		@include flexbox($align: center);
@@ -44,6 +53,20 @@
 	}
 
 	&__button {
-		margin-top: $indent25;
+		margin-top: $indent16;
+	}
+}
+
+.blog__form .form__button {
+	margin-top: -1.56rem;
+
+	@media screen and (max-width: 870px) {
+		margin-top: 0;
+	}
+}
+
+.form_mobile {
+	@media screen and (max-width: 870px) {
+		grid-gap: $indent25;
 	}
 }
