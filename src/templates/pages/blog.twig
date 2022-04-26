@@ -43,45 +43,33 @@
     </div>
 
     <div class="posts posts_columns indent-bottom">
-      <div class="posts__header dropdown">
-        <h4>
+      <div class="posts__header">
+        <label class="posts__label" for="form-select">
           Categories:
-        </h4>
-        <div class="dropdown__content">
-          <label for="dropdown-checkbox" class="dropdown__button">
-            <span>
+        </label>
+
+        <div class="select">
+          <select class="select__body" id="form-select">
+            <option value="" hidden>
               Interaction Design
-            </span>
+            </option>
 
-            <span class="dropdown__arrow">❯</span>
-          </label>
+            <option value="1">
+              All categories
+            </option>
 
-          <input type="checkbox" 
-            name="checkbox" 
-            class="dropdown__checkbox" 
-            id="dropdown-checkbox" />
+            <option value="2">
+              Digital interface
+            </option>
 
-          <ul class="dropdown__items">
-            <li>
-              <a class="dropdown__item" href="#">All categories
-              </a>
-            </li>
+            <option value="3">
+              Visual Design
+            </option>
 
-            <li>
-              <a class="dropdown__item" href="#">Digital Interface
-              </a>
-            </li>
-
-            <li>
-              <a class="dropdown__item" href="#">Visual Design
-              </a>
-            </li>
-
-            <li>
-              <a class="dropdown__item" href="#"> Human computer interaction
-              </a>
-            </li>
-          </ul>
+            <option value="4">
+              Human computer interaction   
+            </option>
+          </select>
         </div>
       </div>
 
