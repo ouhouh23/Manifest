@@ -1,125 +1,54 @@
 .post {
-	@include flexbox($direction: column);
-	
-	&__caption {
-		@include flexbox($justify: space-between);
-
-		margin-top: $indent25;
-		margin-bottom: $indent25;
-	}
-
-	&__category, &__date, &__comments {
-		color: $gray500;
-
-		@include font-style($size: $font-16, $heights: $font-height-20, $spacing: 1px);
-	}
-
-	&__heading {
-		margin-bottom: $indent25;
-	}
-
-	&__paragraph {
-	  margin-top: auto;
-	  color: $gray700;
-
-	  @include font-style($heights: $font-height-26, $spacing: 1px);	
-	}
-
-	&__comments {
-		margin-left: $indent40;
-
-		@media screen and (max-width: 600px) {
-			display: block;
-			margin: $indent10 0 0 0;
-		}
-	}
-}
-
-.post_primary {
-	@include flexbox;
-
-	margin-top: $indent100;
-	margin-bottom: $indent115;
+	padding-left: $indent195;
+	padding-right: $indent195;
 
 	@media screen and (max-width: 870px) {
-		flex-direction: column;
-		align-items: center;
-		margin-top: $indent65;
-		margin-bottom: $indent65;
+		padding: 0;
 	}
 
-	.post__image {
-		max-width: 50%;
+	&__author {
+		@include flexbox($align: center);
 
-		@media screen and (max-width: 870px) {
-			max-width: 100%;
-			margin-bottom: $indent16;
-		}
+		font-size: $font-16;
+		margin-bottom: $indent40;
 	}
 
-	.post__text {
-		@include flexbox($direction: column);
-
-		margin-left: $indent70;
+	&__header {
+		margin-left: -7rem;
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-gap: 5.6rem;
 
 		@media screen and (max-width: 870px) {
 			margin-left: 0;
+			grid-template-columns: auto;
+			grid-gap: $indent40;
 		}
 	}
 
-	.post__category {
-		margin-top: auto;
-		order: 1;	
+	&__paragraph {
+		@include font-style ($size: $font-19, $heights: $font-height-32, $spacing: 0.5px);
+
+		color: $black;
+		margin-bottom: $indent34;
 	}
 
-	.post__heading {
-		order: 2;
-		margin-top: $indent25;
-		margin-bottom: $indent16;
+	&__points {
+		display: grid;
+		grid-gap: $indent34;
+
+		@include font-style ($size: $font-19, $heights: $font-height-32, $spacing: 0.5px);
+
+		list-style-type: disc;
+		padding-left: $indent40;
 	}
 
-	.post__date {
-		order: 3;
-	}
-
-	.post__paragraph {
-		order: 4;
-		margin-top: $indent50;
+	&__form {
+		margin: $indent100 0;
 
 		@media screen and (max-width: 870px) {
-			margin-top: $indent16;
-			margin-bottom: $indent65;
-		}
-	}
-
-	.post__link {
-		vertical-align: text-top;
-	}
-
-	.post__pagination {
-		order: 5;
-		margin-top: auto;
-		margin-right: auto;
-	}
-}
-
-.post_opened {
-	.post__heading {
-		margin-top: $indent25;
-		margin-bottom: $indent45;
-
-		@media screen and (max-width: 600px) {
-			margin-top: $indent16;
-			margin-bottom: $indent16;
-		}
-	}
-
-	.post__image {
-		margin-top: $indent65;
-		margin-bottom: $indent40;
-
-		@media screen and (max-width: 600px) {
-			margin-top: $indent40;
+			margin-top: $indent65;
 		}
 	}
 }
+

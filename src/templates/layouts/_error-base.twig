@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  
+  <title>{% block title %}{{page}}{% endblock %}</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="css/main.css" />
+
+</head>
+
+<body>
+  <section class="wrapper error">
+    <header class="indent-bottom">
+      <a href="#">
+        <img src="img/logo.png" alt="Site logo" width="135" height="12" />
+      </a>
+    </header>
+
+    {% block content %}
+       <h1>Something went wrong, please contact support.</h1>
+    {% endblock %}
+
+    <a class="button button_tight error__button" href="index.html">
+      &#8592 Go Home
+    </a>
+
+    <div class="social-networks social-networks_horizontal error__social-networks">
+      <a href="#">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+
+      <a href="#">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+
+      <a href="#">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+
+      <a href="#">
+        <i class="fa-brands fa-dribbble"></i>
+      </a>
+    </div>    
+  </section>
+</body>
+</html>

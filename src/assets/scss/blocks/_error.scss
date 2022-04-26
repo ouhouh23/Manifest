@@ -1,10 +1,7 @@
 .error {
 	margin-top: $indent100;
 	margin-bottom: 13.5rem;
-
-	&__header, &__content {
-		text-align: center;
-	}
+	text-align: center;
 
 	&__heading {
 		@include font-style($size: 8.5rem, $weight: $font-bold, $heights: 11.5rem, $spacing: 7px);

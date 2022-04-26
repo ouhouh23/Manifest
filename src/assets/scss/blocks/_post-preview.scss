@@ -1,0 +1,119 @@
+.post-preview {
+	@include flexbox($direction: column);
+	
+	&__caption {
+		@include flexbox($justify: space-between);
+
+		margin-top: $indent25;
+		margin-bottom: $indent25;
+	}
+
+	&__category, &__date, &__comments {
+		color: $gray500;
+
+		@include font-style($size: $font-16, $heights: $font-height-20, $spacing: 1px);
+	}
+
+	&__heading {
+		margin-bottom: $indent25;
+	}
+
+	&__paragraph {
+	  margin-top: auto;
+	  color: $gray700;
+
+	  @include font-style($heights: $font-height-26, $spacing: 1px);	
+	}
+
+	&__comments {
+		margin-left: $indent40;
+
+		@media screen and (max-width: 600px) {
+			display: block;
+			margin: $indent10 0 0 0;
+		}
+	}
+}
+
+.post-preview_primary {
+	@include flexbox;
+
+	margin-top: $indent100;
+	margin-bottom: $indent115;
+
+	@media screen and (max-width: 870px) {
+		flex-direction: column;
+		align-items: center;
+		margin-top: $indent65;
+		margin-bottom: $indent65;
+	}
+
+	.post-preview__text {
+		max-width: 50%;
+		margin-left: $indent70;
+
+		@include flexbox($direction: column);
+
+		@media screen and (max-width: 870px) {
+			max-width: 100%;
+			margin-top: $indent16;
+			margin-left: 0;
+		}
+	}
+
+	.post-preview__category {
+		margin-top: auto;
+		order: 1;	
+	}
+
+	.post-preview__heading {
+		order: 2;
+		margin-top: $indent25;
+		margin-bottom: $indent16;
+	}
+
+	.post-preview__date {
+		order: 3;
+	}
+
+	.post-preview__paragraph {
+		order: 4;
+		margin-top: $indent50;
+
+		@media screen and (max-width: 870px) {
+			margin-top: $indent16;
+			margin-bottom: $indent65;
+		}
+	}
+
+	.post-preview__link {
+		vertical-align: text-top;
+	}
+
+	.post-preview__pagination {
+		order: 5;
+		margin-top: auto;
+		margin-right: auto;
+	}
+}
+
+.post-preview_full {
+	.post-preview__heading {
+		margin-top: $indent25;
+		margin-bottom: $indent45;
+
+		@media screen and (max-width: 600px) {
+			margin-top: $indent16;
+			margin-bottom: $indent16;
+		}
+	}
+
+	.post-preview__image {
+		margin-top: $indent65;
+		margin-bottom: $indent40;
+
+		@media screen and (max-width: 600px) {
+			margin-top: $indent40;
+		}
+	}
+}
