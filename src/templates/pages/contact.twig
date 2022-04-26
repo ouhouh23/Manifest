@@ -85,45 +85,29 @@
         />
       </div>
 
-      <div class="dropdown">
-        <label for="contact-checkbox" class="dropdown__button">
-          <span>
+      <div class="select">
+        <select class="select__body">
+          <option value="" hidden>
             Reason for contact
-          </span>
+          </option>
 
-          <span class="dropdown__arrow">❯</span>
-        </label>
+          <option value="1">
+            Know about the product
+          </option>
 
-        <input type="checkbox" name="checkbox" 
-          class="dropdown__checkbox"/ id="contact-checkbox" />
+          <option value="2">
+            Need help or assistance
+          </option>
 
-        <ul class="dropdown__items">
-          <li>
-            <a class="dropdown__item" href="#">
-              Know about the product
-            </a>
-          </li>
+          <option value="3">
+            Have a complaint
+          </option>
 
-          <li>
-            <a class="dropdown__item" href="#">
-              Need help or assistance
-            </a>
-          </li>
-
-          <li>
-            <a class="dropdown__item" href="#">
-              Have a complaint
-            </a>
-          </li>
-
-          <li>
-            <a class="dropdown__item" href="#">
-              Other
-            </a>
-          </li>
-        </ul>
+          <option value="4">
+            Other   
+          </option>
+        </select>
       </div>
-
       <div>
         <label class="form__label" for="contact-text">
           Message*

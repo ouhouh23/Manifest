@@ -1,0 +1,27 @@
+.select {
+	position: relative;
+
+	&__body {
+		width: 100%;
+		appearance: none;
+		outline: none;
+		color: $gray700;
+		padding-bottom: 1rem;
+		border: none;
+		border-bottom: 1px solid $black;
+
+		@include font-style($heights: $font-height-26);
+	}
+
+	&:after {
+		position: absolute;
+		right: 0;
+		top: 0.7rem;
+		width: 1.25rem;
+		height: 1.25rem;
+		content: '❯';
+		transform: rotate(90deg);
+		pointer-events: none;
+		color: $gray700;
+	}
+}
