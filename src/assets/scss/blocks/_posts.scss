@@ -1,5 +1,7 @@
 .posts {
 	display: grid;
+	grid-template-columns: auto;
+	row-gap: $indent-50;
 
 	&__header {
 		@include flexbox($justify: space-between, $align: center);
@@ -12,71 +14,60 @@
 	}
 
 	&__button {
-		margin: -3.3rem auto 0;
+		margin: 0 auto;
 		color: $white;
-		grid-area: 4 / 1 / 5 / 3;
 
-		@media screen and (max-width: 870px) {
-			margin-top: 0;
-			grid-area: auto;
+		@media screen and (min-width: 870px) {
+			margin-top: -3.3rem;
+			grid-area: 4 / 1 / 5 / 3;
 		}
 	}
 
 	&__label {
 		margin-right: $indent-40;
+		margin-bottom: $indent-25;
 
 		@include font-style($heights: $font-height-26);
 
-		@media screen and (max-width: 600px) {
-			margin-bottom: $indent-25;
+		@media screen and (min-width: 600px) {
+			margin-bottom: 0;
 		}
 	}
 }
 
 .posts_row {
-	grid-template-columns: 30% 30% 30%;
-	justify-content: space-between;
-	grid-gap: $indent-34;
+	@media screen and (min-width: 870px) {
+		grid-template-columns: 30% 30% 30%;
+		justify-content: space-between;
+		grid-gap: $indent-34;
+	}
 
 	.posts__header {
-		grid-area: 1 / 1 / 2 / 4;
+		grid-area: 1 / 1 / 2 / 2;
 
-
-		@media screen and (max-width: 870px) {
-			grid-area: 1 / 1 / 2 / 2;
+		@media screen and (min-width: 870px) {
+			grid-area: 1 / 1 / 2 / 4;
 		}
 	}
 } 
 
 .posts_columns {
-	grid-template-columns: 48% 48%;
-	grid-gap: $indent-128 $indent-40;
+	@media screen and (min-width: 870px) {
+		grid-template-columns: 48% 48%;
+		grid-gap: $indent-128 $indent-40;
+	}
 
 	.posts__header {
-		grid-area: 1 / 1 / 2 / 3;
-		margin-bottom: -4.88rem;
+		display: flex;
+		flex-direction: column;
 		align-items: baseline;
-		width: 50%;
-		padding-right: ($indent-40/2);
 
-
-		@media screen and (max-width: 870px) {
-			grid-area: 1 / 1 / 2 / 2;
-			margin-bottom: 0;
-			width: 100%;
-			padding-right: 0;
+		@media screen and (min-width: 870px) {
+			flex-direction: row;
+			grid-area: 1 / 1 / 2 / 3;
+			margin-bottom: -4.88rem;
+			width: 50%;
+			padding-right: ($indent-40/2);
 		}
-
-		@media screen and (max-width: 600px) {
-			display: flex;
-			flex-direction: column;
-		}
-	}
-}
-
-@media screen and (max-width: 870px) {
-	.posts_columns, .posts_row {
-		grid-template-columns: auto;
-		row-gap: $indent-50;
 	}
 }

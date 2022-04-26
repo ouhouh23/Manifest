@@ -1,23 +1,24 @@
 .wrapper {
+	@extend %padding-mobile;
+
 	max-width: 1200px;
 	width: 100%;
-	@extend %padding-desktop;
-	margin: 0 auto;  
+	margin: 0 auto;
+
+	@media screen and (min-width: 600px)  {
+    padding-left: $indent-40;
+    padding-right: $indent-40;		
+	}
 }
 
-@media screen and (max-width: 600px) {
-  .wrapper {
-    padding-left: $indent-16;
-    padding-right: $indent-16;
-  }
-}
 .wrapper_tablet {
-
-  @media screen and (max-width: 870px) {
 		max-width: 33.7rem;
 		margin-left: auto;
 		margin-right: auto;
-	}
+
+  	@media screen and (min-width: 870px) {
+			max-width: 100%;
+		}
 }
 
 .header {
@@ -40,32 +41,32 @@
 .footer {
 	margin-top: auto;
 	background: $gray-100;
-	padding-top: $indent-128;
-	padding-bottom: $indent-128;
+	padding-top: $indent-65;
+	padding-bottom: $indent-65;
 
-	@media screen and (max-width: 870px) {
-		padding-top: $indent-65;
-		padding-bottom: $indent-65;
+	@media screen and (min-width: 870px) {
+		padding-top: $indent-128;
+		padding-bottom: $indent-128;
 	}
 
 	&__content {
-	  @include flexbox($justify: space-between, $align: center);
+	  @include flexbox($direction: column, $justify: space-between, $align: flex-start);
 
-	  @media screen and (max-width: 870px) {
-		flex-direction: column;
-		align-items: flex-start;
+	  @media screen and (min-width: 870px) {
+			flex-direction: row;
+			align-items: center;
 	  }  
 	}
 
 	&__social-networks {
 		align-self: stretch;
+		letter-spacing: 2px;
+		margin: $indent-50 0;
 		
 		@include flexbox($direction: column, $justify: space-between);
 
-		letter-spacing: 2px;
-
-		@media screen and (max-width: 870px) {
-		  margin: $indent-50 0;
+		@media screen and (min-width: 870px) {
+		  margin: 0;
 		}
 	}
 

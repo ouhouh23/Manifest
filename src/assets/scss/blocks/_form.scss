@@ -3,24 +3,24 @@
 	grid-gap: $indent-50;
 
 	&__requrement {
-		margin-top: -3.12rem;
-		margin-bottom: $indent-16;
+		margin-top: -1.56rem;
+		margin-bottom: $indent-40;
 		color: $gray-500;
 
-		@media screen and (max-width: 870px) {
-			margin-top: -1.56rem;
-			margin-bottom: $indent-40;
+		@media screen and (min-width: 870px) {
+			margin-top: -3.12rem;
+			margin-bottom: $indent-16;
 		}
 	}
 
 	&__group {
 		display: grid;
-		grid-template-columns: auto auto auto;
-		grid-gap: $indent-40;
-
-		@media screen and (max-width: 1160px) {
-			grid-template-columns: auto;
-			grid-gap: $indent-25;
+		grid-template-columns: auto;
+		grid-gap: $indent-25;
+		
+		@media screen and (min-width: 1160px) {
+			grid-template-columns: auto auto auto;
+			grid-gap: $indent-40;
 		}
 	}
 
@@ -28,8 +28,6 @@
 		color: $gray-700;
 
 		@include font-style($heights: $font-height-26, $spacing: 0.5px);
-
-		
 	}
 
 	&__input {
@@ -57,16 +55,17 @@
 	}
 }
 
-.blog__form .form__button {
-	margin-top: -1.56rem;
+.post__form .form__button {
 
-	@media screen and (max-width: 870px) {
-		margin-top: 0;
+	@media screen and (min-width: 870px) {
+		margin-top: -1.56rem;
 	}
 }
 
 .form_mobile {
-	@media screen and (max-width: 870px) {
-		grid-gap: $indent-25;
+	grid-gap: $indent-25;
+
+	@media screen and (min-width: 870px) {
+		grid-gap: $indent-50;
 	}
 }

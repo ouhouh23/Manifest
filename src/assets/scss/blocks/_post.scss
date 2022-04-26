@@ -1,53 +1,49 @@
 .post {
-	padding-left: $indent-195;
-	padding-right: $indent-195;
-
-	@media screen and (max-width: 870px) {
-		padding: 0;
+	@media screen and (min-width: 870px) {
+		padding-left: $indent-195;
+		padding-right: $indent-195;
 	}
 
 	&__author {
-		@include flexbox($align: center);
-
 		font-size: $font-16;
 		margin-bottom: $indent-40;
+
+		@include flexbox($align: center);
 	}
 
 	&__header {
-		margin-left: -7rem;
 		display: grid;
-		grid-template-columns: auto auto;
-		grid-gap: 5.6rem;
+		grid-template-columns: auto;
+		grid-gap: $indent-40;
 
-		@media screen and (max-width: 870px) {
-			margin-left: 0;
-			grid-template-columns: auto;
-			grid-gap: $indent-40;
+		@media screen and (min-width: 870px) {
+			margin-left: -7rem;
+			grid-template-columns: auto auto;
+			grid-gap: 5.6rem;
 		}
 	}
 
 	&__paragraph {
-		@include font-style ($size: $font-19, $heights: $font-height-32, $spacing: 0.5px);
-
 		color: $black;
 		margin-bottom: $indent-34;
+
+		@include font-style ($size: $font-19, $heights: $font-height-32, $spacing: 0.5px);
 	}
 
 	&__points {
 		display: grid;
 		grid-gap: $indent-34;
-
-		@include font-style ($size: $font-19, $heights: $font-height-32, $spacing: 0.5px);
-
 		list-style-type: disc;
 		padding-left: $indent-40;
+
+		@include font-style ($size: $font-19, $heights: $font-height-32, $spacing: 0.5px);
 	}
 
 	&__form {
-		margin: $indent-100 0;
+		margin-top: $indent-65;
 
-		@media screen and (max-width: 870px) {
-			margin-top: $indent-65;
+		@media screen and (min-width: 870px) {
+			margin: $indent-100 0;
 		}
 	}
 }

@@ -1,17 +1,12 @@
 .heading {
-	@include font-style($size: $font-48, $heights: $font-height-64);
-	max-width: 65%;
-}
+	@include font-style($size: $font-33, $heights: 3rem);
 
-@media screen and (max-width: 870px) {
-	.heading {
-		max-width: 100%;
+	@media screen and (min-width: 870px) {
+		max-width: 65%;
 	}
-}
 
-@media screen and (max-width: 600px) {
-	.heading {
-		font-size: $font-33;
-		line-height: 3rem;
+	@media screen and (min-width: 600px) {
+		font-size: $font-48;
+		line-height: $font-height-64;
 	}
 }

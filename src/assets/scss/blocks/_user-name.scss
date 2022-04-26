@@ -1,6 +1,6 @@
 .user-name {
-	@include font-style($size: $font-19);
-	
 	color: $black;
 	margin-right: $indent-25;
+
+	@include font-style($size: $font-19);
 }

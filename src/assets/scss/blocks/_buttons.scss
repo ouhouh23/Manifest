@@ -2,9 +2,10 @@
 	display: inline-block;
 	background: $gray-700;
 	color: $white;
-	@include font-style($heights: $font-height-26, $weight: $font-bold);
 	width: fit-content;
 	white-space: nowrap;
+
+	@include font-style($heights: $font-height-26, $weight: $font-bold);
 
 	&_tight {
 		padding: $indent-10 $indent-34;

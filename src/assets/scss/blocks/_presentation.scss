@@ -1,9 +1,9 @@
 .presentation {
 	display: grid;
-	grid-template-columns: 60% 40%;
+	grid-template-columns: auto;
 
-	@media screen and (max-width: 870px) {
-		grid-template-columns: auto;
+	@media screen and (min-width: 870px) {
+		grid-template-columns: 60% 40%;
 	}
 
 	&__header {
@@ -11,18 +11,20 @@
 	}
 
 	&__heading:first-line {
-		@media screen and (max-width: 870px) {
-			line-height: 7rem;
+		line-height: 7rem;
+
+		@media screen and (min-width: 870px) {
+			line-height: $font-height-38;
 		}
 	}
 
 	&__link {
 		display: block;
-		margin-top: $indent-45;
+		margin-top: $indent-25;
+		margin-bottom: $indent-50;
 
 		@media screen and (max-width: 870px) {
-			margin-top: $indent-25;
-			margin-bottom: $indent-50;
+			margin-top: $indent-45;
 		}
 	}
 

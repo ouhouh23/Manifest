@@ -4,27 +4,28 @@
 	text-align: center;
 
 	&__heading {
-		@include font-style($size: 8.5rem, $weight: $font-bold, $heights: 11.5rem, $spacing: 7px);
-
 		color: $gray-300;
+
+		@include font-style($size: 8.5rem, $weight: $font-bold, $heights: 11.5rem, $spacing: 7px);
 	}
 
 	&__paragraph {
+		color: $gray-700;
+		margin-top: $indent-50;
+		margin-bottom: $indent-65;
+
 		@include font-style($size: $font-23, $heights: $font-height-38);
 
-		color: $gray-700;
-		margin-bottom: $indent-50;
-
-		@media screen and (max-width: 600px) {
-			margin-top: $indent-50;
-			margin-botton: $indent-65;	
+		@media screen and (min-width: 600px) {
+			margin-top: 0;
+			margin-bottom: $indent-50;
 		}
 	}
 
 	&__caption {
-		@include font-style($size: $font-33, $heights: 3.12rem);
-
 		color: $gray-300;
+
+		@include font-style($size: $font-33, $heights: 3.12rem);
 	}
 
 	&__button {

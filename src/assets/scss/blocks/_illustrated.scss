@@ -1,23 +1,23 @@
 .illustrated {
 	display: grid;
-	grid-template-columns: 30% 49%;
+	grid-template-columns: auto;
 	grid-gap: $indent-45;
-	justify-content: space-between;
+	justify-content: center;
 	margin-bottom: $indent-50;
 
 	&:last-child { 
 	  margin-bottom:0;
 	}
 
-	@media screen and (max-width: 870px)  {
-		grid-template-columns: auto;
-		justify-content: center;
+	@media screen and (min-width: 870px)  {
+		grid-template-columns: 30% 49%;
+		justify-content: space-between;
 	}
 
 	&__paragraph {
-		@include font-style($size: $font-19, $heights: $font-height-32, $spacing: 0.5px);
-
 		color: $black;
+
+		@include font-style($size: $font-19, $heights: $font-height-32, $spacing: 0.5px);
 	}
 
 	&__break {
@@ -44,16 +44,18 @@
 	}
 
 	&__image {
-		@media screen and (max-width: 870px) {
-			grid-area: 1 / 1 / 2 / 2;
+		grid-area: 1 / 1 / 2 / 2;
+
+		@media screen and (min-width: 870px) {
+			grid-area: auto;
 		}
 	}  
 }
 
 .illustrated_top {
-	margin-bottom: $indent-70;
+	margin-bottom: $indent-50;
 
-	@media screen and (max-width: 870px) {
-		margin-bottom: $indent-50;
+	@media screen and (min-width: 870px) {
+		margin-bottom: $indent-70;
 	}
 }

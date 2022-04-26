@@ -14,12 +14,12 @@
  	}
 
  	&__button {
-		display: none;
+		display: block;
 		margin-left: $indent-10;
 		cursor: pointer;
 
-		@media screen and (max-width: 870px) {
-			display: block;
+		@media screen and (min-width: 870px) {
+			display: none;
 		}
 	}
 
@@ -30,11 +30,11 @@
 
 	&__content {
 		display: grid;
-		grid-auto-flow: column;
+		grid-auto-flow: row;
 		grid-gap: $indent-50;
 
-		@media screen and (max-width: 870px) {
-			grid-auto-flow: row;
+		@media screen and (min-width: 870px) {
+			grid-auto-flow: column;
 
 		}
 	}
@@ -44,9 +44,9 @@
 	}
 
 	&__item_active {
-		@include flexbox($direction: column, $align: center);
-  
 		margin-bottom: -2px;
+		
+		@include flexbox($direction: column, $align: center);
 
 		&:after {
 			content: ('');

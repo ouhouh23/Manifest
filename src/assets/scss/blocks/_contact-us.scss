@@ -1,17 +1,20 @@
 .contact-us {
 	display: grid;
-	grid-template-columns: 35% 45%;
-	grid-gap: $indent-128 $indent-25;
+	grid-template-columns: auto;
+	grid-gap: $indent-65;
 	justify-content: space-between;
 
-	@media screen and (max-width: 600px) {
+	@media screen and (min-width: 600px) {
 		grid-template-columns: auto;
 		grid-gap: $indent-65;
+		grid-template-columns: 35% 45%;
+		grid-gap: $indent-128 $indent-25;
 	}
 
 	&__paragraph {
-		@include font-style($size: $font-19, $spacing: 0.5px);
 		color: $gray-700;
+
+		@include font-style($size: $font-19, $spacing: 0.5px);
 	}
 
 	&__social-networks {

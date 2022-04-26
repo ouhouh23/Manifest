@@ -3,10 +3,10 @@
 	grid-auto-flow: column;
 	grid-gap: $indent-34;
 	justify-content: center;
-	width: 69rem;
+	width: 34rem;
 
-	@media screen and (max-width: 600px) {
-		width: 34rem;
+	@media screen and (min-width: 600px) {
+		width: 69rem;
 	}
 
 	&__caption {
@@ -17,12 +17,12 @@
 	}
 
 	&__image {
-		max-width: 34rem;
-		height: 34rem;
+		max-width: 16rem;
+		height: auto;
 
-		@media screen and (max-width: 600px) {
-			max-width: 16rem;
-			height: auto;
+		@media screen and (min-width: 600px) {
+			max-width: 34rem;
+			height: 34;
 		}
 	}
 }

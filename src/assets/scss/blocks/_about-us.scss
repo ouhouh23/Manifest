@@ -1,11 +1,11 @@
 .about-us {
 	display: grid;
-	grid-template-columns: 35% 55%;
+	grid-template-columns: auto;
 	grid-gap: $indent-45;
 	justify-content: space-between;
 
-	@media screen and (max-width: 870px) {
-		grid-template-columns: auto;
+	@media screen and (min-width: 870px) {
+		grid-template-columns: 35% 55%;
 	}
 
 	&__person, &__description {
@@ -22,8 +22,9 @@
 
 	&__paragraph {
 		margin-bottom: $indent-65;
-		@include font-style($size: $font-19, $heights: $font-height-32, $spacing: 0.5px);
 		color: $gray-700;
+
+		@include font-style($size: $font-19, $heights: $font-height-32, $spacing: 0.5px);
 	}
 
 	&__button {

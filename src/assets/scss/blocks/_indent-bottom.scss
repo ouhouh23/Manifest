@@ -1,9 +1,9 @@
 .indent-bottom {
-	margin-bottom: $indent-128;
+	margin-bottom: $indent-65;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
 	.indent-bottom {
-		margin-bottom: $indent-65;
+		margin-bottom: $indent-128;
 	}
 }

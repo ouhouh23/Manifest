@@ -2,10 +2,10 @@
 	@include flexbox($direction: column);
 	
 	&__caption {
-		@include flexbox($justify: space-between);
-
 		margin-top: $indent-25;
 		margin-bottom: $indent-25;
+
+		@include flexbox($justify: space-between);
 	}
 
 	&__category, &__date, &__comments {
@@ -26,38 +26,42 @@
 	}
 
 	&__comments {
-		margin-left: $indent-40;
+		margin-top: $indent-10;
+		display: block;
 
-		@media screen and (max-width: 600px) {
-			display: block;
-			margin: $indent-10 0 0 0;
+		@media screen and (min-width: 600px) {
+			display: inline-block;
+			margin: 0 0 0 $indent-40;
 		}
 	}
 }
 
 .post-preview_primary {
-	@include flexbox;
+	@include flexbox($direction: column, $align: center);
 
-	margin-top: $indent-100;
-	margin-bottom: $indent-115;
+	margin-top: $indent-65;
+	margin-bottom: $indent-65;
 
-	@media screen and (max-width: 870px) {
-		flex-direction: column;
-		align-items: center;
-		margin-top: $indent-65;
-		margin-bottom: $indent-65;
+	@media screen and (min-width: 870px) {
+		flex-direction: row;
+		align-items: stretch;
+		margin-top: $indent-100;
+		margin-bottom: $indent-115;
+	}
+
+	.post-preview__image {
+		@media screen and (min-width: 870px) {
+			max-width: 50%;
+		}
 	}
 
 	.post-preview__text {
-		max-width: 50%;
-		margin-left: $indent-70;
+		margin-top: $indent-16;
 
 		@include flexbox($direction: column);
 
-		@media screen and (max-width: 870px) {
-			max-width: 100%;
-			margin-top: $indent-16;
-			margin-left: 0;
+		@media screen and (min-width: 870px) {
+			margin-left: $indent-70;
 		}
 	}
 
@@ -78,11 +82,12 @@
 
 	.post-preview__paragraph {
 		order: 4;
-		margin-top: $indent-50;
+		margin-top: $indent-16;
+		margin-bottom: $indent-65;
 
-		@media screen and (max-width: 870px) {
-			margin-top: $indent-16;
-			margin-bottom: $indent-65;
+		@media screen and (min-width: 870px) {
+			margin-top: $indent-50;
+			margin-bottom: 0;
 		}
 	}
 
@@ -99,21 +104,21 @@
 
 .post-preview_full {
 	.post-preview__heading {
-		margin-top: $indent-25;
-		margin-bottom: $indent-45;
+		margin-top: $indent-16;
+		margin-bottom: $indent-16;
 
-		@media screen and (max-width: 600px) {
-			margin-top: $indent-16;
-			margin-bottom: $indent-16;
+		@media screen and (min-width: 600px) {
+			margin-top: $indent-25;
+			margin-bottom: $indent-45;
 		}
 	}
 
 	.post-preview__image {
-		margin-top: $indent-65;
+		margin-top: $indent-40;
 		margin-bottom: $indent-40;
 
-		@media screen and (max-width: 600px) {
-			margin-top: $indent-40;
+		@media screen and (min-width: 600px) {
+			margin-top: $indent-65;
 		}
 	}
 }
