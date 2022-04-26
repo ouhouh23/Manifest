@@ -3,21 +3,21 @@ $font-heading: "Red Hat Display", sans-serif;
 $font-regular: "Lato";
 $font-normal: 400;
 $font-bold: 700;
-$font-12: 0.75rem;
-$font-16: 1rem;
-$font-19: 1.18rem;
-$font-23: 1.43rem;
-$font-33: 2.06rem;
-$font-48: 3rem;
-$font-height-16: (16rem/16);
-$font-height-20: (20rem/16);
-$font-height-26: (26rem/16);
-$font-height-32: (32rem/16);
-$font-height-38: (38rem/16);
-$font-height-64: (64rem/16);
-$font-size-baze: 16px;
-$font-height-test: rem(160px);
+$font-size-base: 16px;
 
 @function rem($px-value, $base-size: $font-size-base) {
-	@return $px-value / $base-size * 1 rem;
+	@return $px-value / $base-size * 1rem;
 }
+
+$font-12: rem(12px);
+$font-16: rem(16px);
+$font-19: rem(19px);
+$font-23: rem(23px);
+$font-33: rem(33px);
+$font-48: rem(48px);
+$font-height-16: rem(16px);
+$font-height-20: rem(20px);
+$font-height-26: rem(26px);
+$font-height-32: rem(32px);
+$font-height-38: rem(38px);
+$font-height-64: rem(64px);

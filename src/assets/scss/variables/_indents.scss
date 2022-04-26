@@ -1,16 +1,22 @@
-$indent10: (10rem/16);
-$indent16: (16rem/16);
-$indent25: (25rem/16);
-$indent34: (34rem/16);
-$indent40: (40rem/16);
-$indent45: (45rem/16);
-$indent50: (50rem/16);
-$indent65: (65rem/16);
-$indent70: (70rem/16);
-$indent100: (100rem/16);
-$indent115: (115rem/16);
-$indent128: (128rem/16);
-$indent160: (160rem/16);
-$indent195: (195rem/16);
+$font-size-base: 16px;
+
+@function rem($px-value, $base-size: $font-size-base) {
+	@return $px-value / $base-size * 1rem;
+}
+
+$indent10: rem(10px);
+$indent16: rem(16px);
+$indent25: rem(25px);
+$indent34: rem(34px);
+$indent40: rem(40px);
+$indent45: rem(45px);
+$indent50: rem(50px);
+$indent65: rem(65px);
+$indent70: rem(70px);
+$indent100: rem(100px);
+$indent115: rem(115px);
+$indent128: rem(128px);
+$indent160: rem(160px);
+$indent195: rem(195px);
 
 
