@@ -5,8 +5,8 @@
 		position: absolute;
 		right: 0;
 		top: 2rem;
-		padding: $indent40 $indent65;
-		background: $gray100;
+		padding: $indent-40 $indent-65;
+		background: $gray-100;
 
 		&__checkbox:checked + & {
 			display: block;
@@ -15,7 +15,7 @@
 
  	&__button {
 		display: none;
-		margin-left: $indent10;
+		margin-left: $indent-10;
 		cursor: pointer;
 
 		@media screen and (max-width: 870px) {
@@ -31,7 +31,7 @@
 	&__content {
 		display: grid;
 		grid-auto-flow: column;
-		grid-gap: $indent50;
+		grid-gap: $indent-50;
 
 		@media screen and (max-width: 870px) {
 			grid-auto-flow: row;
@@ -51,7 +51,7 @@
 		&:after {
 			content: ('');
 			display: inline-block;
-			width: 35px;
+			width: 2.18rem;
 			height: 2px;
 			background: $black;
   		}

@@ -1,31 +1,31 @@
 .form {
 	display: grid;
-	grid-gap: $indent50;
+	grid-gap: $indent-50;
 
 	&__requrement {
 		margin-top: -3.12rem;
-		margin-bottom: $indent16;
-		color: $gray500;
+		margin-bottom: $indent-16;
+		color: $gray-500;
 
 		@media screen and (max-width: 870px) {
 			margin-top: -1.56rem;
-			margin-bottom: $indent40;
+			margin-bottom: $indent-40;
 		}
 	}
 
 	&__group {
 		display: grid;
 		grid-template-columns: auto auto auto;
-		grid-gap: $indent40;
+		grid-gap: $indent-40;
 
 		@media screen and (max-width: 1160px) {
 			grid-template-columns: auto;
-			grid-gap: $indent25;
+			grid-gap: $indent-25;
 		}
 	}
 
 	&__label {
-		color: $gray700;
+		color: $gray-700;
 
 		@include font-style($heights: $font-height-26, $spacing: 0.5px);
 
@@ -35,10 +35,10 @@
 	&__input {
 		display: block;
 		width: 100%;
-		margin-top: $indent16;
+		margin-top: $indent-16;
 		border: none;
 		border-bottom: 1px solid $black;
-		padding-bottom: $indent10;
+		padding-bottom: $indent-10;
 		opacity: 0.8;
 	}
 
@@ -49,11 +49,11 @@
 	}
 
 	&__checkbox {
-		margin-right: $indent10;
+		margin-right: $indent-10;
 	}
 
 	&__button {
-		margin-top: $indent16;
+		margin-top: $indent-16;
 	}
 }
 
@@ -67,6 +67,6 @@
 
 .form_mobile {
 	@media screen and (max-width: 870px) {
-		grid-gap: $indent25;
+		grid-gap: $indent-25;
 	}
 }

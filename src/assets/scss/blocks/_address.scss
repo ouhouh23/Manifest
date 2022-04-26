@@ -1,9 +1,9 @@
 .address {
-	margin-bottom: $indent70;
+	margin-bottom: $indent-70;
 	display: grid;
-	row-gap: $indent25;
-	margin-top: $indent25;
-	color: $gray700;
+	row-gap: $indent-25;
+	margin-top: $indent-25;
+	color: $gray-700;
 	
 	@include font-style($heights: $font-height-26, $spacing: 0.5px);
 }

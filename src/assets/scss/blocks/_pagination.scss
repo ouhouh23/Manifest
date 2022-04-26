@@ -1,13 +1,13 @@
 .pagination {
 	display: grid;
 	grid-template-columns: auto auto auto;
-	grid-gap: $indent25;
+	grid-gap: $indent-25;
 
 	&__item {
 		@include font-style($heights: $font-height-26);
 	}
 
 	&__item_active {
-		color: $gray500;
+		color: $gray-500;
 	}
 }

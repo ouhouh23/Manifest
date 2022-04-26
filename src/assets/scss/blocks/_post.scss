@@ -1,6 +1,6 @@
 .post {
-	padding-left: $indent195;
-	padding-right: $indent195;
+	padding-left: $indent-195;
+	padding-right: $indent-195;
 
 	@media screen and (max-width: 870px) {
 		padding: 0;
@@ -10,7 +10,7 @@
 		@include flexbox($align: center);
 
 		font-size: $font-16;
-		margin-bottom: $indent40;
+		margin-bottom: $indent-40;
 	}
 
 	&__header {
@@ -22,7 +22,7 @@
 		@media screen and (max-width: 870px) {
 			margin-left: 0;
 			grid-template-columns: auto;
-			grid-gap: $indent40;
+			grid-gap: $indent-40;
 		}
 	}
 
@@ -30,24 +30,24 @@
 		@include font-style ($size: $font-19, $heights: $font-height-32, $spacing: 0.5px);
 
 		color: $black;
-		margin-bottom: $indent34;
+		margin-bottom: $indent-34;
 	}
 
 	&__points {
 		display: grid;
-		grid-gap: $indent34;
+		grid-gap: $indent-34;
 
 		@include font-style ($size: $font-19, $heights: $font-height-32, $spacing: 0.5px);
 
 		list-style-type: disc;
-		padding-left: $indent40;
+		padding-left: $indent-40;
 	}
 
 	&__form {
-		margin: $indent100 0;
+		margin: $indent-100 0;
 
 		@media screen and (max-width: 870px) {
-			margin-top: $indent65;
+			margin-top: $indent-65;
 		}
 	}
 }

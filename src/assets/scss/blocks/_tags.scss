@@ -1,19 +1,19 @@
 .tags {
 	display: flex;
 	align-items: baseline;
-	padding-bottom: $indent16;
-	border-bottom: 1px solid $gray100;
+	padding-bottom: $indent-16;
+	border-bottom: 1px solid $gray-100;
 
 	@include font-style($heights: $font-height-26, $spacing: 1px);
 
-	margin-top: $indent65;
+	margin-top: $indent-65;
 
 	&__heading {
 		font-weight: $font-normal;
-		margin-right: $indent16;
+		margin-right: $indent-16;
 	}
 	&__item {
-		margin-right: $indent10;
-		color: $gray500;
+		margin-right: $indent-10;
+		color: $gray-500;
 	}
 }

@@ -1,16 +1,16 @@
 .button {
 	display: inline-block;
-	background: $gray700;
+	background: $gray-700;
 	color: $white;
 	@include font-style($heights: $font-height-26, $weight: $font-bold);
 	width: fit-content;
 	white-space: nowrap;
 
 	&_tight {
-		padding: $indent10 $indent34;
+		padding: $indent-10 $indent-34;
 	}
 
 	&_wide {
-		padding: $indent10 $indent45;
+		padding: $indent-10 $indent-45;
 	}
 }

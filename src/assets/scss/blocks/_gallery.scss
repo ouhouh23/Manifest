@@ -1,7 +1,7 @@
 .gallery {
 	display: grid;
 	grid-auto-flow: column;
-	grid-gap: $indent34;
+	grid-gap: $indent-34;
 	justify-content: center;
 	width: 69rem;
 
@@ -11,7 +11,7 @@
 
 	&__caption {
 		display: inline-block;
-		margin-top: $indent16;
+		margin-top: $indent-16;
 
 		@include font-style($heights: $font-height-26);
 	}

@@ -8,7 +8,7 @@
 	&__link {
 		@include font-style($heights: $font-height-26);
 
-		color: $gray500;
+		color: $gray-500;
 	}
 
 	&__button {
@@ -23,12 +23,12 @@
 	}
 
 	&__label {
-		margin-right: $indent40;
+		margin-right: $indent-40;
 
 		@include font-style($heights: $font-height-26);
 
 		@media screen and (max-width: 600px) {
-			margin-bottom: $indent25;
+			margin-bottom: $indent-25;
 		}
 	}
 }
@@ -36,7 +36,7 @@
 .posts_row {
 	grid-template-columns: 30% 30% 30%;
 	justify-content: space-between;
-	grid-gap: $indent34;
+	grid-gap: $indent-34;
 
 	.posts__header {
 		grid-area: 1 / 1 / 2 / 4;
@@ -50,14 +50,14 @@
 
 .posts_columns {
 	grid-template-columns: 48% 48%;
-	grid-gap: $indent128 $indent40;
+	grid-gap: $indent-128 $indent-40;
 
 	.posts__header {
 		grid-area: 1 / 1 / 2 / 3;
 		margin-bottom: -4.88rem;
 		align-items: baseline;
 		width: 50%;
-		padding-right: ($indent40/2);
+		padding-right: ($indent-40/2);
 
 
 		@media screen and (max-width: 870px) {
@@ -77,6 +77,6 @@
 @media screen and (max-width: 870px) {
 	.posts_columns, .posts_row {
 		grid-template-columns: auto;
-		row-gap: $indent50;
+		row-gap: $indent-50;
 	}
 }

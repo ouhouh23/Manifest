@@ -1,7 +1,7 @@
 .overview {
 	display: grid;
 	grid-template-columns: 50% 40%;
-	grid-gap: $indent65;
+	grid-gap: $indent-65;
 	justify-content: space-between;
 
 	@media screen and (max-width: 870px) {
@@ -11,12 +11,12 @@
 	&__text {
 		align-self: start;
 		display: grid;
-		row-gap: $indent40;
+		row-gap: $indent-40;
 	}
 
 	&__information {
 		display: grid;
-		row-gap: $indent45;
+		row-gap: $indent-45;
 		justify-content: center;
 
 		@media screen and (max-width: 870px) {
@@ -27,6 +27,6 @@
 	&__item {
 		display: block;
 		@include font-style($size: $font-19, $spacing: 0.5px);
-		color: $gray700;
+		color: $gray-700;
 	}
 }

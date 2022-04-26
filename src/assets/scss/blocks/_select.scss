@@ -6,7 +6,7 @@
 		width: 100%;
 		appearance: none;
 		outline: none;
-		color: $gray700;
+		color: $gray-700;
 		padding-bottom: 1rem;
 		border: none;
 		border-bottom: 1px solid $black;
@@ -23,6 +23,6 @@
 		content: '❯';
 		transform: rotate(90deg);
 		pointer-events: none;
-		color: $gray700;
+		color: $gray-700;
 	}
 }

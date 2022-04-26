@@ -7,8 +7,8 @@
 
 @media screen and (max-width: 600px) {
   .wrapper {
-    padding-left: $indent16;
-    padding-right: $indent16;
+    padding-left: $indent-16;
+    padding-right: $indent-16;
   }
 }
 .wrapper_tablet {
@@ -21,7 +21,7 @@
 }
 
 .header {
-	padding-top: $indent100;
+	padding-top: $indent-100;
 	width: 100%;
 	
 	@include flexbox($justify: space-between, $align: center);
@@ -33,19 +33,19 @@
 	}
 
 	&__icon {
-		margin-left: $indent50;
+		margin-left: $indent-50;
 	}
 }
 
 .footer {
 	margin-top: auto;
-	background: $gray100;
-	padding-top: $indent128;
-	padding-bottom: $indent128;
+	background: $gray-100;
+	padding-top: $indent-128;
+	padding-bottom: $indent-128;
 
 	@media screen and (max-width: 870px) {
-		padding-top: $indent65;
-		padding-bottom: $indent65;
+		padding-top: $indent-65;
+		padding-bottom: $indent-65;
 	}
 
 	&__content {
@@ -65,7 +65,7 @@
 		letter-spacing: 2px;
 
 		@media screen and (max-width: 870px) {
-		  margin: $indent50 0;
+		  margin: $indent-50 0;
 		}
 	}
 

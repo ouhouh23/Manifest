@@ -1,7 +1,7 @@
 .about-us {
 	display: grid;
 	grid-template-columns: 35% 55%;
-	grid-gap: $indent45;
+	grid-gap: $indent-45;
 	justify-content: space-between;
 
 	@media screen and (max-width: 870px) {
@@ -13,17 +13,17 @@
 	}
 
 	&__rank {
-		margin-top: $indent40;
-		margin-bottom: $indent16;
-		color: $gray700;
+		margin-top: $indent-40;
+		margin-bottom: $indent-16;
+		color: $gray-700;
 
 		@include font-style ($size: $font-23, $heights: $font-height-38, $spacing: 1px);
 	}
 
 	&__paragraph {
-		margin-bottom: $indent65;
+		margin-bottom: $indent-65;
 		@include font-style($size: $font-19, $heights: $font-height-32, $spacing: 0.5px);
-		color: $gray700;
+		color: $gray-700;
 	}
 
 	&__button {

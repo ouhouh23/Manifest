@@ -6,11 +6,11 @@
   }
 
   &__phone {
-  	margin-top: $indent34;
-  	margin-bottom: $indent16;
+  	margin-top: $indent-34;
+  	margin-bottom: $indent-16;
 
     @media screen and (max-width: 870px) {
-      margin-top: $indent16;
+      margin-top: $indent-16;
     }
   }
   

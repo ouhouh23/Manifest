@@ -1,18 +1,18 @@
 .blockquote {
-	padding-left: $indent65;
-	border-left: 3px solid $gray300;
+	padding-left: $indent-65;
+	border-left: 3px solid $gray-300;
 
 	@media screen and (max-width: 600px) {
-		padding-left: $indent16;
+		padding-left: $indent-16;
 	}
 
 	&__content {
-		margin: 0 0 $indent34 0;
+		margin: 0 0 $indent-34 0;
 	}
 
 	&__caption {
 		display: inline-block;
-		margin-bottom: $indent34;
-		color: $gray500;
+		margin-bottom: $indent-34;
+		color: $gray-500;
 	}
 }

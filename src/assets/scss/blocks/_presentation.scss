@@ -18,17 +18,17 @@
 
 	&__link {
 		display: block;
-		margin-top: $indent45;
+		margin-top: $indent-45;
 
 		@media screen and (max-width: 870px) {
-			margin-top: $indent25;
-			margin-bottom: $indent50;
+			margin-top: $indent-25;
+			margin-bottom: $indent-50;
 		}
 	}
 
 	&__text {
 		display: grid;
-		row-gap: $indent45;
+		row-gap: $indent-45;
 	}
 
 	&__paragraph {

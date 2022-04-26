@@ -1,7 +1,7 @@
 .social-networks {
 	display: inline-grid;
-	grid-gap: $indent25;
-	color: $gray500;
+	grid-gap: $indent-25;
+	color: $gray-500;
 
 	&_horizontal {
 		grid-template-columns: auto auto auto auto
