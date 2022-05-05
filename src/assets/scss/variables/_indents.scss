@@ -1,9 +1,3 @@
-$font-size-base: 16px;
-
-@function rem($px-value, $base-size: $font-size-base) {
-	@return $px-value / $base-size * 1rem;
-}
-
 $indent-10: rem(10px);
 $indent-16: rem(16px);
 $indent-25: rem(25px);
@@ -18,5 +12,3 @@ $indent-115: rem(115px);
 $indent-128: rem(128px);
 $indent-160: rem(160px);
 $indent-195: rem(195px);
-
-

@@ -2,20 +2,14 @@
   './index.html': 'Home',
   './about.html': 'About', 
   './blog.html': 'Blog', 
-  './contact.html': 'Contact' , 
+  './contact.html': 'Contact', 
   './works.html': 'Works' 
 } %}
 
 <nav class="navigation">
   <ul class="navigation__content">
     {% for url, name in navigation %}
-      <li 
-        {% if name == page %}
-          class="navigation__item navigation__item_active"
-        {% else %}
-          class="navigation__item" 
-        {% endif %}
-      >
+      <li class="navigation__item{% if name == page %} navigation__item_active {% endif %}">
         <a href="{{ url }}">{{ name }}</a>
       </li>
     {% endfor %}

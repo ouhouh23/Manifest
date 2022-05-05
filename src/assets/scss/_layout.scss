@@ -1,6 +1,9 @@
 .wrapper {
-	@extend %padding-mobile;
-
+	padding: {
+		left: $indent-16;
+		right: $indent-16;
+	}
+	
 	max-width: 1200px;
 	width: 100%;
 	margin: 0 auto;
