@@ -40,10 +40,13 @@
 	}
 
 	&__form {
-		margin-top: $indent-65;
+		margin: {
+			top: $indent-65;
+			bottom: $indent-100;
+		}
 
 		@media screen and (min-width: 870px) {
-			margin: $indent-100 0;
+			margin-top: $indent-100;
 		}
 	}
 }

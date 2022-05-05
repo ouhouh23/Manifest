@@ -18,11 +18,9 @@
 
 	&__image {
 		max-width: 16rem;
-		height: auto;
 
 		@media screen and (min-width: 600px) {
 			max-width: 34rem;
-			height: 34;
 		}
 	}
 }

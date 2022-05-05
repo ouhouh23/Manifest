@@ -9,12 +9,12 @@
 	margin: 0 auto;
 
 	@media screen and (min-width: 600px)  {
-    padding-left: $indent-40;
-    padding-right: $indent-40;		
+    	padding-left: $indent-40;
+    	padding-right: $indent-40;		
 	}
 }
 
-.wrapper_tablet {
+.wrapper-tablet {
 		max-width: 33.7rem;
 		margin-left: auto;
 		margin-right: auto;
@@ -22,6 +22,41 @@
   	@media screen and (min-width: 870px) {
 			max-width: 100%;
 		}
+}
+
+.indent-bottom {
+	margin-bottom: $indent-65;
+}
+
+@media screen and (min-width: 600px) {
+	.indent-bottom {
+		margin-bottom: $indent-128;
+	}
+}
+
+.heading {
+	@include font-style($size: $font-33, $heights: 3rem);
+
+	@media screen and (min-width: 870px) {
+		max-width: 65%;
+	}
+
+	@media screen and (min-width: 600px) {
+		font-size: $font-48;
+		line-height: $font-height-64;
+	}
+}
+
+.heading-secondary {
+	@include font-style($size: $font-23, $heights: $font-height-38, $spacing: 1px);
+}
+
+.image-primary {
+	margin-top: $indent-65;
+}
+
+.image-secondary {
+	margin-top: $indent-40;
 }
 
 .header {
