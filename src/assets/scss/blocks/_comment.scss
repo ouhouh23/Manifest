@@ -4,6 +4,7 @@
 	grid-gap: $indent-40 $indent-16;
 	padding-bottom: $indent-40;
 	border-bottom: 3px solid $gray-100;
+	margin-bottom: $indent-40;
 
 	@media screen and (min-width: 600px) {
 		column-gap: $indent-25;
@@ -16,12 +17,13 @@
 	&__reply, &:last-child {
 		padding-bottom: 0;
 		border-bottom: none;
+		margin-bottom: 0;
 	}
 
 	&__header {
-		flex-wrap: wrap;
-
 		@include flexbox($align: center);
+
+		flex-wrap: wrap;
 	}
 
 	&__date {

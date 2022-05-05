@@ -8,13 +8,16 @@
 		grid-template-columns: 35% 55%;
 	}
 
-	&__person, &__description {
-		display: grid;
+	&__description {
+		@include flexbox($direction: column, $justify: space-between);
 	}
 
 	&__rank {
-		margin-top: $indent-40;
-		margin-bottom: $indent-16;
+		margin: {
+			top: $indent-40;
+			bottom: $indent-16;
+		}
+		
 		color: $gray-700;
 
 		@include font-style ($size: $font-23, $heights: $font-height-38, $spacing: 1px);
@@ -28,6 +31,6 @@
 	}
 
 	&__button {
-		align-self: end;
+		margin-top: auto;
 	}
 }

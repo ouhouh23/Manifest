@@ -1,6 +1,9 @@
 .error {
-	margin-top: $indent-100;
-	margin-bottom: 13.5rem;
+	margin: {
+		top: $indent-100;
+		bottom: 13.5rem;
+	}
+
 	text-align: center;
 
 	&__heading {
@@ -10,15 +13,20 @@
 	}
 
 	&__paragraph {
+		margin: {
+			top: $indent-50;
+			bottom: $indent-65;
+		}
+
 		color: $gray-700;
-		margin-top: $indent-50;
-		margin-bottom: $indent-65;
 
 		@include font-style($size: $font-23, $heights: $font-height-38);
 
 		@media screen and (min-width: 600px) {
-			margin-top: 0;
-			margin-bottom: $indent-50;
+			margin: {
+				top: 0;
+				bottom: $indent-50;
+			}
 		}
 	}
 
@@ -30,8 +38,10 @@
 
 	&__button {
 		display: block;
-		margin-left: auto;
-		margin-right: auto;
+		margin: {
+			left: auto;
+			right: auto;
+		}
 	}
 
 	&__social-networks {

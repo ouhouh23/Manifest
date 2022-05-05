@@ -1,9 +1,15 @@
 .address {
-	margin-bottom: $indent-70;
-	display: grid;
-	row-gap: $indent-25;
-	margin-top: $indent-25;
+	margin: {
+		top: $indent-25;
+		bottom: $indent-50;
+	}
+
 	color: $gray-700;
 	
 	@include font-style($heights: $font-height-26, $spacing: 0.5px);
+
+	&__item {
+		display: block;
+		margin-bottom: $indent-25;
+	}
 }

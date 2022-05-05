@@ -3,24 +3,44 @@
 	grid-gap: $indent-50;
 
 	&__requrement {
-		margin-top: -1.56rem;
-		margin-bottom: $indent-40;
+		margin: {
+			top: -1.56rem;
+			bottom: $indent-40;
+		}
+
 		color: $gray-500;
 
 		@media screen and (min-width: 870px) {
-			margin-top: -3.12rem;
-			margin-bottom: $indent-16;
+			margin: {
+				top: -3.12rem;
+				bottom: $indent-16;
+			}
 		}
 	}
 
 	&__group {
-		display: grid;
-		grid-template-columns: auto;
-		grid-gap: $indent-25;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: -1.5rem;
 		
 		@media screen and (min-width: 1160px) {
-			grid-template-columns: auto auto auto;
-			grid-gap: $indent-40;
+			flex-direction: row;
+			margin: {
+				right: -2.5rem;
+				bottom: 0;
+			}
+		}
+	}
+
+	&__item {
+		margin-bottom: $indent-25;
+
+		@media screen and (min-width: 1160px) {
+			flex-grow: 1;
+			margin: {
+				right: $indent-40;
+				bottom: 0;
+			}
 		}
 	}
 

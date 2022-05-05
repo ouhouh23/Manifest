@@ -24,8 +24,10 @@
 	}
 
 	&__label {
-		margin-right: $indent-40;
-		margin-bottom: $indent-25;
+		margin: {
+			right: $indent-40;
+			bottom: $indent-25;
+		}
 
 		@include font-style($heights: $font-height-26);
 

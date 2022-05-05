@@ -6,8 +6,10 @@
   }
 
   &__phone {
-  	margin-top: $indent-16;
-  	margin-bottom: $indent-16;
+    margin: {
+  	  top: $indent-16;
+  	  bottom: $indent-16;
+    }
 
     @media screen and (min-width: 870px) {
       margin-top: $indent-34;

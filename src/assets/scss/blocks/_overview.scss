@@ -8,25 +8,27 @@
 		grid-template-columns: 50% 40%;
 	}
 
-	&__text {
-		align-self: start;
-		display: grid;
-		row-gap: $indent-40;
+	&__paragraph {
+		margin-top: $indent-40;
 	}
 
 	&__information {
-		display: grid;
-		row-gap: $indent-45;
-		justify-content: start;
+		margin-bottom: -2.8rem;
+	}
+
+	&__category {
+		margin-bottom: $indent-45;
 
 		@media screen and (min-width: 870px) {
-			justify-content: center;
+			max-width: 70%;
+			margin-left: auto;
 		}
 	}
 
 	&__item {
 		display: block;
-		@include font-style($size: $font-19, $spacing: 0.5px);
 		color: $gray-700;
+
+		@include font-style($size: $font-19, $spacing: 0.5px);
 	}
 }

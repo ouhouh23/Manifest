@@ -1,13 +1,16 @@
 .presentation {
-	display: grid;
-	grid-template-columns: auto;
+	display: flex;
+	flex-direction: column;
 
 	@media screen and (min-width: 870px) {
-		grid-template-columns: 60% 40%;
+		flex-direction: row;
 	}
 
 	&__header {
-		margin-bottom: auto;
+
+		@media screen and (min-width: 870px) {
+			flex-grow: 1;
+		}
 	}
 
 	&__heading:first-line {
@@ -15,6 +18,7 @@
 
 		@media screen and (min-width: 870px) {
 			line-height: $font-height-38;
+
 		}
 	}
 
@@ -29,11 +33,16 @@
 	}
 
 	&__text {
-		display: grid;
-		row-gap: $indent-45;
+		margin-top: -2.12rem;
+
+		@media screen and (min-width: 870px) {
+			max-width: 45%;
+		}
 	}
 
 	&__paragraph {
+		margin-top: $indent-34;
+		
 		@include font-style($size: $font-19, $heights: $font-height-32, $spacing: 1px);
 	}
 }

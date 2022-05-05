@@ -1,9 +1,9 @@
 .pagination {
-	display: grid;
-	grid-template-columns: auto auto auto;
-	grid-gap: $indent-25;
+	display: flex;
 
 	&__item {
+		margin-right: $indent-25;
+
 		@include font-style($heights: $font-height-26);
 	}
 
