@@ -1,51 +1,51 @@
 .error {
-	margin: {
-		top: $indent-100;
-		bottom: 13.5rem;
-	}
+  margin: {
+    top: $indent-100;
+    bottom: 13.5rem;
+  }
 
-	text-align: center;
+  text-align: center;
 
-	&__heading {
-		color: $gray-300;
+  &__heading {
+    color: $gray-300;
 
-		@include font-style($size: 8.5rem, $weight: $font-bold, $heights: 11.5rem, $spacing: 7px);
-	}
+    @include font-style($size: 8.5rem, $weight: $font-bold, $heights: 11.5rem, $spacing: 7px);
+  }
 
-	&__paragraph {
-		margin: {
-			top: $indent-50;
-			bottom: $indent-65;
-		}
+  &__paragraph {
+    margin: {
+      top: $indent-50;
+      bottom: $indent-65;
+    }
 
-		color: $gray-700;
+    color: $gray-700;
 
-		@include font-style($size: $font-23, $heights: $font-height-38);
+    @include font-style($size: $font-23, $heights: $font-height-38);
 
-		@media screen and (min-width: 600px) {
-			margin: {
-				top: 0;
-				bottom: $indent-50;
-			}
-		}
-	}
+    @media screen and (min-width: 600px) {
+      margin: {
+        top: 0;
+        bottom: $indent-50;
+      }
+    }
+  }
 
-	&__caption {
-		color: $gray-300;
+  &__caption {
+    color: $gray-300;
 
-		@include font-style($size: $font-33, $heights: 3.12rem);
-	}
+    @include font-style($size: $font-33, $heights: 3.12rem);
+  }
 
-	&__button {
-		display: block;
-		margin: {
-			left: auto;
-			right: auto;
-		}
-	}
+  &__button {
+    display: block;
+    margin: {
+      left: auto;
+      right: auto;
+    }
+  }
 
-	&__social-networks {
-		margin-top: $indent-25;
-		color: $black;
-	}
+  &__social-networks {
+    margin-top: $indent-25;
+    color: $black;
+  }
 }

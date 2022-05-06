@@ -1,15 +1,15 @@
 .address {
-	margin: {
-		top: $indent-25;
-		bottom: $indent-50;
-	}
+  margin: {
+    top: $indent-25;
+    bottom: $indent-50;
+  }
 
-	color: $gray-700;
-	
-	@include font-style($heights: $font-height-26, $spacing: 0.5px);
+  color: $gray-700;
+  
+  @include font-style($heights: $font-height-26, $spacing: 0.5px);
 
-	&__item {
-		display: block;
-		margin-bottom: $indent-25;
-	}
+  &__item {
+    display: block;
+    margin-bottom: $indent-25;
+  }
 }

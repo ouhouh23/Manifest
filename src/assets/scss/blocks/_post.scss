@@ -1,58 +1,57 @@
 .post {
-	@media screen and (min-width: 870px) {
-		padding: {
-			left: $indent-195;
-			right: $indent-195;
-		}
-	}
+  @media screen and (min-width: 870px) {
+    padding: {
+      left: $indent-195;
+      right: $indent-195;
+    }
+  }
 
-	&__author {
-		font-size: $font-16;
-		margin-bottom: $indent-40;
+  &__author {
+    font-size: $font-16;
+    margin-bottom: $indent-40;
 
-		@include flexbox($align: center);
-	}
+    @include flexbox($align: center);
+  }
 
-	&__header {
-		display: grid;
-		grid-template-columns: auto;
-		grid-gap: $indent-40;
+  &__header {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: $indent-40;
 
-		@media screen and (min-width: 870px) {
-			margin-left: -7rem;
-			grid-template-columns: auto auto;
-			grid-gap: 5.6rem;
-		}
-	}
+    @media screen and (min-width: 870px) {
+      margin-left: -7rem;
+      grid-template-columns: auto auto;
+      grid-gap: 5.6rem;
+    }
+  }
 
-	&__paragraph {
-		color: $black;
-		margin-bottom: $indent-34;
+  &__paragraph {
+    color: $black;
+    margin-bottom: $indent-34;
 
-		@include font-style ($size: $font-19, $heights: $font-height-32, $spacing: 0.5px);
-	}
+    @include font-style ($size: $font-19, $heights: $font-height-32, $spacing: 0.5px);
+  }
 
-	&__points {
-		list-style-type: disc;
-		padding-left: $indent-40;
-		margin-bottom: -2.12rem;
+  &__points {
+    list-style-type: disc;
+    padding-left: $indent-40;
+    margin-bottom: -2.12rem;
 
-		@include font-style ($size: $font-19, $heights: $font-height-32, $spacing: 0.5px);
-	}
+    @include font-style ($size: $font-19, $heights: $font-height-32, $spacing: 0.5px);
+  }
 
-	&__item {
-		margin-bottom: $indent-34;
-	}
+  &__item {
+    margin-bottom: $indent-34;
+  }
 
-	&__form {
-		margin: {
-			top: $indent-65;
-			bottom: $indent-100;
-		}
+  &__form {
+    margin: {
+      top: $indent-65;
+      bottom: $indent-100;
+    }
 
-		@media screen and (min-width: 870px) {
-			margin-top: $indent-100;
-		}
-	}
+    @media screen and (min-width: 870px) {
+      margin-top: $indent-100;
+    }
+  }
 }
-

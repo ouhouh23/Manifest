@@ -1,13 +1,13 @@
 .pagination {
-	display: flex;
+  display: flex;
 
-	&__item {
-		margin-right: $indent-25;
+  &__item {
+    margin-right: $indent-25;
 
-		@include font-style($heights: $font-height-26);
-	}
+    @include font-style($heights: $font-height-26);
+  }
 
-	&__item_active {
-		color: $gray-500;
-	}
+  &__item_active {
+    color: $gray-500;
+  }
 }

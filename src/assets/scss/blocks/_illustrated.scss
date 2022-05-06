@@ -1,64 +1,64 @@
 .illustrated {
-	display: grid;
-	grid-template-columns: auto;
-	grid-gap: $indent-45;
-	justify-content: center;
-	margin-bottom: $indent-50;
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: $indent-45;
+  justify-content: center;
+  margin-bottom: $indent-50;
 
-	&:last-child { 
-	  margin-bottom:0;
-	}
+  &:last-child {
+    margin-bottom: 0;
+  }
 
-	@media screen and (min-width: 870px)  {
-		grid-template-columns: 30% 49%;
-		justify-content: space-between;
-	}
+  @media screen and (min-width: 870px) {
+    grid-template-columns: 30% 49%;
+    justify-content: space-between;
+  }
 
-	&__paragraph {
-		color: $black;
+  &__paragraph {
+    color: $black;
 
-		@include font-style($size: $font-19, $heights: $font-height-32, $spacing: 0.5px);
-	}
+    @include font-style($size: $font-19, $heights: $font-height-32, $spacing: 0.5px);
+  }
 
-	&__break {
-		display: inline-block;
-		margin: {
-			top: $indent-16;
-			bottom: $indent-25;
-		}
+  &__break {
+    display: inline-block;
+    margin: {
+      top: $indent-16;
+      bottom: $indent-25;
+    }
 
-		width: 5.3rem;
-		border-color: $gray-100;
-	}
+    width: 5.3rem;
+    border-color: $gray-100;
+  }
 
-	&__type {
-		display: block;
-		margin-bottom: $indent-16;
-		letter-spacing: 2px;
-	}
+  &__type {
+    display: block;
+    margin-bottom: $indent-16;
+    letter-spacing: 2px;
+  }
 
-	&__date {
-		color: $gray-700;
-		display: block;
-	}
+  &__date {
+    color: $gray-700;
+    display: block;
+  }
 
-	&__button {
-		margin-top: $indent-40;
-	}
+  &__button {
+    margin-top: $indent-40;
+  }
 
-	&__image {
-		grid-area: 1 / 1 / 2 / 2;
+  &__image {
+    grid-area: 1 / 1 / 2 / 2;
 
-		@media screen and (min-width: 870px) {
-			grid-area: auto;
-		}
-	}  
+    @media screen and (min-width: 870px) {
+      grid-area: auto;
+    }
+  }
 }
 
 .illustrated_top {
-	margin-bottom: $indent-50;
+  margin-bottom: $indent-50;
 
-	@media screen and (min-width: 870px) {
-		margin-bottom: $indent-70;
-	}
+  @media screen and (min-width: 870px) {
+    margin-bottom: $indent-70;
+  }
 }

@@ -1,36 +1,36 @@
 .about-us {
-	display: grid;
-	grid-template-columns: auto;
-	grid-gap: $indent-45;
-	justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: $indent-45;
+  justify-content: space-between;
 
-	@media screen and (min-width: 870px) {
-		grid-template-columns: 35% 55%;
-	}
+  @media screen and (min-width: 870px) {
+    grid-template-columns: 35% 55%;
+  }
 
-	&__description {
-		@include flexbox($direction: column, $justify: space-between);
-	}
+  &__description {
+    @include flexbox($direction: column, $justify: space-between);
+  }
 
-	&__rank {
-		margin: {
-			top: $indent-40;
-			bottom: $indent-16;
-		}
-		
-		color: $gray-700;
+  &__rank {
+    margin: {
+      top: $indent-40;
+      bottom: $indent-16;
+    }
+    
+    color: $gray-700;
 
-		@include font-style ($size: $font-23, $heights: $font-height-38, $spacing: 1px);
-	}
+    @include font-style ($size: $font-23, $heights: $font-height-38, $spacing: 1px);
+  }
 
-	&__paragraph {
-		margin-bottom: $indent-65;
-		color: $gray-700;
+  &__paragraph {
+    margin-bottom: $indent-65;
+    color: $gray-700;
 
-		@include font-style($size: $font-19, $heights: $font-height-32, $spacing: 0.5px);
-	}
+    @include font-style($size: $font-19, $heights: $font-height-32, $spacing: 0.5px);
+  }
 
-	&__button {
-		margin-top: auto;
-	}
+  &__button {
+    margin-top: auto;
+  }
 }

@@ -1,47 +1,47 @@
 .comment {
-	display: grid;
-	grid-template-columns: 4.38rem auto;
-	grid-gap: $indent-40 $indent-16;
-	padding-bottom: $indent-40;
-	border-bottom: 3px solid $gray-100;
-	margin-bottom: $indent-40;
+  display: grid;
+  grid-template-columns: 4.38rem auto;
+  grid-gap: $indent-40 $indent-16;
+  padding-bottom: $indent-40;
+  border-bottom: 3px solid $gray-100;
+  margin-bottom: $indent-40;
 
-	@media screen and (min-width: 600px) {
-		column-gap: $indent-25;
-	}
+  @media screen and (min-width: 600px) {
+    column-gap: $indent-25;
+  }
 
-	&__reply {
-		grid-column: 2/3;
-	}
+  &__reply {
+    grid-column: 2/3;
+  }
 
-	&__reply, &:last-child {
-		padding-bottom: 0;
-		border-bottom: none;
-		margin-bottom: 0;
-	}
+  &__reply, &:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 0;
+  }
 
-	&__header {
-		@include flexbox($align: center);
+  &__header {
+    @include flexbox($align: center);
 
-		flex-wrap: wrap;
-	}
+    flex-wrap: wrap;
+  }
 
-	&__date {
-		color: $gray-500;
+  &__date {
+    color: $gray-500;
 
-		@include font-style($size: $font-12, $heights: $font-height-20, $spacing: 0.5px);
-	}
+    @include font-style($size: $font-12, $heights: $font-height-20, $spacing: 0.5px);
+  }
 
-	&__body {
-		color: $gray-700;
-		margin: $indent-16 $indent-25 $indent-16 0;
+  &__body {
+    color: $gray-700;
+    margin: $indent-16 $indent-25 $indent-16 0;
 
-		@include font-style($size: $font-16, $heights: $font-height-32, $spacing: 0.5px);
-	}
+    @include font-style($size: $font-16, $heights: $font-height-32, $spacing: 0.5px);
+  }
 
-	&__footer {
-		color: $gray-500;
+  &__footer {
+    color: $gray-500;
 
-		@include font-style ($heights: $font-height-26, $spacing: 0.5px);
-	}
+    @include font-style ($heights: $font-height-26, $spacing: 0.5px);
+  }
 }

@@ -1,91 +1,91 @@
 .form {
-	display: grid;
-	grid-gap: $indent-50;
+  display: grid;
+  grid-gap: $indent-50;
 
-	&__requrement {
-		margin: {
-			top: -1.56rem;
-			bottom: $indent-40;
-		}
+  &__requrement {
+    margin: {
+      top: -1.56rem;
+      bottom: $indent-40;
+    }
 
-		color: $gray-500;
+    color: $gray-500;
 
-		@media screen and (min-width: 870px) {
-			margin: {
-				top: -3.12rem;
-				bottom: $indent-16;
-			}
-		}
-	}
+    @media screen and (min-width: 870px) {
+      margin: {
+        top: -3.12rem;
+        bottom: $indent-16;
+      }
+    }
+  }
 
-	&__group {
-		display: flex;
-		flex-direction: column;
-		margin-bottom: -1.5rem;
-		
-		@media screen and (min-width: 1160px) {
-			flex-direction: row;
-			margin: {
-				right: -2.5rem;
-				bottom: 0;
-			}
-		}
-	}
+  &__group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -1.5rem;
+    
+    @media screen and (min-width: 1160px) {
+      flex-direction: row;
+      margin: {
+        right: -2.5rem;
+        bottom: 0;
+      }
+    }
+  }
 
-	&__item {
-		margin-bottom: $indent-25;
+  &__item {
+    margin-bottom: $indent-25;
 
-		@media screen and (min-width: 1160px) {
-			flex-grow: 1;
-			margin: {
-				right: $indent-40;
-				bottom: 0;
-			}
-		}
-	}
+    @media screen and (min-width: 1160px) {
+      flex-grow: 1;
+      margin: {
+        right: $indent-40;
+        bottom: 0;
+      }
+    }
+  }
 
-	&__label {
-		color: $gray-700;
+  &__label {
+    color: $gray-700;
 
-		@include font-style($heights: $font-height-26, $spacing: 0.5px);
-	}
+    @include font-style($heights: $font-height-26, $spacing: 0.5px);
+  }
 
-	&__input {
-		display: block;
-		width: 100%;
-		margin-top: $indent-16;
-		border: none;
-		border-bottom: 1px solid $black;
-		padding-bottom: $indent-10;
-		opacity: 0.8;
-	}
+  &__input {
+    display: block;
+    width: 100%;
+    margin-top: $indent-16;
+    border: none;
+    border-bottom: 1px solid $black;
+    padding-bottom: $indent-10;
+    opacity: 0.8;
+  }
 
-	&__item_checkbox {
-		opacity: 0.8;
+  &__item_checkbox {
+    opacity: 0.8;
 
-		@include flexbox($align: center);
-	}
+    @include flexbox($align: center);
+  }
 
-	&__checkbox {
-		margin-right: $indent-10;
-	}
+  &__checkbox {
+    margin-right: $indent-10;
+  }
 
-	&__button {
-		margin-top: $indent-16;
-	}
+  &__button {
+    margin-top: $indent-16;
+  }
 }
 
 .post__form .form__button {
 
-	@media screen and (min-width: 870px) {
-		margin-top: -1.56rem;
-	}
+  @media screen and (min-width: 870px) {
+    margin-top: -1.56rem;
+  }
 }
 
 .form_mobile {
-	grid-gap: $indent-25;
+  grid-gap: $indent-25;
 
-	@media screen and (min-width: 870px) {
-		grid-gap: $indent-50;
-	}
+  @media screen and (min-width: 870px) {
+    grid-gap: $indent-50;
+  }
 }

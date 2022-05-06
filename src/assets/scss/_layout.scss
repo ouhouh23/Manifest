@@ -1,118 +1,122 @@
 .wrapper {
-	padding: {
-		left: $indent-16;
-		right: $indent-16;
-	}
+  padding: {
+	  left: $indent-16;
+	  right: $indent-16;
+  }
 	
-	max-width: 1200px;
-	width: 100%;
-	margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  margin: {
+	  left: auto;
+	  right: auto;
+  }
 
-	@media screen and (min-width: 600px)  {
-    	padding-left: $indent-40;
-    	padding-right: $indent-40;		
-	}
+  @media screen and (min-width: 600px)  {
+	  padding: {
+      left: $indent-40;
+      right: $indent-40;	
+    }	
+  }
 }
 
-.wrapper-tablet {
-		max-width: 33.7rem;
-		margin-left: auto;
-		margin-right: auto;
+.wrapper_tablet {
+  max-width: 33.7rem;
+  padding: 0;
 
-  	@media screen and (min-width: 870px) {
-			max-width: 100%;
-		}
+  @media screen and (min-width: 870px) {
+    max-width: 100%;
+  }
 }
 
 .indent-bottom {
-	margin-bottom: $indent-65;
-}
+  margin-bottom: $indent-65;
 
-@media screen and (min-width: 600px) {
-	.indent-bottom {
-		margin-bottom: $indent-128;
-	}
+  @media screen and (min-width: 600px) {
+	  margin-bottom: $indent-128;
+  }
 }
 
 .heading {
-	@include font-style($size: $font-33, $heights: 3rem);
+  @include font-style($size: $font-33, $heights: 3rem);
 
-	@media screen and (min-width: 870px) {
-		max-width: 65%;
-	}
+  @media screen and (min-width: 870px) {
+	  max-width: 65%;
+  }
 
-	@media screen and (min-width: 600px) {
-		font-size: $font-48;
-		line-height: $font-height-64;
-	}
+  @media screen and (min-width: 600px) {
+    font-size: $font-48;
+    line-height: $font-height-64;
+  }
 }
 
 .heading-secondary {
-	@include font-style($size: $font-23, $heights: $font-height-38, $spacing: 1px);
+  @include font-style($size: $font-23, $heights: $font-height-38, $spacing: 1px);
 }
 
 .image-primary {
-	margin-top: $indent-65;
+  margin-top: $indent-65;
 }
 
 .image-secondary {
-	margin-top: $indent-40;
+  margin-top: $indent-40;
 }
 
 .header {
-	padding-top: $indent-100;
-	width: 100%;
+  padding-top: $indent-100;
+  width: 100%;
 	
-	@include flexbox($justify: space-between, $align: center);
+  @include flexbox($justify: space-between, $align: center);
 
-	&__navigation {
-		display: flex;
-		color: $black;
-		position: relative;
-	}
+  &__navigation {
+    display: flex;
+    color: $black;
+    position: relative;
+  }
 
-	&__icon {
-		margin-left: $indent-50;
-	}
+  &__icon {
+    margin-left: $indent-50;
+  }
 }
 
 .footer {
-	margin-top: auto;
-	background: $gray-100;
-	padding-top: $indent-65;
-	padding-bottom: $indent-65;
+  margin-top: auto;
+  background: $gray-100;
+  padding: {
+    top: $indent-65;
+    bottom: $indent-65;
+  }
 
-	@media screen and (min-width: 870px) {
-		padding-top: $indent-128;
-		padding-bottom: $indent-128;
-	}
+  @media screen and (min-width: 870px) {
+    padding: {
+      top: $indent-128;
+      bottom: $indent-128;
+    }
+  }
 
-	&__content {
+  &__content {
 	  @include flexbox($direction: column, $justify: space-between, $align: flex-start);
 
 	  @media screen and (min-width: 870px) {
-			flex-direction: row;
-			align-items: center;
-	  }  
-	}
+      flex-direction: row;
+      align-items: center;
+    }  
+  }
 
-	&__social-networks {
-		align-self: stretch;
-		letter-spacing: 2px;
-		margin: $indent-50 0;
+  &__social-networks {
+    align-self: stretch;
+    letter-spacing: 2px;
+    margin: $indent-50 0;
 		
-		@include flexbox($direction: column, $justify: space-between);
+    @include flexbox($direction: column, $justify: space-between);
 
-		@media screen and (min-width: 870px) {
-		  margin: 0;
-		}
-	}
+    @media screen and (min-width: 870px) {
+      margin: 0;
+    }
+  }
 
-	&__copyright {
-		margin-top: auto;
+  &__copyright {
+    margin-top: auto;
 
-		@include font-style($size: $font-16, $heights: $font-height-20, $spacing: 1px);
-	}
+    @include font-style($size: $font-16, $heights: $font-height-20, $spacing: 1px);
+  }
 }
-
-

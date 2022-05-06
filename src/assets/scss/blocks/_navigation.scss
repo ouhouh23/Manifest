@@ -1,60 +1,56 @@
 .navigation {
+  @media screen and (max-width: 870px) {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 2rem;
+    padding: $indent-40 $indent-65;
+    background: $gray-100;
 
- 	@media screen and (max-width: 870px) {
-		display: none;
-		position: absolute;
-		right: 0;
-		top: 2rem;
-		padding: $indent-40 $indent-65;
-		background: $gray-100;
+    &__checkbox:checked + & {
+      display: block;
+    }
+  }
 
-		&__checkbox:checked + & {
-			display: block;
-		}
- 	}
+  &__button {
+    display: block;
+    margin-left: $indent-10;
+    cursor: pointer;
 
- 	&__button {
-		display: block;
-		margin-left: $indent-10;
-		cursor: pointer;
+    @media screen and (min-width: 870px) {
+      display: none;
+    }
+  }
 
-		@media screen and (min-width: 870px) {
-			display: none;
-		}
-	}
+  &__checkbox {
+    display: none;
+  }
 
+  &__content {
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: $indent-50;
 
-	&__checkbox {
-		display: none;
-	}
+    @media screen and (min-width: 870px) {
+      grid-auto-flow: column;
+    }
+  }
 
-	&__content {
-		display: grid;
-		grid-auto-flow: row;
-		grid-gap: $indent-50;
+  &__item {
+    @include font-style($size: $font-16, $heights: $font-height-16, $spacing: 3px);
+  }
 
-		@media screen and (min-width: 870px) {
-			grid-auto-flow: column;
+  &__item_active {
+    margin-bottom: -2px;
+    
+    @include flexbox($direction: column, $align: center);
 
-		}
-	}
-
-	&__item {
-		@include font-style($size: $font-16, $heights: $font-height-16, $spacing: 3px);
-	}
-
-	&__item_active {
-		margin-bottom: -2px;
-		
-		@include flexbox($direction: column, $align: center);
-
-		&:after {
-			content: ('');
-			display: inline-block;
-			width: 2.18rem;
-			height: 2px;
-			background: $black;
-  		}
-  	}  	
+    &:after {
+      content: ('');
+      display: inline-block;
+      width: 2.18rem;
+      height: 2px;
+      background: $black;
+    }
+  }
 }
-

@@ -1,34 +1,34 @@
 .overview {
-	display: grid;
-	grid-template-columns: auto;
-	grid-gap: $indent-65;
-	justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: $indent-65;
+  justify-content: space-between;
 
-	@media screen and (min-width: 870px) {
-		grid-template-columns: 50% 40%;
-	}
+  @media screen and (min-width: 870px) {
+    grid-template-columns: 50% 40%;
+  }
 
-	&__paragraph {
-		margin-top: $indent-40;
-	}
+  &__paragraph {
+    margin-top: $indent-40;
+  }
 
-	&__information {
-		margin-bottom: -2.8rem;
-	}
+  &__information {
+    margin-bottom: -2.8rem;
+  }
 
-	&__category {
-		margin-bottom: $indent-45;
+  &__category {
+    margin-bottom: $indent-45;
 
-		@media screen and (min-width: 870px) {
-			max-width: 70%;
-			margin-left: auto;
-		}
-	}
+    @media screen and (min-width: 870px) {
+      max-width: 70%;
+      margin-left: auto;
+    }
+  }
 
-	&__item {
-		display: block;
-		color: $gray-700;
+  &__item {
+    display: block;
+    color: $gray-700;
 
-		@include font-style($size: $font-19, $spacing: 0.5px);
-	}
+    @include font-style($size: $font-19, $spacing: 0.5px);
+  }
 }

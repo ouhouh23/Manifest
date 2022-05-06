@@ -1,26 +1,26 @@
 .gallery {
-	display: grid;
-	grid-auto-flow: column;
-	grid-gap: $indent-34;
-	justify-content: center;
-	width: 34rem;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: $indent-34;
+  justify-content: center;
+  width: 34rem;
 
-	@media screen and (min-width: 600px) {
-		width: 69rem;
-	}
+  @media screen and (min-width: 600px) {
+    width: 69rem;
+  }
 
-	&__caption {
-		display: inline-block;
-		margin-top: $indent-16;
+  &__caption {
+    display: inline-block;
+    margin-top: $indent-16;
 
-		@include font-style($heights: $font-height-26);
-	}
+    @include font-style($heights: $font-height-26);
+  }
 
-	&__image {
-		max-width: 16rem;
+  &__image {
+    max-width: 16rem;
 
-		@media screen and (min-width: 600px) {
-			max-width: 34rem;
-		}
-	}
+    @media screen and (min-width: 600px) {
+      max-width: 34rem;
+    }
+  }
 }

@@ -1,75 +1,75 @@
 .posts {
-	display: grid;
-	grid-template-columns: auto;
-	row-gap: $indent-50;
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: $indent-50;
 
-	&__header {
-		@include flexbox($justify: space-between, $align: center);
-	}
+  &__header {
+    @include flexbox($justify: space-between, $align: center);
+  }
 
-	&__link {
-		@include font-style($heights: $font-height-26);
+  &__link {
+    color: $gray-500;
 
-		color: $gray-500;
-	}
+    @include font-style($heights: $font-height-26);
+  }
 
-	&__button {
-		margin: 0 auto;
-		color: $white;
+  &__button {
+    margin: 0 auto;
+    color: $white;
 
-		@media screen and (min-width: 870px) {
-			margin-top: -3.3rem;
-			grid-area: 4 / 1 / 5 / 3;
-		}
-	}
+    @media screen and (min-width: 870px) {
+      margin-top: -3.3rem;
+      grid-area: 4 / 1 / 5 / 3;
+    }
+  }
 
-	&__label {
-		margin: {
-			right: $indent-40;
-			bottom: $indent-25;
-		}
+  &__label {
+    margin: {
+      right: $indent-40;
+      bottom: $indent-25;
+    }
 
-		@include font-style($heights: $font-height-26);
+    @include font-style($heights: $font-height-26);
 
-		@media screen and (min-width: 600px) {
-			margin-bottom: 0;
-		}
-	}
+    @media screen and (min-width: 600px) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .posts_row {
-	@media screen and (min-width: 870px) {
-		grid-template-columns: 30% 30% 30%;
-		justify-content: space-between;
-		grid-gap: $indent-34;
-	}
+  @media screen and (min-width: 870px) {
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+    grid-gap: $indent-34;
+  }
 
-	.posts__header {
-		grid-area: 1 / 1 / 2 / 2;
+  .posts__header {
+    grid-area: 1 / 1 / 2 / 2;
 
-		@media screen and (min-width: 870px) {
-			grid-area: 1 / 1 / 2 / 4;
-		}
-	}
-} 
+    @media screen and (min-width: 870px) {
+      grid-area: 1 / 1 / 2 / 4;
+    }
+  }
+}
 
 .posts_columns {
-	@media screen and (min-width: 870px) {
-		grid-template-columns: 48% 48%;
-		grid-gap: $indent-128 $indent-40;
-	}
+  @media screen and (min-width: 870px) {
+    grid-template-columns: 48% 48%;
+    grid-gap: $indent-128 $indent-40;
+  }
 
-	.posts__header {
-		display: flex;
-		flex-direction: column;
-		align-items: baseline;
+  .posts__header {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
 
-		@media screen and (min-width: 870px) {
-			flex-direction: row;
-			grid-area: 1 / 1 / 2 / 3;
-			margin-bottom: -4.88rem;
-			width: 50%;
-			padding-right: ($indent-40/2);
-		}
-	}
+    @media screen and (min-width: 870px) {
+      flex-direction: row;
+      grid-area: 1 / 1 / 2 / 3;
+      margin-bottom: -4.88rem;
+      width: 50%;
+      padding-right: ($indent-40/2);
+    }
+  }
 }

@@ -9,7 +9,7 @@
 <nav class="navigation">
   <ul class="navigation__content">
     {% for url, name in navigation %}
-      <li class="navigation__item{% if name == page %} navigation__item_active {% endif %}">
+      <li class="navigation__item{% if name == page %} navigation__item_active{% endif %}">
         <a href="{{ url }}">{{ name }}</a>
       </li>
     {% endfor %}

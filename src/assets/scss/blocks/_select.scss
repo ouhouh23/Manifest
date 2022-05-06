@@ -1,29 +1,29 @@
 .select {
-	position: relative;
-	width: 100%;
+  position: relative;
+  width: 100%;
 
-	&__body {
-		width: 100%;
-		appearance: none;
-		outline: none;
-		color: $gray-700;
-		padding-bottom: 1rem;
-		border: none;
-		border-bottom: 1px solid $black;
-		background: $white;
+  &__body {
+    width: 100%;
+    appearance: none;
+    outline: none;
+    color: $gray-700;
+    padding-bottom: 1rem;
+    border: none;
+    border-bottom: 1px solid $black;
+    background: $white;
 
-		@include font-style($heights: $font-height-26);
-	}
+    @include font-style($heights: $font-height-26);
+  }
 
-	&:after {
-		position: absolute;
-		right: 0;
-		top: 0.7rem;
-		width: 1.25rem;
-		height: 1.25rem;
-		content: '❯';
-		transform: rotate(90deg);
-		pointer-events: none;
-		color: $gray-700;
-	}
+  &:after {
+    position: absolute;
+    right: 0;
+    top: 0.7rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    content: '❯';
+    transform: rotate(90deg);
+    pointer-events: none;
+    color: $gray-700;
+  }
 }

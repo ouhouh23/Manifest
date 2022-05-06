@@ -1,19 +1,19 @@
 .tags {
-	display: flex;
-	align-items: baseline;
-	padding-bottom: $indent-16;
-	border-bottom: 1px solid $gray-100;
-	margin-top: $indent-65;
+  display: flex;
+  align-items: baseline;
+  padding-bottom: $indent-16;
+  border-bottom: 1px solid $gray-100;
+  margin-top: $indent-65;
 
-	@include font-style($heights: $font-height-26, $spacing: 1px);
+  @include font-style($heights: $font-height-26, $spacing: 1px);
 
-	&__heading {
-		font-weight: $font-normal;
-		margin-right: $indent-16;
-	}
-	
-	&__item {
-		margin-right: $indent-10;
-		color: $gray-500;
-	}
+  &__heading {
+    font-weight: $font-normal;
+    margin-right: $indent-16;
+  }
+
+  &__item {
+    margin-right: $indent-10;
+    color: $gray-500;
+  }
 }

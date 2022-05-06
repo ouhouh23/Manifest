@@ -1,17 +1,17 @@
 .button {
-	display: inline-block;
-	background: $gray-700;
-	color: $white;
-	width: fit-content;
-	white-space: nowrap;
+  display: inline-block;
+  background: $gray-700;
+  color: $white;
+  width: fit-content;
+  white-space: nowrap;
 
-	@include font-style($heights: $font-height-26, $weight: $font-bold);
+  @include font-style($heights: $font-height-26, $weight: $font-bold);
 
-	&_tight {
-		padding: $indent-10 $indent-34;
-	}
+  &_tight {
+    padding: $indent-10 $indent-34;
+  }
 
-	&_wide {
-		padding: $indent-10 $indent-45;
-	}
+  &_wide {
+    padding: $indent-10 $indent-45;
+  }
 }

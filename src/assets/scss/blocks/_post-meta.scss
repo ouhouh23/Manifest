@@ -1,144 +1,144 @@
 .post-meta {
-	@include flexbox($direction: column);
-	
-	&__caption {
-		margin: {
-			top: $indent-25;
-			bottom: $indent-25;
-		}
+  @include flexbox($direction: column);
 
-		@include flexbox($justify: space-between);
-	}
+  &__caption {
+    margin: {
+      top: $indent-25;
+      bottom: $indent-25;
+    }
 
-	&__category, &__date, &__comments {
-		color: $gray-500;
+    @include flexbox($justify: space-between);
+  }
 
-		@include font-style($size: $font-16, $heights: $font-height-20, $spacing: 1px);
-	}
+  &__category, &__date, &__comments {
+    color: $gray-500;
 
-	&__heading {
-		margin-bottom: $indent-25;
-	}
+    @include font-style($size: $font-16, $heights: $font-height-20, $spacing: 1px);
+  }
 
-	&__paragraph {
-	  margin-top: auto;
-	  color: $gray-700;
+  &__heading {
+    margin-bottom: $indent-25;
+  }
 
-	  @include font-style($heights: $font-height-26, $spacing: 1px);	
-	}
+  &__paragraph {
+    margin-top: auto;
+    color: $gray-700;
 
-	&__comments {
-		margin-top: $indent-10;
-		display: block;
+    @include font-style($heights: $font-height-26, $spacing: 1px);
+  }
 
-		@media screen and (min-width: 600px) {
-			display: inline-block;
-			margin: 0 0 0 $indent-40;
-		}
-	}
+  &__comments {
+    margin-top: $indent-10;
+    display: block;
+
+    @media screen and (min-width: 600px) {
+      display: inline-block;
+      margin: 0 0 0 $indent-40;
+    }
+  }
 }
 
 .post-meta_primary {
-	margin: {
-		top: $indent-65;
-		bottom: $indent-65;
-	}
+  margin: {
+    top: $indent-65;
+    bottom: $indent-65;
+  }
 
-	@include flexbox($direction: column, $align: center);
+  @include flexbox($direction: column, $align: center);
 
-	@media screen and (min-width: 870px) {
-		flex-direction: row;
-		align-items: stretch;
-		margin: {
-			top: $indent-100;
-			bottom: $indent-115;
-		}
-	}
+  @media screen and (min-width: 870px) {
+    flex-direction: row;
+    align-items: stretch;
+    margin: {
+      top: $indent-100;
+      bottom: $indent-115;
+    }
+  }
 
-	.post-meta__image {
-		@media screen and (min-width: 870px) {
-			max-width: 50%;
-		}
-	}
+  .post-meta__image {
+    @media screen and (min-width: 870px) {
+      max-width: 50%;
+    }
+  }
 
-	.post-meta__text {
-		margin-top: $indent-16;
+  .post-meta__text {
+    margin-top: $indent-16;
 
-		@include flexbox($direction: column);
+    @include flexbox($direction: column);
 
-		@media screen and (min-width: 870px) {
-			margin-left: $indent-70;
-		}
-	}
+    @media screen and (min-width: 870px) {
+      margin-left: $indent-70;
+    }
+  }
 
-	.post-meta__category {
-		margin-top: auto;
-		order: 1;	
-	}
+  .post-meta__category {
+    margin-top: auto;
+    order: 1; 
+  }
 
-	.post-meta__heading {
-		order: 2;
-		margin: {
-			top: $indent-25;
-			bottom: $indent-16;
-		}
-	}
+  .post-meta__heading {
+    order: 2;
+    margin: {
+      top: $indent-25;
+      bottom: $indent-16;
+    }
+  }
 
-	.post-meta__date {
-		order: 3;
-	}
+  .post-meta__date {
+    order: 3;
+  }
 
-	.post-meta__paragraph {
-		order: 4;
-		margin: {
-			top: $indent-16;
-			bottom: $indent-65;
-		}
+  .post-meta__paragraph {
+    order: 4;
+    margin: {
+      top: $indent-16;
+      bottom: $indent-65;
+    }
 
-		@media screen and (min-width: 870px) {
-			margin: {
-				top: $indent-50;
-				bottom: 0;
-			}
-		}
-	}
+    @media screen and (min-width: 870px) {
+      margin: {
+        top: $indent-50;
+        bottom: 0;
+      }
+    }
+  }
 
-	.post-meta__link {
-		vertical-align: text-top;
-	}
+  .post-meta__link {
+    vertical-align: text-top;
+  }
 
-	.post-meta__pagination {
-		order: 5;
-		margin: {
-			top: auto;
-			right: auto;
-		}
-	}
+  .post-meta__pagination {
+    order: 5;
+    margin: {
+      top: auto;
+      right: auto;
+    }
+  }
 }
 
 .post-meta_full {
-	.post-meta__heading {
-		margin: {
-			top: $indent-16;
-			bottom: $indent-16;
-		}
+  .post-meta__heading {
+    margin: {
+      top: $indent-16;
+      bottom: $indent-16;
+    }
 
-		@media screen and (min-width: 600px) {
-			margin: {
-				top: $indent-25;
-				bottom: $indent-45;
-			}
-		}
-	}
+    @media screen and (min-width: 600px) {
+      margin: {
+        top: $indent-25;
+        bottom: $indent-45;
+      }
+    }
+  }
 
-	.post-meta__image {
-		margin: {
-			top: $indent-40;
-			bottom: $indent-40;
-		}
+  .post-meta__image {
+    margin: {
+      top: $indent-40;
+      bottom: $indent-40;
+    }
 
-		@media screen and (min-width: 600px) {
-			margin-top: $indent-65;
-		}
-	}
+    @media screen and (min-width: 600px) {
+      margin-top: $indent-65;
+    }
+  }
 }

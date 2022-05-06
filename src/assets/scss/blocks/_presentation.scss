@@ -1,48 +1,48 @@
 .presentation {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-	@media screen and (min-width: 870px) {
-		flex-direction: row;
-	}
+  @media screen and (min-width: 870px) {
+    flex-direction: row;
+  }
 
-	&__header {
+  &__header {
+    @media screen and (min-width: 870px) {
+      flex-grow: 1;
+    }
+  }
 
-		@media screen and (min-width: 870px) {
-			flex-grow: 1;
-		}
-	}
+  &__heading:first-line {
+    line-height: 7rem;
 
-	&__heading:first-line {
-		line-height: 7rem;
+    @media screen and (min-width: 870px) {
+      line-height: $font-height-38;
+    }
+  }
 
-		@media screen and (min-width: 870px) {
-			line-height: $font-height-38;
+  &__link {
+    display: block;
+    margin: {
+      top: $indent-25;
+      bottom: $indent-50;
+    }
 
-		}
-	}
+    @media screen and (max-width: 870px) {
+      margin-top: $indent-45;
+    }
+  }
 
-	&__link {
-		display: block;
-		margin-top: $indent-25;
-		margin-bottom: $indent-50;
+  &__text {
+    margin-top: -2.12rem;
 
-		@media screen and (max-width: 870px) {
-			margin-top: $indent-45;
-		}
-	}
+    @media screen and (min-width: 870px) {
+      max-width: 45%;
+    }
+  }
 
-	&__text {
-		margin-top: -2.12rem;
-
-		@media screen and (min-width: 870px) {
-			max-width: 45%;
-		}
-	}
-
-	&__paragraph {
-		margin-top: $indent-34;
-		
-		@include font-style($size: $font-19, $heights: $font-height-32, $spacing: 1px);
-	}
+  &__paragraph {
+    margin-top: $indent-34;
+    
+    @include font-style($size: $font-19, $heights: $font-height-32, $spacing: 1px);
+  }
 }

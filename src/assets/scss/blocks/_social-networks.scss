@@ -1,15 +1,15 @@
 .social-networks {
-	display: inline-grid;
-	grid-gap: $indent-25;
-	color: $gray-500;
-	width: fit-content;
-	grid-auto-flow: column;
+  display: inline-grid;
+  grid-gap: $indent-25;
+  color: $gray-500;
+  width: fit-content;
+  grid-auto-flow: column;
 
-	@media screen and (min-width: 870px) {
-		grid-auto-flow: row;
-	}
+  @media screen and (min-width: 870px) {
+    grid-auto-flow: row;
+  }
 
-	&_horizontal {
-		grid-auto-flow: column;
-	}
+  &_horizontal {
+    grid-auto-flow: column;
+  }
 }
