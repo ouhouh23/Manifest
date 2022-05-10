@@ -24,10 +24,14 @@
   }
 
   &__paragraph {
-    margin-bottom: $indent-65;
+    margin-bottom: $indent-50;
     color: $gray-700;
 
     @include font-style($size: $font-19, $heights: $font-height-32, $spacing: 0.5px);
+
+    @media screen and (min-width: 870px) {
+      margin-bottom: $indent-65;
+    }
   }
 
   &__button {
