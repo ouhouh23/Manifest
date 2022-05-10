@@ -3,21 +3,42 @@
 
   &__caption {
     margin: {
-      top: $indent-25;
+      top: $indent-16;
       bottom: $indent-25;
     }
 
-    @include flexbox($justify: space-between);
+    @include flexbox($direction: column, $justify: space-between);
+
+    @media screen and (min-width: 600px) {
+      flex-direction: row;
+      margin-top: $indent-25;
+    }
+  }
+
+  &__category {
+    margin-bottom: $indent-10;
+
+    @media screen and (min-width: 600px) {
+      margin-bottom: 0;
+    }
   }
 
   &__category, &__date, &__comments {
     color: $gray-500;
 
-    @include font-style($size: $font-16, $heights: $font-height-20, $spacing: 1px);
+    @include font-style($size: $font-12, $heights: $font-height-20, $spacing: 1px);
   }
 
   &__heading {
     margin-bottom: $indent-25;
+    
+    @media screen and (min-width: 870px) {
+      min-height: 7.12rem;
+    }
+
+    @media screen and (min-width: 1100px) {
+      min-height: 4.75rem;
+    }
   }
 
   &__paragraph {

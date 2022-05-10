@@ -1,20 +1,24 @@
 .wrapper {
   padding: {
-	  left: $indent-16;
-	  right: $indent-16;
+    left: $indent-16;
+    right: $indent-16;
   }
 	
-  max-width: 1200px;
+  max-width: 1184px;
   width: 100%;
   margin: {
-	  left: auto;
-	  right: auto;
+    left: auto;
+    right: auto;
+  }
+
+  @media only screen and (min-width: 0px) and (max-width: 870px) {
+    overflow-x: hidden;
   }
 
   @media screen and (min-width: 600px)  {
-	  padding: {
-      left: $indent-40;
-      right: $indent-40;	
+    padding: {
+      left: 2rem;
+      right: 2rem;	
     }	
   }
 }
@@ -32,7 +36,7 @@
   margin-bottom: $indent-65;
 
   @media screen and (min-width: 600px) {
-	  margin-bottom: $indent-128;
+    margin-bottom: $indent-128;
   }
 }
 
@@ -40,7 +44,7 @@
   @include font-style($size: $font-33, $heights: 3rem);
 
   @media screen and (min-width: 870px) {
-	  max-width: 65%;
+    max-width: 65%;
   }
 
   @media screen and (min-width: 600px) {
@@ -62,10 +66,15 @@
 }
 
 .header {
-  padding-top: $indent-100;
+  padding-top: $indent-25;
   width: 100%;
+  overflow: visible;
 	
   @include flexbox($justify: space-between, $align: center);
+
+  @media screen and (min-width: 600px) {
+    padding-top: $indent-100;
+  }
 
   &__navigation {
     display: flex;
@@ -94,7 +103,7 @@
   }
 
   &__content {
-	  @include flexbox($direction: column, $justify: space-between, $align: flex-start);
+    @include flexbox($direction: column, $justify: space-between, $align: flex-start);
 
 	  @media screen and (min-width: 870px) {
       flex-direction: row;
@@ -105,18 +114,31 @@
   &__social-networks {
     align-self: stretch;
     letter-spacing: 2px;
-    margin: $indent-50 0;
-		
-    @include flexbox($direction: column, $justify: space-between);
+    margin: {
+      top: $indent-50;
+      bottom: $indent-25;
+    }
+
+		display: flex;
+    flex-direction: column;
 
     @media screen and (min-width: 870px) {
-      margin: 0;
+      margin: {
+        top: 0;
+        bottom: -1.56rem;
+      }
     }
+  }
+
+  &__social-media {
+    margin-bottom: $indent-25;
+
+    @include font-style($size: $font-16, $heights: $font-height-26, $spacing: 1px);
   }
 
   &__copyright {
     margin-top: auto;
 
-    @include font-style($size: $font-16, $heights: $font-height-20, $spacing: 1px);
+    @include font-style($size: $font-12, $heights: $font-height-20, $spacing: 1px);
   }
 }
