@@ -6,3 +6,12 @@
     }
   }
 }
+
+%offset-left {
+  @media screen and (min-width: 1300px) {
+    margin: {
+      right: 3.75rem;
+      left: -3.75rem;
+    }
+  }
+}
