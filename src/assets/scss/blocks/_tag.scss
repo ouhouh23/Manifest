@@ -1,5 +1,5 @@
 .tag {
   margin-bottom: $indent-50;
 
-  @include font-style($heights: $font-height-26);
+  @include font-style($heights: $font-height-26, $spacing: 4px);
 }

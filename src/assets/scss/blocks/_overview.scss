@@ -5,7 +5,15 @@
   justify-content: space-between;
 
   @media screen and (min-width: 870px) {
-    grid-template-columns: 50% 40%;
+    grid-template-columns: 49% 40%;
+  }
+
+  &__heading {
+    margin-bottom: -1.56rem;
+
+    @media screen and (min-width: 600px) {
+      margin-bottom: 0;
+    }
   }
 
   &__paragraph {
@@ -20,7 +28,7 @@
     margin-bottom: $indent-45;
 
     @media screen and (min-width: 870px) {
-      max-width: 70%;
+      max-width: 21.9rem;
       margin-left: auto;
     }
   }
