@@ -88,17 +88,20 @@
     @include flexbox($direction: column);
 
     @media screen and (min-width: 870px) {
-      margin-left: $indent-70;
+      margin: 0 $indent-70;
     }
   }
 
   .post-meta__category {
     margin-top: auto;
+    font-size: $font-16;
+    line-height: $font-height-26;
     order: 1; 
   }
 
   .post-meta__heading {
     order: 2;
+    min-height: auto;
     margin: {
       top: $indent-25;
       bottom: $indent-16;
@@ -107,6 +110,8 @@
 
   .post-meta__date {
     order: 3;
+    font-size: $font-16;
+    line-height: $font-height-26;
   }
 
   .post-meta__paragraph {
@@ -116,12 +121,18 @@
       bottom: $indent-65;
     }
 
+    @include font-style($size: $font-16, $heights: $font-height-26, $spacing: 0.5px);
+
     @media screen and (min-width: 870px) {
       margin: {
         top: $indent-50;
         bottom: 0;
       }
     }
+  }
+
+  .post-meta__arrow {
+    margin-left: $indent-10;
   }
 
   .post-meta__link {
