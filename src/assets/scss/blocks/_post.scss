@@ -1,9 +1,6 @@
 .post {
-  @media screen and (min-width: 870px) {
-    padding: {
-      left: $indent-195;
-      right: $indent-195;
-    }
+  &__author, &__paragraph, &__points, &__tags, &__form, &__heading, &__comments {
+    @extend %post-centered;
   }
 
   &__author {
@@ -14,18 +11,34 @@
   }
 
   &__header {
-    display: grid;
-    grid-template-columns: auto;
-    grid-gap: $indent-40;
+    display: flex;
+    flex-direction: column;
 
-    @media screen and (min-width: 870px) {
-      margin-left: -7rem;
-      grid-template-columns: auto auto;
-      grid-gap: 5.6rem;
+    @media screen and (min-width: 950px) {
+      flex-direction: row;
+      max-width: 58.75rem;
+      padding-right: 1rem;
+      margin: {
+        right: auto;
+        left: auto;
+      }
+    }
+  }
+
+  &__social-networks {
+    margin-bottom: $indent-34;
+
+    @media screen and (min-width: 950px) {
+      align-self: flex-start;
+      margin: {
+        top: 0.38rem;
+        bottom: 0;
+      }
     }
   }
 
   &__paragraph {
+
     color: $black;
     margin-bottom: $indent-34;
 
@@ -33,15 +46,17 @@
   }
 
   &__points {
-    list-style-type: disc;
-    padding-left: $indent-40;
-    margin-bottom: -2.12rem;
+    margin-top: $indent-70; 
 
     @include font-style ($size: $font-19, $heights: $font-height-32, $spacing: 0.5px);
+
+    @media screen and (min-width: 600px) {
+      margin-top: 0;
+    }
   }
 
-  &__item {
-    margin-bottom: $indent-34;
+  &__tags {
+    margin-top: $indent-100;
   }
 
   &__form {

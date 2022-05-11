@@ -8,10 +8,20 @@
 }
 
 %offset-left {
-  @media screen and (min-width: 1300px) {
+  @media screen and (min-width: 1350px) {
     margin: {
       right: 3.75rem;
       left: -3.75rem;
     }
   }
+}
+
+%post-centered {
+  @media screen and (min-width: 950px) {
+    max-width: 45.6rem;
+    margin: {
+      left: auto;
+      right: auto;
+    }
+  } 
 }

@@ -1,9 +1,11 @@
 .blockquote {
   padding-left: $indent-16;
   border-left: 3px solid $gray-300;
+  margin-top: $indent-70;
 
   @media screen and (min-width: 600px) {
     padding-left: $indent-65;
+    margin-top: 0;
   }
 
   &__content {

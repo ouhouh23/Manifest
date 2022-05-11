@@ -161,6 +161,10 @@
 .post-meta_full {
   @extend %offset-left;
 
+  @media screen and (min-width: 600px) {
+    margin-top: -3rem;
+  }
+
   .post-meta__heading {
     margin: {
       top: $indent-16;
@@ -179,13 +183,6 @@
     font-size: $font-16;
     line-height: $font-height-26;
   }
-
-    @media screen and (min-width: 600px) {
-      margin: {
-        top: $indent-25;
-        bottom: $indent-45;
-      }
-    }
 
   .post-meta__image {
     margin: {

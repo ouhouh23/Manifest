@@ -10,6 +10,8 @@
 
     color: $gray-500;
 
+    @include font-style($size: $font-16, $heights: $font-height-26, $spacing: 1px);
+
     @media screen and (min-width: 870px) {
       margin: {
         top: -3.12rem;
@@ -34,8 +36,10 @@
 
   &__item {
     margin-bottom: $indent-25;
+    max-width: 75%;
 
     @media screen and (min-width: 1160px) {
+      max-width: 100%;
       flex-grow: 1;
       margin: {
         right: $indent-40;
@@ -47,7 +51,7 @@
   &__label {
     color: $gray-700;
 
-    @include font-style($heights: $font-height-26, $spacing: 0.5px);
+    @include font-style($size: $font-16, $heights: $font-height-26, $spacing: 0.5px);
   }
 
   &__input {
@@ -57,17 +61,48 @@
     border: none;
     border-bottom: 1px solid $black;
     padding-bottom: $indent-10;
-    opacity: 0.8;
+
+    @include font-style($size: $font-12, $heights: $font-height-20, $spacing: 0.5px);
+
+    &::placeholder {
+      color: $gray-500;
+    }
   }
 
-  &__item_checkbox {
-    opacity: 0.8;
+  &__label_checkbox {
+    color: $gray-500;
+    font-size: $font-12;
+    display: flex;
+    position: relative;
 
-    @include flexbox($align: center);
+    &:before {
+      content: '';
+      display: inline-block;
+      min-width: 1.12rem;
+      height: 1.12rem;
+      border: 1px solid $black;
+      margin: {
+        right: $indent-10;
+        top: 0.25rem;
+      }
+    }
+
+    &:after {
+      content: 'v';
+      display: none;
+      position: absolute;
+      left: 0.31rem;
+      font-size: $font-19;
+      color: $black;
+    }
   }
-
+  
   &__checkbox {
-    margin-right: $indent-10;
+    display: none;
+  }
+
+  &__checkbox:checked + &__label_checkbox:after {
+    display: inline-block;
   }
 
   &__button {

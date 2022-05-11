@@ -31,7 +31,7 @@
 
     @include font-style($heights: $font-height-26);
 
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 870px) {
       margin-bottom: 0;
     }
   }
