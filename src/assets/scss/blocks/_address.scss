@@ -1,7 +1,7 @@
 .address {
   margin: {
     top: $indent-25;
-    bottom: $indent-50;
+    bottom: $indent-70;
   }
 
   color: $gray-700;
@@ -9,7 +9,12 @@
   @include font-style($heights: $font-height-26, $spacing: 0.5px);
 
   &__item {
-    display: block;
+    display: flex;
+    align-items: center;
     margin-bottom: $indent-25;
+  }
+
+  &__icon {
+    margin-right: $indent-10;
   }
 }

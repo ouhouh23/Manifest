@@ -4,7 +4,13 @@
   grid-gap: $indent-65;
   justify-content: space-between;
 
-  @media screen and (min-width: 600px) {
+  .contact-us__heading {
+    @media screen and (min-width: 870px) {
+      max-width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 870px) {
     grid-template-columns: 35% 45%;
     grid-gap: $indent-128 $indent-25;
   }

@@ -4,7 +4,7 @@
 
 {% block content %}
   <section class="contact-us">
-    <h1 class="heading">Contact us</h1>
+    <h1 class="contact-us__heading heading">Contact us</h1>
 
     <p class="contact-us__paragraph">
       If you need our help with your user account, have questions about 
@@ -17,17 +17,19 @@
 
       <address class="address">
         <span class="address__item">
-          486 Rahi street, Berlin .98 Germany
+          486 Rahi street, Berlin .98
+          <br>
+          Germany
         </span>
 
         <a class="address__item" href="tel:+48601366816">
-          <i class="fa-solid fa-phone"></i>
+          <i class="address__icon fa-solid fa-phone"></i>
 
           +48 601 366 816
         </a>
 
         <a class="address__item" href="mailto:company@support.com">
-          <i class="fa-solid fa-envelope"></i>
+          <i class="address__icon fa-solid fa-envelope"></i>
 
             company@support.com
         </a>
@@ -127,10 +129,10 @@
       </div>
 
       <input 
-        class="button button_tight form__button" 
+        class="button button_tight form__button button__arrow" 
         type="submit" 
         name="Send" 
-        value="Send &#8594" 
+        value="Send" 
       />
     </form>
   </section>
