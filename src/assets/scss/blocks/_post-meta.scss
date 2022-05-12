@@ -139,7 +139,17 @@
     }
   }
 
+  .post-meta__row {
+    white-space: nowrap;
+  }
+
   .post-meta__arrow {
+    max-width: 1rem;
+
+    @media screen and (min-width: 600px) {
+      max-width: 100%;
+    }
+
     @media screen and (min-width: 870px) {
       margin-left: $indent-10;
     }
