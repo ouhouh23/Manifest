@@ -15,10 +15,14 @@
     padding: $indent-10 $indent-45;
   }
 
-  &__arrow {
+  &__arrow-right {
     padding: $indent-10 $indent-65 $indent-10 $indent-34;
     background-image: url("~../img/arrow-button.svg");
     background-repeat: no-repeat;
     background-position: 5.6rem;
   }
+
+  &__arrow-left {
+    margin-right: $indent-10;
+  } 
 }
