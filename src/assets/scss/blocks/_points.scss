@@ -4,16 +4,17 @@
   @include font-style ($size: $font-19, $heights: $font-height-32, $spacing: 0.5px);
 
   &__item {
+    display: flex;
     margin-bottom: $indent-34;
 
     &:before {
       content: '';
       display: inline-block;
-      width: 5px;
+      min-width: 5px;
       height: 5px;
       border-radius: 50%;
       background: $black;
-      margin: 0 0.75rem 0.28rem 0.35rem;
+      margin: 0.75rem 0.75rem 0.28rem 0.35rem;
     }
   }
 }

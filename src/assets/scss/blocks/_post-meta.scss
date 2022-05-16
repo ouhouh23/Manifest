@@ -169,12 +169,6 @@
 }
 
 .post-meta_full {
-  @extend %offset-left;
-
-  @media screen and (min-width: 600px) {
-    margin-top: -3rem;
-  }
-
   .post-meta__heading {
     margin: {
       top: $indent-16;

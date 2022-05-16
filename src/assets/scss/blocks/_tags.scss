@@ -2,17 +2,30 @@
   display: flex;
   align-items: baseline;
   padding-bottom: $indent-16;
-  border-bottom: 1px solid $gray-100;
+  border-bottom: 1px solid $gray-500;
 
   @include font-style($heights: $font-height-26, $spacing: 1px);
+
+  @media screen and (min-width: 870px) {
+    border-color: $gray-100;
+  }
 
   &__heading {
     font-weight: $font-normal;
     margin-right: $indent-16;
+    color: $gray-500;
+
+    @media screen and (min-width: 870px) {
+      color: $black;
+    }
   }
 
   &__item {
     margin-right: $indent-10;
-    color: $gray-500;
+    color: $black;
+
+    @media screen and (min-width: 870px) {
+      color: $gray-500;
+    }
   }
 }

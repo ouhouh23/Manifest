@@ -1,6 +1,4 @@
 .gallery {
-  @extend %offset-right;
-
   display: grid;
   grid-auto-flow: column;
   grid-gap: $indent-16;

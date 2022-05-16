@@ -11,10 +11,6 @@
     right: auto;
   }
 
-  @media only screen and (max-width: 870px) {
-    overflow-x: hidden;
-  }
-
   @media screen and (min-width: 600px)  {
     padding: {
       left: 2rem;
@@ -68,7 +64,6 @@
 .header {
   padding-top: $indent-25;
   width: 100%;
-  overflow: visible;
 	
   @include flexbox($justify: space-between, $align: center);
 

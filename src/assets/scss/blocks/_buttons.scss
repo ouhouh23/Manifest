@@ -4,8 +4,10 @@
   color: $white;
   width: fit-content;
   white-space: nowrap;
+  height: 3.1rem;
+  border: none;
 
-  @include font-style($heights: $font-height-26, $weight: $font-bold);
+  @include font-style($size: $font-16, $heights: $font-height-26, $spacing: 1px);
 
   &_tight {
     padding: $indent-10 $indent-34;
